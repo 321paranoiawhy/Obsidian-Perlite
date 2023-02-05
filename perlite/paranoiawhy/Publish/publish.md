@@ -85,6 +85,65 @@ https://learn.microsoft.com/zh-cn/windows/wsl/install-manual#step-4---download-t
 > ```
 > 本地改动后无须重建 (`rebuild`)
 
+## `Github Actions` 配置 `Docker`
+
+```yaml
+name: Docker Image CI
+
+on:
+  push:
+    branches: [ "dev" ]
+  pull_request:
+    branches: [ "dev" ]
+
+jobs:
+
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Build the Docker image
+      run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
+
+```
+
+```yaml
+name: ci
+
+on:
+  push:
+    branches:
+      - 'dev'
+
+jobs:
+  docker:
+    runs-on: ubuntu-latest
+    steps:
+      -
+        name: Set up QEMU
+        uses: docker/setup-qemu-action@v2
+      -
+        name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v2
+      -
+        name: Login to Docker Hub
+        uses: docker/login-action@v2
+        with:
+          username: ${{ secrets.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_TOKEN }}
+      -
+        name: Build and push
+        uses: docker/build-push-action@v4
+        with:
+          push: true
+          tags: user/app:latest
+```
+
+`paranoiawhy`
+`why17375774285`
+
 # `Flowershow`
 
 - [Flowershow](https://flowershow.app/)

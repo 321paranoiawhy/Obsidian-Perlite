@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "publish",
+      "path": "Publish/publish.md"
+    },
+    {
       "basename": "debug",
       "path": "Issues/debug.md"
     },
@@ -19,10 +23,6 @@
     {
       "basename": "intro",
       "path": "Rust/intro.md"
-    },
-    {
-      "basename": "publish",
-      "path": "Publish/publish.md"
     },
     {
       "basename": "v-html",

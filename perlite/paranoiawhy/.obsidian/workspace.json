@@ -60,7 +60,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -134,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Issues/debug.md",
+                "file": "Publish/publish.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Issues/debug.md",
+                "file": "Publish/publish.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Issues/debug.md"
+                "file": "Publish/publish.md"
               }
             }
           }
@@ -196,13 +196,13 @@
       "publish:Publish changes": false
     }
   },
-  "active": "0b8b531109e949cc",
+  "active": "852549dfbe9ed28c",
   "lastOpenFiles": [
+    "Issues/debug.md",
     "Vue/动态.md",
     "TypeScript/unions.md",
     "TypeScript/generics.md",
     "Rust/intro.md",
-    "Issues/debug.md",
     "Publish/publish.md",
     "Vue/v-html.md",
     "Attachments/Obsidian Plugin Developers Docs 运行示意.png",
