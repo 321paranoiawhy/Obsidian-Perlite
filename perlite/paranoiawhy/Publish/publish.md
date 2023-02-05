@@ -109,40 +109,23 @@ jobs:
 
 ```
 
-```yaml
-name: ci
+# `docker hub`
 
-on:
-  push:
-    branches:
-      - 'dev'
+- 账号: paranoiawhy
+- 密码: why17375774285
+- 邮箱: paranoiawhy@gmail.com
 
-jobs:
-  docker:
-    runs-on: ubuntu-latest
-    steps:
-      -
-        name: Set up QEMU
-        uses: docker/setup-qemu-action@v2
-      -
-        name: Set up Docker Buildx
-        uses: docker/setup-buildx-action@v2
-      -
-        name: Login to Docker Hub
-        uses: docker/login-action@v2
-        with:
-          username: ${{ secrets.DOCKERHUB_USERNAME }}
-          password: ${{ secrets.DOCKERHUB_TOKEN }}
-      -
-        name: Build and push
-        uses: docker/build-push-action@v4
-        with:
-          push: true
-          tags: user/app:latest
-```
+## `GitHub secrets`
 
-`paranoiawhy`
-`why17375774285`
+- [Creating encrypted secrets for a repository](https://docs.github.com/en/actions/security-guides/encrypted-secrets#creating-encrypted-secrets-for-a-repository)
+- [Naming your secrets](https://docs.github.com/en/actions/security-guides/encrypted-secrets#naming-your-secrets)
+
+- DOCKERHUB_USERNAME: paranoiawhy
+- DOCKERHUB_TOKEN
+
+# 利用 `Github Actions` 构建和推送 `Docker` 镜像
+
+- [GitHub Action: Build and push Docker images](https://github.com/marketplace/actions/build-and-push-docker-images)
 
 # `Flowershow`
 
