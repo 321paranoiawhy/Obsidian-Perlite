@@ -33,7 +33,8 @@
 }
 
 img {
-  display: initial !important;
+  display: block;
+  margin: 0 auto;
 }
 
 .popup-icon {
@@ -52,7 +53,7 @@ img {
 
    .workspace-split.mod-horizontal.mod-right-split {
     display: none;
-  } 
+  }
   .workspace-split.mod-horizontal.mod-left-split {
     width: 90vw !important;
     max-width: 300px !important;
@@ -70,5 +71,5 @@ img {
   #mdContent {
     padding-right: 30px;
   }
-  
+
 }

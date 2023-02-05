@@ -33,6 +33,32 @@
 > // /<h([\d])>([\s\S]*?)<\/h([\d])>/gi
 > ```
 
+# 图片居中
+
+> [!tip]
+> 将 `perlite/.styles/perlite.css` 中 `img` 样式由:
+> 
+> ```css
+> img {
+>   display: initial !important;
+>   margin: 0 auto;
+> }
+> ```
+> 
+> 改为:
+> 
+> ```css
+> img {
+>   display: block;
+>   margin: 0 auto;
+> }
+> ```
+
+# 去除图片右上角箭头
+
+> [!tip]
+> 将 `perlite/.styles/app.css` 中 `.external-link`类选择器改为 `.external-link:not(img)`
+
 # TODO
 
 ## 多彩缩进
@@ -52,3 +78,9 @@
 ## 标题悬停动效
 
 ## 滚动到顶部/底部
+
+## `Tooltip`
+
+各按钮的 `Tooltip` 样式
+
+## 国际化 (部分内容)

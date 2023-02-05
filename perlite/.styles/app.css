@@ -1,6 +1,6 @@
 body {
   /*
-	List of variables is placed in body rather than :root so 
+	List of variables is placed in body rather than :root so
 	that we can	combine all property types including colors
 	and sort alphabetically to maximize readability in
 	the compiled app.css file.
@@ -1601,12 +1601,12 @@ span.CodeMirror-selectedtext {
 }
 /*
 
-OS-dependent rules to make space for traffic lights buttons, 
+OS-dependent rules to make space for traffic lights buttons,
 window buttons and sidebar toggles.
 
 ---
 
-Scenarios to account for: 
+Scenarios to account for:
 
 Window frame styles
 - Hidden
@@ -3937,7 +3937,7 @@ button.mod-warning {
   color: var(--text-accent);
 }
 /* Document search and replace */
-/* 
+/*
 Moves search to the top
 #todo move this into DOM */
 .markdown-reading-view.is-searching,
@@ -5569,11 +5569,17 @@ body:not(.is-translucent):not(.is-mobile) .workspace-tabs {
 .tree-item-self.is-clickable {
   cursor: var(--cursor);
 }
+.tree-item-self.is-clickable a{
+  color: var(--nav-item-color);
+}
 @media (hover: hover) {
   .tree-item-self.is-clickable:hover {
     background-color: var(--nav-item-background-hover);
     color: var(--nav-item-color-hover);
     font-weight: var(--nav-item-weight-hover);
+  }
+  .tree-item-self.is-clickable:hover a {
+    color: var(--nav-item-color-hover) !important;
   }
 }
 .tree-item-self .tree-item-icon {
@@ -6836,7 +6842,7 @@ a {
     text-decoration-line: var(--link-decoration-hover);
   }
 }
-.external-link {
+.external-link:not(img) {
   color: var(--link-external-color);
   text-decoration-line: var(--link-external-decoration);
   background-position: center right;

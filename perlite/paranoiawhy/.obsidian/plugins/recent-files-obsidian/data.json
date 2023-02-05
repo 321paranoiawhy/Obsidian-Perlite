@@ -1,12 +1,12 @@
 {
   "recentFiles": [
     {
-      "basename": "publish",
-      "path": "Publish/publish.md"
-    },
-    {
       "basename": "debug",
       "path": "Issues/debug.md"
+    },
+    {
+      "basename": "publish",
+      "path": "Publish/publish.md"
     },
     {
       "basename": "动态",

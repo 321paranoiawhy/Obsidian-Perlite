@@ -11,10 +11,10 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
+    # https://stackoverflow.com/questions/67023441/deploy-docker-container-with-compose-github-actions
     defaults:
       run:
         working-directory: ./web
-    # image: 'web/Dockerfile'
 
     steps:
     - uses: actions/checkout@v3
