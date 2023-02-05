@@ -8,7 +8,7 @@
 > 
 > `MAINTAINER` 语法已废弃, 应改为:
 > 
-> ```dcockerfile
+> ```dockerfile
 > LABEL maintainer="sec77 https://github.com/secure-77/Perlite"
 > ```
 > [参见这里](https://github.com/apache/couchdb-docker/issues/126)
