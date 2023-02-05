@@ -1,0 +1,212 @@
+{
+  "main": {
+    "id": "275f906f2439966f",
+    "type": "split",
+    "children": [
+      {
+        "id": "40e7a707eb4513ac",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "22e81a9a77cebfd8",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Vue/v-html.md",
+                "mode": "source",
+                "source": false
+              },
+              "pinned": true
+            }
+          },
+          {
+            "id": "bdf138bcc04bca49",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Vue/动态.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "852549dfbe9ed28c",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Publish/publish.md",
+                "mode": "source",
+                "source": false
+              },
+              "pinned": true
+            }
+          },
+          {
+            "id": "0b8b531109e949cc",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Issues/debug.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ],
+        "currentTab": 3
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "11bf9bb57a81c8c8",
+    "type": "split",
+    "children": [
+      {
+        "id": "d24a6804788d01f4",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "830573838b840347",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "a92f845dc99bcf35",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "develo",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "5286a5ea5e864146",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          },
+          {
+            "id": "b09248ca46ba8619",
+            "type": "leaf",
+            "state": {
+              "type": "recent-files",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 393.5
+  },
+  "right": {
+    "id": "7a9fc6cd0a259c7e",
+    "type": "split",
+    "children": [
+      {
+        "id": "b165f8233feb302f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "2e2fe2f98098ccc5",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Issues/debug.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "5eab1eac7b957f94",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Issues/debug.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "55e9f64254f15af4",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "541c60ba37f1156b",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Issues/debug.md"
+              }
+            }
+          }
+        ],
+        "currentTab": 3
+      }
+    ],
+    "direction": "horizontal",
+    "width": 363.5
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "publish:Publish changes": false
+    }
+  },
+  "active": "0b8b531109e949cc",
+  "lastOpenFiles": [
+    "Vue/动态.md",
+    "TypeScript/unions.md",
+    "TypeScript/generics.md",
+    "Rust/intro.md",
+    "Issues/debug.md",
+    "Publish/publish.md",
+    "Vue/v-html.md",
+    "Attachments/Obsidian Plugin Developers Docs 运行示意.png",
+    "Attachments/Obsidian Plugin Developers Docs Demo.png",
+    "AI/AI.md"
+  ]
+}

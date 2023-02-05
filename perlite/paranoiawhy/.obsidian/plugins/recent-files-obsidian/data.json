@@ -1,0 +1,47 @@
+{
+  "recentFiles": [
+    {
+      "basename": "debug",
+      "path": "Issues/debug.md"
+    },
+    {
+      "basename": "动态",
+      "path": "Vue/动态.md"
+    },
+    {
+      "basename": "unions",
+      "path": "TypeScript/unions.md"
+    },
+    {
+      "basename": "generics",
+      "path": "TypeScript/generics.md"
+    },
+    {
+      "basename": "intro",
+      "path": "Rust/intro.md"
+    },
+    {
+      "basename": "publish",
+      "path": "Publish/publish.md"
+    },
+    {
+      "basename": "v-html",
+      "path": "Vue/v-html.md"
+    },
+    {
+      "basename": "Obsidian Plugin Developers Docs 运行示意",
+      "path": "Attachments/Obsidian Plugin Developers Docs 运行示意.png"
+    },
+    {
+      "basename": "Obsidian Plugin Developers Docs Demo",
+      "path": "Attachments/Obsidian Plugin Developers Docs Demo.png"
+    },
+    {
+      "basename": "AI",
+      "path": "AI/AI.md"
+    }
+  ],
+  "omittedPaths": [],
+  "maxLength": null,
+  "openType": "tab"
+}

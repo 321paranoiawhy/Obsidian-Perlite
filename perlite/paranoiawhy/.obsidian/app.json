@@ -1,0 +1,13 @@
+{
+  "showLineNumber": true,
+  "spellcheck": true,
+  "spellcheckLanguages": [
+    "zh-CN",
+    "en-US"
+  ],
+  "trashOption": "local",
+  "alwaysUpdateLinks": true,
+  "attachmentFolderPath": "Attachments",
+  "newLinkFormat": "relative",
+  "tabSize": 2
+}

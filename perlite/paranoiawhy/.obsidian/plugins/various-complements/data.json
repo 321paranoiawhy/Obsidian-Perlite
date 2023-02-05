@@ -1,0 +1,147 @@
+{
+  "strategy": "default",
+  "matchStrategy": "prefix",
+  "maxNumberOfSuggestions": 5,
+  "maxNumberOfWordsAsPhrase": 3,
+  "minNumberOfCharactersTriggered": 0,
+  "minNumberOfWordsTriggeredPhrase": 1,
+  "complementAutomatically": true,
+  "delayMilliSeconds": 0,
+  "disableSuggestionsDuringImeOn": false,
+  "insertAfterCompletion": true,
+  "firstCharactersDisableSuggestions": ":/^",
+  "showMatchStrategy": true,
+  "showComplementAutomatically": true,
+  "showIndexingStatus": true,
+  "descriptionOnSuggestion": "Short",
+  "selectSuggestionKeys": "Enter",
+  "additionalCycleThroughSuggestionsKeys": "None",
+  "disableUpDownKeysForCycleThroughSuggestionsKeys": false,
+  "openSourceFileKey": "None",
+  "propagateEsc": false,
+  "enableCurrentFileComplement": true,
+  "currentFileMinNumberOfCharacters": 0,
+  "onlyComplementEnglishOnCurrentFileComplement": false,
+  "enableCurrentVaultComplement": false,
+  "currentVaultMinNumberOfCharacters": 0,
+  "includeCurrentVaultPathPrefixPatterns": "",
+  "excludeCurrentVaultPathPrefixPatterns": "",
+  "includeCurrentVaultOnlyFilesUnderCurrentDirectory": false,
+  "enableCustomDictionaryComplement": false,
+  "customDictionaryPaths": "https://raw.githubusercontent.com/first20hours/google-10000-english/master/google-10000-english-no-swears.txt",
+  "columnDelimiter": "Tab",
+  "customDictionaryWordRegexPattern": "",
+  "delimiterToHideSuggestion": "",
+  "delimiterToDivideSuggestionsForDisplayFromInsertion": "",
+  "caretLocationSymbolAfterComplement": "",
+  "displayedTextSuffix": " => ...",
+  "enableInternalLinkComplement": true,
+  "suggestInternalLinkWithAlias": false,
+  "excludeInternalLinkPathPrefixPatterns": "",
+  "enableFrontMatterComplement": true,
+  "frontMatterComplementMatchStrategy": "inherit",
+  "insertCommaAfterFrontMatterCompletion": false,
+  "intelligentSuggestionPrioritization": {
+    "maxDaysToKeepHistory": 30,
+    "maxNumberOfHistoryToKeep": 0
+  },
+  "showLogAboutPerformanceInConsole": false,
+  "selectionHistoryTree": {
+    "Prelite": {
+      "Prelite": {
+        "currentFile": {
+          "count": 2,
+          "lastUpdated": 1675586610847
+        }
+      }
+    },
+    "Flowershow": {
+      "Flowershow": {
+        "currentFile": {
+          "count": 2,
+          "lastUpdated": 1675522955809
+        }
+      }
+    },
+    "GitHub": {
+      "GitHub": {
+        "currentFile": {
+          "count": 3,
+          "lastUpdated": 1675524966151
+        }
+      }
+    },
+    "MindStone": {
+      "MindStone": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1675521655946
+        }
+      }
+    },
+    "Pubsidian": {
+      "Pubsidian": {
+        "currentFile": {
+          "count": 2,
+          "lastUpdated": 1675522630615
+        }
+      }
+    },
+    "Obsidian": {
+      "Obsidian": {
+        "currentFile": {
+          "count": 2,
+          "lastUpdated": 1675523032447
+        }
+      }
+    },
+    "Publish": {
+      "Publish": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1675523039573
+        }
+      }
+    },
+    "Digital": {
+      "Digital": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1675523475045
+        }
+      }
+    },
+    "Energy": {
+      "Energy": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1675581020486
+        }
+      }
+    },
+    "Github": {
+      "Github": {
+        "currentFile": {
+          "count": 2,
+          "lastUpdated": 1675581965669
+        }
+      }
+    },
+    "docker-compose": {
+      "docker-compose": {
+        "currentFile": {
+          "count": 2,
+          "lastUpdated": 1675590796179
+        }
+      }
+    },
+    "Attachments": {
+      "Attachments": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1675589946434
+        }
+      }
+    }
+  }
+}
