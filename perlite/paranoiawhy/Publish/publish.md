@@ -126,6 +126,7 @@ jobs:
 # 利用 `Github Actions` 构建和推送 `Docker` 镜像
 
 - [GitHub Action: Build and push Docker images](https://github.com/marketplace/actions/build-and-push-docker-images)
+- [Git context](https://github.com/marketplace/actions/build-and-push-docker-images#git-context)
 
 # `Flowershow`
 
