@@ -28,8 +28,6 @@ npm install --global yarn
 
 ###  安装 `Docker`
 
-https://learn.microsoft.com/zh-cn/windows/wsl/install-manual#step-4---download-the-linux-kernel-update-package
-
 - 下载 `Docker`: [Get Docker](https://docs.docker.com/get-docker/)
 - 终端运行 `wsl --update`
 - 查看 `Docker` 版本: `docker -v`

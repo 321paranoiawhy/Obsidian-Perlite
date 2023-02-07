@@ -6834,7 +6834,6 @@ a {
   outline: none;
   text-decoration-line: var(--link-decoration);
   text-decoration-thickness: var(--link-decoration-thickness);
-  cursor: var(--cursor-link);
 }
 @media (hover: hover) {
   a:hover {

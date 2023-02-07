@@ -1,4 +1,3 @@
-
 .logo {
   position: fixed;
   top: 8px;
@@ -19,7 +18,8 @@
 }
 
 /* fix graph canvas height */
-#mynetwork, #graph_all{
+#mynetwork,
+#graph_all {
   height: 100%;
 }
 
@@ -44,14 +44,11 @@ img {
   left: 3px;
 }
 
-
-
 /* --------------- */
 /* Mobile / Responive Settings */
 
 @media screen and (max-width: 990px) {
-
-   .workspace-split.mod-horizontal.mod-right-split {
+  .workspace-split.mod-horizontal.mod-right-split {
     display: none;
   }
   .workspace-split.mod-horizontal.mod-left-split {
@@ -61,7 +58,6 @@ img {
 
   .markdown-preview-view {
     padding: 10px !important;
-
   }
 
   .sidebar-toggle-button.mod-right {
@@ -71,5 +67,92 @@ img {
   #mdContent {
     padding-right: 30px;
   }
+}
 
+.workspace-tab-header {
+  cursor: pointer;
+}
+
+.nav-folder,
+.nav-folder-title,
+.nav-file,
+.nav-file-title,
+.tree-item-self.is-clickable,
+.clickable-icon {
+  cursor: pointer !important;
+}
+
+/* 平滑滚动 */
+.markdown-rendered {
+  scroll-behavior: smooth;
+}
+
+.tree-item-children a {
+  text-decoration: none;
+}
+
+
+.workspace-tab-header {
+  position: relative;
+}
+
+.workspace-tab-header::before {
+  /* content: var(--content, "This is a tooltip."); */
+  content: attr(aria-label);
+  text-align: center;
+  background-color: var(--background-color, rgb(36, 41, 47));
+  color: var(--color, red);
+  border-radius: var(--border-radius, 0.25rem);
+  padding: var(--padding, 0.5rem 0.75rem);
+  word-wrap: break-word;
+  white-space: pre;
+  top: var(--before-top, 50%);
+  left: var(--before-left, 100%);
+  transform: var(--before-transform, translate(var(--offset, 0.5rem), -50%));
+}
+
+.workspace-tab-header::after {
+  content: " ";
+  top: var(--after-top, 50%);
+  left: var(--after-left, 100%);
+  transform: var(--after-transform, translateY(-50%));
+  border: calc(var(--offset, 0.5rem) / 2) solid;
+  border-color: var(
+    --border-color,
+    transparent var(--background-color, rgb(36, 41, 47)) transparent transparent
+  );
+}
+
+.workspace-tab-header::before,
+.workspace-tab-header::after {
+  display: initial !important;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  position: absolute;
+  z-index: var(--z-index, 666);
+  pointer-events: none;
+}
+
+.workspace-tab-header:hover::before,
+.workspace-tab-header:hover::after {
+  visibility: visible;
+  opacity: 1;
+  animation: var(--animation);
+}
+
+.markdown-rendered pre {
+  position: relative;
+}
+
+.markdown-rendered pre::after {
+  content: attr(data-lang);
+  /* content: "HTML"; */
+  position: absolute;
+  top: 0.75em;
+  right: 0.75em;
+  opacity: 0.6;
+  color: inherit;
+  font-size: var(--code-size);
+  line-height: 1;
 }

@@ -44,7 +44,7 @@ $jsonGraphData = getfullGraph($rootDir);
     <script src=".js/katex.min.js"></script>
     <script src=".js/auto-render.min.js"></script>
     <script src=".js/mermaid.min.js"></script>
-
+    <script type="module" src="https://cdn.jsdelivr.net/gh/321paranoiawhy/ExquisiteUI/components/Tooltip/tooltip.js"></script>
 
 </head>
 
@@ -175,7 +175,7 @@ $jsonGraphData = getfullGraph($rootDir);
                                         <div class="nav-folder mod-root">
                                             <div class="nav-folder-title" data-path="/">
                                                 <div class="nav-folder-collapse-indicator collapse-icon"></div>
-                                                <div class="nav-folder-title-content"><?php echo $vaultName ?></div>
+                                                <div class="nav-folder-title-content">Author: <?php echo $vaultName ?></div>
                                             </div>
                                             <div class="nav-folder-children">
                                                 <div style="width: 612px; height: 0.1px; margin-bottom: 0px;"></div>

@@ -37,11 +37,15 @@ function getContent(str, home = false, popHover = false) {
 
     $.ajax({
       url: requestPath, success: function (result) {
-
         if (popHover == false) {
 
           // set content
           $("#mdContent").html(result);
+
+          const pre = document.querySelectorAll("pre");
+          pre.forEach((item)=>{
+            item.setAttribute("data-lang",item.children[0].classList[0].substr(9));
+          });
 
           // set word and char count
           $("#wordCount").text($(".wordCount").text() + ' words');
@@ -94,8 +98,9 @@ function getContent(str, home = false, popHover = false) {
                 level = parseInt(openLevel);
 
                 var anchor = titleText.replace(/ /g, "_");
-                toc += '<div class="tree-item-self is-clickable"><a href="#' + anchor + '">' + titleText
-                  + '</a></div>';
+                // toc += '<div class="tree-item-self is-clickable"><a href="#' + anchor + '">' + titleText
+                //   + '</a></div>';
+                toc += `<a href="#${anchor}"><div class="tree-item-self is-clickable">${titleText}</div></a>`;
 
                 return "<h" + openLevel + "><a name='" + anchor + "' >"
                   + "" + "</a>" + titleText + "</h" + closeLevel + ">";
@@ -1449,7 +1454,7 @@ $(document).ready(function () {
     $("#popUp").css("display", "none");
   });
 
-  // local Graph & Outline Swith
+  // local Graph & Outline Switch
   $('.clickable-icon.view-action[aria-label="Open outline"]').click(function (e) {
 
     $('.clickable-icon.view-action[aria-label="Open outline"]').css('display', 'none')
