@@ -1,6 +1,8 @@
 #Build #Flutter #Android #iOS #Web
 # `Android apk`
 
+## 普通打包
+
 ```bash
 flutter build apk
 ```
@@ -16,6 +18,12 @@ flutter build apk
 
 > [!important] 构建完成的 `APK` 路径
 > build\app\outputs\flutter-apk\app-release.apk
+
+## 上架
+
+```bash
+flutter build appbundle
+```
 
 # `iOS ipa`
 

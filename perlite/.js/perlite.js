@@ -44,8 +44,13 @@ function getContent(str, home = false, popHover = false) {
 
           const pre = document.querySelectorAll("pre");
           pre.forEach((item)=>{
-            item.setAttribute("data-lang",item.children[0].classList[0].substr(9));
+            item.setAttribute("data-lang",item.children[0].classList[0].substring(9).toUpperCase());
           });
+
+          const footer = document.createElement("div");
+          footer.setAttribute("class", "footer");
+          footer.innerHTML = "Powered with <span style='color: red;'>❤</span> by <a class='external-link' target='_blank' href='https://github.com/secure-77/Perlite'>Perlite</a>";
+          document.querySelector("#mdContent").appendChild(footer);
 
           // set word and char count
           $("#wordCount").text($(".wordCount").text() + ' words');
@@ -67,7 +72,9 @@ function getContent(str, home = false, popHover = false) {
             $("div.view-header-title").text(title);
             $(".inline-title").text(title);
 
-            $("title").text(title + ' - ' + $("p.vault").text() + ' - ' + $("p.perliteTitle").text());
+            // $("title").text(title + ' - ' + $("p.vault").text() + ' - ' + $("p.perliteTitle").text());
+            $("title").text(title + ' - ' + $("p.vault").text());
+            // $("title").text($(".view-header-title-container.mod-at-start").text());
 
             // set edit button url
             $('.clickable-icon.view-action[aria-label="Click to edit"]')
@@ -990,7 +997,6 @@ $(document).ready(function () {
     var text = window.location.href;
     $('.tooltip').css("top", target.offset().top + 39);
     $('.tooltip').css("left", target.offset().left);
-    $('.tooltip').css("height", "25px");
     $('.tooltip').css("display", "unset");
 
     navigator.clipboard.writeText(text).then(function () {
@@ -1003,6 +1009,118 @@ $(document).ready(function () {
     setTimeout(hideTooltip, 1500);
   });
 
+  $(".workspace-tab-header").on("mouseenter", (e) => {
+    const node = e.currentTarget;
+    $(".tooltip").css("top", node.getBoundingClientRect().bottom + 7);
+    $(".tooltip").css(
+      "left",
+      (node.getBoundingClientRect().left + node.getBoundingClientRect().right) /
+        2
+    );
+    $(".tooltip").css("width", "fit-content");
+    $(".tooltip").css("display", "unset");
+    $(".tooltip").text(node.getAttribute("aria-label"));
+  });
+
+  $(".workspace-tab-header").on("mouseleave", (e) => {
+    $(".tooltip").css("display", "none");
+  });
+
+  $(".clickable-icon.view-action").on("mouseenter", (e) => {
+    const node = e.currentTarget;
+    $(".tooltip").css("top", node.getBoundingClientRect().bottom + 7);
+    $(".tooltip").css(
+      "left",
+      (node.getBoundingClientRect().left + node.getBoundingClientRect().right) /
+        2
+    );
+    $(".tooltip").css("width", "fit-content");
+    $(".tooltip").css("display", "unset");
+    $(".tooltip").text(node.getAttribute("aria-label"));
+  });
+  $(".clickable-icon.view-action").on("mouseleave", (e) => {
+    $(".tooltip").css("display", "none");
+  });
+
+  $(".clickable-icon.graph-controls-button.mod-open").on("mouseenter", (e) => {
+    const node = e.currentTarget;
+    $(".tooltip").css(
+      "top",
+      (node.getBoundingClientRect().top + node.getBoundingClientRect().bottom) /
+        2 -
+        12.5
+    );
+    $(".tooltip").css(
+      "left",
+      node.getBoundingClientRect().left -
+        node.getBoundingClientRect().width -
+        35
+    );
+    $(".tooltip").css("width", "fit-content");
+    $(".tooltip").css("display", "unset");
+    $(".tooltip").text(node.getAttribute("aria-label"));
+  });
+  $(".clickable-icon.graph-controls-button.mod-open").on("mouseleave", (e) => {
+    $(".tooltip").css("display", "none");
+  });
+
+  $(".clickable-icon.graph-controls-button.mod-close").on("mouseenter", (e) => {
+    const node = e.currentTarget;
+    $(".tooltip").css("top", node.getBoundingClientRect().bottom + 7);
+    $(".tooltip").css(
+      "left",
+      (node.getBoundingClientRect().left + node.getBoundingClientRect().right) /
+        2
+    );
+    $(".tooltip").css("width", "fit-content");
+    $(".tooltip").css("display", "unset");
+    $(".tooltip").text(node.getAttribute("aria-label"));
+  });
+
+  $(".clickable-icon.graph-controls-button.mod-close").on("mouseleave", (e) => {
+    $(".tooltip").css("display", "none");
+  });
+
+  $(".clickable-icon.graph-controls-button.mod-reset").on("mouseenter", (e) => {
+    const node = e.currentTarget;
+    $(".tooltip").css("top", node.getBoundingClientRect().bottom + 7);
+    $(".tooltip").css(
+      "left",
+      (node.getBoundingClientRect().left + node.getBoundingClientRect().right) /
+        2
+    );
+    $(".tooltip").css("width", "fit-content");
+    $(".tooltip").css("display", "unset");
+    $(".tooltip").text(node.getAttribute("aria-label"));
+  });
+
+  $(".clickable-icon.graph-controls-button.mod-reset").on("mouseleave", (e) => {
+    $(".tooltip").css("display", "none");
+  });
+
+  $(".sidebar-toggle-button.mod-right").on("mouseenter", (e) => {
+    const node = e.currentTarget;
+    $(".tooltip").css(
+      "top",
+      (node.getBoundingClientRect().top + node.getBoundingClientRect().bottom) /
+        2 -
+        12.5
+    );
+    $(".tooltip").css(
+      "left",
+      node.getBoundingClientRect().left - node.getBoundingClientRect().width
+    );
+    $(".tooltip").css("width", "fit-content");
+    $(".tooltip").css("display", "unset");
+    if (node.classList.contains("is-collapsed")) {
+      $(".tooltip").text("Expand");
+    } else {
+      $(".tooltip").text("Collapse");
+    }
+  });
+  $(".sidebar-toggle-button.mod-right").on("mouseleave", (e) => {
+    $(".tooltip").css("display", "none");
+  });
 
 
   // rezise Handler right

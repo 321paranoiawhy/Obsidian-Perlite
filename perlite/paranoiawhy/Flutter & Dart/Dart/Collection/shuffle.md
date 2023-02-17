@@ -79,8 +79,6 @@ const shuffle = (arr, start = 0, end) => {
 > [!tip]
 > shuffle -> arrayShuffle -> shuffleSelf
 
-```
-
 ```javascript
 // 1. shuffle
 function shuffle(collection) {

@@ -178,6 +178,27 @@ docker run --name python -p 8080:8080 -d python
 - [Quick Start](https://github.com/docker/compose#quick-start)
 - [Docker Compose 使用](https://yeasy.gitbook.io/docker_practice/compose/usage)
 
+`docker-compose.yml` :
+
+```yml
+version: '3'
+
+services:
+  # redis
+  redis:
+    image: "redis:alpine"
+
+  # python
+  python:
+    build: .
+    ports:
+      - "8080:8080"
+    environment:
+      - REDIS_URL=redis://10.10.21.86:6379
+    depends_on:
+      - redis
+```
+
 ## 运行
 
 ```bash
@@ -206,20 +227,6 @@ docker-compose
 > 以登录 `login` 为例, 请求的`URL` 应为:
 > - `http://localhost:8080/login`
 > - 其他请求同理。
-
-# 配置 `Dockerfile`
-
-# 配置 `dockerfile-compose.yml`
-
-```yml
-
-```
-
-```bash
-docker-compose up
-```
-
-# 配置 `dockerfile-compose-dev.yml`
 
 # `Another Redis Desktop Manager`
 

@@ -4,22 +4,59 @@
     "type": "split",
     "children": [
       {
-        "id": "0d7d785616e27a9e",
+        "id": "b8e139cd40718d2c",
         "type": "tabs",
         "children": [
           {
-            "id": "e62566b0fd3ae9c6",
+            "id": "ff65084bdd5de73e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Issues/debug.md",
-                "mode": "preview",
+                "file": "Docker/数据持久化.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "53be26c1abab99ea",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Docker/数据库管理页面.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "aa0fd70cf94464cb",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Docker/Projects/backend-api-data.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "4fc38adf5c25ea68",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Docker/n8n.md",
+                "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -48,11 +85,11 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "publish",
+                "query": "docker build",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
-                "extraContext": false,
+                "extraContext": true,
                 "sortOrder": "alphabetical"
               }
             }
@@ -77,7 +114,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 393.5
+    "width": 318.5
   },
   "right": {
     "id": "7a9fc6cd0a259c7e",
@@ -93,7 +130,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Issues/debug.md",
+                "file": "Docker/n8n.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +147,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Issues/debug.md",
+                "file": "Docker/n8n.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +170,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Issues/debug.md"
+                "file": "Docker/n8n.md"
               }
             }
           }
@@ -142,7 +179,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 220.5
+    "width": 216.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -155,17 +192,17 @@
       "publish:Publish changes": false
     }
   },
-  "active": "e62566b0fd3ae9c6",
+  "active": "4fc38adf5c25ea68",
   "lastOpenFiles": [
-    "Issues/debug.md",
+    "Docker/Projects/backend-api-data.md",
+    "Docker/Docker compose/restart.md",
+    "Docker/数据库管理页面.md",
+    "Docker/数据持久化.md",
+    "Docker/Pre-Denpendency/JAVA.md",
     "Publish/publish.md",
-    "Docker/docker-compose.md",
-    "Docker/docker logs.md",
-    "Docker/docker-compose file.md",
-    "You Don't Know Desigin Patterns/Singleton.md",
-    "Docker/Getting Started.md",
-    "Docker/estate.md",
-    "Tools/Obsidian/语法.md",
-    "Docker/docker inspect.md"
+    "Docker/Projects/cluster.md",
+    "JavaScript/数组扁平化.md",
+    "CSS/拼音.md",
+    "Flutter & Dart/Flutter/All about build in flutter.md"
   ]
 }

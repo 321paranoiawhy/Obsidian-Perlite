@@ -119,5 +119,5 @@ docker-compose logs
 > docker-compose logs -f
 > ```
 
-- [[docker logs]]
+- [[Docker Commands/docker logs]]
 - [docker compose logs](https://docs.docker.com/engine/reference/commandline/compose_logs/)

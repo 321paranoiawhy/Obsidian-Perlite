@@ -86,6 +86,8 @@ toc += `<a href="#${anchor}"><div class="tree-item-self is-clickable">${titleTex
 
 # 代码块右上角显示语言
 
+`perlite/.js/perlite.js` :
+
 ```js
 // set content
 $("#mdContent").html(result);
@@ -94,6 +96,25 @@ const pre = document.querySelectorAll("pre");
 pre.forEach((item)=>{
 	item.setAttribute("data-lang",item.children[0].classList[0].substr(9));
 });
+```
+
+`perlite/.styles/perlite.css` :
+
+```css
+.markdown-rendered pre {
+  position: relative;
+}
+
+.markdown-rendered pre::after {
+  content: attr(data-lang);
+  position: absolute;
+  top: 0.75em;
+  right: 0.75em;
+  opacity: 0.6;
+  color: inherit;
+  font-size: var(--code-size);
+  line-height: 1;
+}
 ```
 
 # 代码块增加复制按钮
@@ -139,6 +160,26 @@ pre.forEach((item)=>{
 /* 平滑滚动 */
 .markdown-rendered {
   scroll-behavior: smooth;
+}
+```
+
+# 底部增加内容
+
+`perlite/.js/perlite.js` 中添加如下 `js` 代码:
+
+```js
+const footer = document.createElement("div");
+footer.setAttribute("class", "footer");
+footer.innerHTML = "Powered with <span style='color: red;'>❤</span> by <a class='external-link' target='_blank' href='https://github.com/secure-77/Perlite'>Perlite</a>";
+document.querySelector("#mdContent").appendChild(footer);
+```
+
+`perlite/.styles/perlite.css` 中添加如下 `CSS` 代码:
+
+```css
+.footer {
+  text-align: center;
+  margin-top: 1rem;
 }
 ```
 

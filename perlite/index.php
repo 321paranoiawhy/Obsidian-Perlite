@@ -44,7 +44,6 @@ $jsonGraphData = getfullGraph($rootDir);
     <script src=".js/katex.min.js"></script>
     <script src=".js/auto-render.min.js"></script>
     <script src=".js/mermaid.min.js"></script>
-    <script type="module" src="https://cdn.jsdelivr.net/gh/321paranoiawhy/ExquisiteUI/components/Tooltip/tooltip.js"></script>
 
 </head>
 
@@ -533,7 +532,7 @@ $jsonGraphData = getfullGraph($rootDir);
         <p class="perliteTitle"><?php echo $title ?></p>
     </div>
     <!-- tool tip -->
-    <div class="tooltip" style="top: 83.9531px; left: 1032.51px; width: 180.984px; height: 25px; display: none">
+    <div class="tooltip" style="top: 83.9531px; left: 1032.51px; width: 180.984px; display: none">
         <div class="tooltip-arrow" style="left: initial; right: 43px;"></div>
     </div>
     <!-- about modal -->
