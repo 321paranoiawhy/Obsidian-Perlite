@@ -8,55 +8,47 @@
         "type": "tabs",
         "children": [
           {
-            "id": "ff65084bdd5de73e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Docker/数据持久化.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "53be26c1abab99ea",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Docker/数据库管理页面.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "aa0fd70cf94464cb",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Docker/Projects/backend-api-data.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "4fc38adf5c25ea68",
             "type": "leaf",
+            "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
                 "file": "Docker/n8n.md",
                 "mode": "source",
                 "source": false
+              },
+              "pinned": true
+            }
+          },
+          {
+            "id": "0cb2753a4870a9c0",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Docker/Pre-Denpendency/JAVA.md",
+                "mode": "source",
+                "source": false
+              },
+              "pinned": true
+            }
+          },
+          {
+            "id": "15f5482299ad83b6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Flutter & Dart/Flutter/Debug/模拟器调试.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -85,7 +77,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "docker build",
+                "query": "夜神模拟器",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -130,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Docker/n8n.md",
+                "file": "Flutter & Dart/Flutter/Debug/模拟器调试.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -147,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Docker/n8n.md",
+                "file": "Flutter & Dart/Flutter/Debug/模拟器调试.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -170,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Docker/n8n.md"
+                "file": "Flutter & Dart/Flutter/Debug/模拟器调试.md"
               }
             }
           }
@@ -192,17 +184,17 @@
       "publish:Publish changes": false
     }
   },
-  "active": "4fc38adf5c25ea68",
+  "active": "15f5482299ad83b6",
   "lastOpenFiles": [
+    "Docker/Pre-Denpendency/JAVA.md",
+    "Docker/n8n.md",
+    "Flutter & Dart/Flutter/屏幕.md",
+    "Flutter & Dart/Flutter/All about build in flutter.md",
+    "Flutter & Dart/Flutter/Debug/模拟器调试.md",
     "Docker/Projects/backend-api-data.md",
     "Docker/Docker compose/restart.md",
     "Docker/数据库管理页面.md",
     "Docker/数据持久化.md",
-    "Docker/Pre-Denpendency/JAVA.md",
-    "Publish/publish.md",
-    "Docker/Projects/cluster.md",
-    "JavaScript/数组扁平化.md",
-    "CSS/拼音.md",
-    "Flutter & Dart/Flutter/All about build in flutter.md"
+    "Publish/publish.md"
   ]
 }

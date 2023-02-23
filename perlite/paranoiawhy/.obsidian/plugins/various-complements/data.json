@@ -226,8 +226,8 @@
     "powershell": {
       "powershell": {
         "currentFile": {
-          "count": 2,
-          "lastUpdated": 1675842320075
+          "count": 3,
+          "lastUpdated": 1676880404325
         }
       }
     },
@@ -484,6 +484,14 @@
         "currentFile": {
           "count": 1,
           "lastUpdated": 1676535816131
+        }
+      }
+    },
+    "default": {
+      "default": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1676885455423
         }
       }
     }

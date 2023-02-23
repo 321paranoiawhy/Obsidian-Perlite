@@ -47,40 +47,85 @@ STORAGE_REDIS_PORT: process.env.STORAGE_REDIS_PORT ?? '6379',
 ```bash
 npm install -g lerna
 npm install --production --loglevel notice
+node loadEnv.js
 lerna bootstrap --hoist
 npm run build
 npm run start
 ```
 
-### `sqlite3`
+> [!important] loadEnv.js
+> ```js
+> require('dotenv').config();
+> console.log(process.env);
+> ```
 
-> [!error]
+> [!success] lerna bootstrap --hoist
+> lerna success Bootstrapped 6 packages
+
+> [!success] npm run build
+> lerna success exec Executed command in 6 packages: "npm run build"
+
+> [!error] npm run start
 > Initializing n8n process
-> There was an error initializing DB: "SQLite package has not been found installed. Try to install it: npm install sqlite3 --save"
-
-```bash
-npm install sqlite3 --save
-```
-
-```bash
-npm i node-pre-gyp -g
-```
-
-- [node-pre-gyp 以及 node-gyp 的源码简单解析（以安装 sqlite3 为例）](https://juejin.cn/post/6949528268512952333)
+> invalid vhost [].
+>  »   Error: There was an error: Cannot read property 'on' of undefined
 
 > [!error]
-> Error: There was an error: SQLITE_ERROR: no such column: WorkflowEntity.userId
-
-### `host.docker.internal`
-
-> [!danger]
-> "Host 'host.docker.internal' is not allowed to connect to this MySQL server"
+> There was an error initializing DB: "Access denied for user 'root'@'localhost' (using password: NO)"
 
 查询 `MySQL` 用户:
 
 ```sql
 select Host, User from mysql.user;
 ```
+
+`powershell` :
+
+```powershell
+$env:DB_MYSQLDB_DATABASE="n8n";$env:DB_MYSQLDB_HOST="localhost";$env:DB_MYSQLDB_PORT="3307";$env:DB_MYSQLDB_USER="root";$env:DB_MYSQLDB_PASSWORD="123456";$env:DB_TYPE="mysqldb";$env:PORTAL_API_BASE="http://api-portal:8080";$env:DEVICE_API_BASE="http://api-device:8080";$env:DEVICE_DATA_API_BASE="http://api-data:8080";$env:VIRTUAL_CONTROLLER_API_BASE="http://api-virtual-controller:5000";$env:MQTT_PROTOCOL="mqtt";$env:MQTT_HOST="localhost";$env:MQTT_PORT="1883";$env:MQTT_CLEAN_SESSION="false";$env:RABBITMQ_URLS="amqp://localhost:5672/";$env:RABBITMQ_MESSAGE_QUEUE_VHOST="n8n-mq";$env:RABBITMQ_USERNAME="guest";$env:RABBITMQ_PASSWORD="guest";$env:RABBITMQ_TOPIC_EXCHANGENAME="amq.topic";$env:RABBITMQ_TRIGGER_QUEUE_TTL="300000";$env:RABBITMQ_QUEUENAME_WEBSOCKET_DATA="cereb.websocket-data";$env:SHADOW_WEBSOCKET_TOPIC="/topic/shadow_websocket";$env:STORAGE_REDIS_HOST="localhost";$env:STORAGE_REDIS_PORT="6379";$env:STORAGE_REDIS_DB="1";$env:REDIS_CACHE_DEVICE_TIME_SEC="600";$env:QUEUE_BULL_REDIS_HOST="localhost";$env:QUEUE_BULL_REDIS_PORT="6379";$env:QUEUE_BULL_REDIS_DB="1";$env:EXECUTIONS_PROCESS="own";$env:EXECUTIONS_MODE="regular";$env:N8N_SKIP_WEBHOOK_DEREGISTRATION_SHUTDOWN="false";$env:WEBHOOK_DOMAIN="localhost:5678/";$env:WORKFLOW_DOMAIN="localhost:5678/";$env:WEBHOOK_URL="http://localhost:5678/";$env:CUSTOM_BASE_URL="http://localhost:5678/";$env:N8N_DISABLE_PRODUCTION_MAIN_PROCESS="true";$env:N8N_BASIC_AUTH_ACTIVE="false";$env:N8N_HOST="localhost";$env:N8N_PORT="5678";$env:N8N_PROTOCOL="http";$env:N8N_CEREB_JWT_SECRET="cerebsecret";$env:N8N_ENCRYPTION_KEY="itsn8nsecret";$env:VUE_APP_URL_BASE_API="http://localhost:5678/";$env:NODE_ENV="production";$env:EXECUTIONS_DATA_PRUNE="true";$env:EXECUTIONS_DATA_MAX_AGE="168";$env:EXECUTIONS_TIMEOUT_MAX="600"
+```
+
+```powershell
+$env:DB_MYSQLDB_DATABASE="n8n";$env:DB_MYSQLDB_HOST="localhost";$env:DB_MYSQLDB_PORT="3307";$env:DB_MYSQLDB_USER="root";$env:DB_MYSQLDB_PASSWORD="123456";$env:DB_TYPE="mysqldb";$env:PORTAL_API_BASE="http://api-portal:8080";$env:DEVICE_API_BASE="http://api-device:8080";$env:DEVICE_DATA_API_BASE="http://api-data:8080";$env:VIRTUAL_CONTROLLER_API_BASE="http://api-virtual-controller:5000";$env:MQTT_PROTOCOL="mqtt";$env:MQTT_HOST="localhost";$env:MQTT_PORT="1883";$env:MQTT_CLEAN_SESSION="false";$env:RABBITMQ_URLS="amqp://localhost:5672/";$env:RABBITMQ_MESSAGE_QUEUE_VHOST="n8n-mq";$env:RABBITMQ_USERNAME="guest";$env:RABBITMQ_PASSWORD="guest";$env:RABBITMQ_TOPIC_EXCHANGENAME="amq.topic";$env:RABBITMQ_TRIGGER_QUEUE_TTL="300000";$env:RABBITMQ_QUEUENAME_WEBSOCKET_DATA="cereb.websocket-data";$env:SHADOW_WEBSOCKET_TOPIC="/topic/shadow_websocket";$env:STORAGE_REDIS_HOST="localhost";$env:STORAGE_REDIS_PORT="6379";$env:STORAGE_REDIS_DB="1";$env:REDIS_CACHE_DEVICE_TIME_SEC="600"
+```
+
+- [Execution modes and processes - n8n Documentation](https://docs.n8n.io/hosting/scaling/execution-modes-processes/)
+- `EXECUTIONS_PROCESS` : `own (default)` 或 `main` 
+- `EXECUTIONS_MODE` : `regular (default)` 或 `queue`
+
+`cmd` :
+
+> [!tip]- /healthz [GET]
+> ```ts
+> 		// ----------------------------------------
+> 		// Healthcheck
+> 		// ----------------------------------------
+> 
+> 
+> 		// Does very basic health check
+> 		this.app.get('/healthz', async (req: express.Request, res: express.Response) => {
+> 
+> 			// const connectionManager = getConnectionManager();
+> 
+> 			// if (connectionManager.connections.length === 0) {
+> 			// 	const error = new ResponseHelper.ResponseError('No Database connection found!', undefined, 503);
+> 			// 	return ResponseHelper.sendErrorResponse(res, error);
+> 			// }
+> 
+> 			// if (connectionManager.connections[0].isConnected === false) {
+> 			// 	// Connection is not active
+> 			// 	const error = new ResponseHelper.ResponseError('Database connection not active!', undefined, 503);
+> 			// 	return ResponseHelper.sendErrorResponse(res, error);
+> 			// }
+> 
+> 			// Everything fine
+> 			const responseData = {
+> 				status: 'ok',
+> 			};
+> 
+> 			ResponseHelper.sendSuccessResponse(res, responseData, true, 200);
+> 		});
+> ```
 
 # Official
 
@@ -100,4 +145,15 @@ npx n8n
 
 ```bash
 docker run -it --rm	--name n8n -p 5678:5678	-v ~/.n8n:/home/node/.n8n	n8nio/n8n
+```
+
+# 本地开发
+
+```bash
+npm install -g lerna
+npm install --production --loglevel notice
+node -r .env
+lerna bootstrap --hoist
+npm run build
+npm run start
 ```

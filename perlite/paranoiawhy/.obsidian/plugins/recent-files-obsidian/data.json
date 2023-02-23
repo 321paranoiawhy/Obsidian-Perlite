@@ -1,8 +1,24 @@
 {
   "recentFiles": [
     {
+      "basename": "模拟器调试",
+      "path": "Flutter & Dart/Flutter/Debug/模拟器调试.md"
+    },
+    {
+      "basename": "JAVA",
+      "path": "Docker/Pre-Denpendency/JAVA.md"
+    },
+    {
       "basename": "n8n",
       "path": "Docker/n8n.md"
+    },
+    {
+      "basename": "屏幕",
+      "path": "Flutter & Dart/Flutter/屏幕.md"
+    },
+    {
+      "basename": "All about build in flutter",
+      "path": "Flutter & Dart/Flutter/All about build in flutter.md"
     },
     {
       "basename": "backend-api-data",
@@ -21,10 +37,6 @@
       "path": "Docker/数据持久化.md"
     },
     {
-      "basename": "JAVA",
-      "path": "Docker/Pre-Denpendency/JAVA.md"
-    },
-    {
       "basename": "publish",
       "path": "Publish/publish.md"
     },
@@ -41,10 +53,6 @@
       "path": "CSS/拼音.md"
     },
     {
-      "basename": "All about build in flutter",
-      "path": "Flutter & Dart/Flutter/All about build in flutter.md"
-    },
-    {
       "basename": "backend-api-portal",
       "path": "Docker/Projects/backend-api-portal.md"
     },
@@ -59,10 +67,6 @@
     {
       "basename": "ADB 调试",
       "path": "Flutter & Dart/Flutter/Debug/ADB 调试.md"
-    },
-    {
-      "basename": "夜神模拟器调试",
-      "path": "Flutter & Dart/Flutter/Debug/夜神模拟器调试.md"
     },
     {
       "basename": "backend-api-device",
@@ -195,10 +199,6 @@
     {
       "basename": "CMD",
       "path": "Tools/CMD.md"
-    },
-    {
-      "basename": "All about Key in Flutter",
-      "path": "Flutter & Dart/Flutter/All about Key in Flutter.md"
     }
   ],
   "omittedPaths": [],

@@ -1,0 +1,356 @@
+/* https://help.obsidian.md/How+to/Use+callouts */
+
+.callout {
+  border-left: 4px solid rgb(var(--callout-color));
+}
+
+.callout-title {
+  gap: 10px;
+  /* padding: 10px; */
+  /* display: flex; */
+  /* background-color: rgba(var(--callout-color), 0.1); */
+}
+
+.callout.is-collapsible .callout-title {
+  cursor: pointer;
+}
+
+.callout-title-inner {
+  /* flex: 1 1 0; */
+  font-weight: 700;
+}
+
+.callout[data-callout="info"],
+.callout[data-callout="todo"] {
+  --callout-color: 0, 184, 212;
+}
+
+.callout[data-callout="abstract"],
+.callout[data-callout="summary"],
+.callout[data-callout="tldr"] {
+  --callout-color: 0, 176, 255;
+  --callout-icon: lucide-clipboard-list;
+}
+
+.callout[data-callout="todo"] {
+  --callout-icon: lucide-check-circle-2;
+}
+
+.callout[data-callout="tip"],
+.callout[data-callout="hint"],
+.callout[data-callout="important"] {
+  --callout-color: 0, 191, 165;
+  --callout-icon: lucide-flame;
+}
+
+.callout[data-callout="success"],
+.callout[data-callout="check"],
+.callout[data-callout="done"] {
+  --callout-color: 0, 200, 83;
+  --callout-icon: lucide-check;
+}
+
+.callout[data-callout="question"],
+.callout[data-callout="help"],
+.callout[data-callout="faq"] {
+  --callout-color: 100, 221, 23;
+  --callout-icon: lucide-help-circle;
+}
+
+.callout[data-callout="warning"],
+.callout[data-callout="caution"],
+.callout[data-callout="attention"] {
+  --callout-color: 255, 145, 0;
+  --callout-icon: lucide-alert-triangle;
+}
+
+.callout[data-callout="failure"],
+.callout[data-callout="fail"],
+.callout[data-callout="missing"] {
+  --callout-color: 255, 82, 82;
+  --callout-icon: lucide-x;
+}
+
+.callout[data-callout="danger"],
+.callout[data-callout="error"] {
+  --callout-color: 255, 23, 68;
+  --callout-icon: lucide-zap;
+}
+
+.callout[data-callout="bug"] {
+  --callout-color: 245, 0, 87;
+  --callout-icon: lucide-bug;
+}
+
+.callout[data-callout="example"] {
+  --callout-color: 124, 77, 255;
+  --callout-icon: lucide-list;
+}
+
+.callout[data-callout="quote"],
+.callout[data-callout="cite"] {
+  --callout-color: 158, 158, 158;
+  --callout-icon: quote-glyph;
+}
+
+iframe {
+  margin: 12px auto;
+}
+
+/*  
+设置标题大小和样式(在标题左侧，在实时预览模式中)  
+*/
+/* .is-live-preview
+  div.cm-contentContainer
+  > div
+  > div:not(.HyperMD-header.HyperMD-header-1.cm-line.cm-active)
+  > span.cm-header.cm-header-1::before {
+  content: "H1";
+  color: #6b6d6f;
+  margin-right: 0px;
+  font-size: 0.8rem;
+  margin-right: 5px;
+  font-weight: normal;
+} */
+
+.is-live-preview
+  div.cm-contentContainer
+  div.HyperMD-header.HyperMD-header-1.cm-line::before {
+  content: "H1";
+  color: #6b6d6f;
+  margin-right: 0px;
+  font-size: 0.8rem;
+  margin-right: 5px;
+  font-weight: normal;
+}
+
+.is-live-preview
+  div.cm-contentContainer
+  div.HyperMD-header.HyperMD-header-2.cm-line::before {
+  content: "H2";
+  color: #6b6d6f;
+  margin-right: 0px;
+  font-size: 0.8rem;
+  margin-right: 5px;
+  font-weight: normal;
+}
+
+.is-live-preview
+  div.cm-contentContainer
+  div.HyperMD-header.HyperMD-header-3.cm-line::before {
+  content: "H3";
+  color: #6b6d6f;
+  margin-right: 0px;
+  font-size: 0.8rem;
+  margin-right: 5px;
+  font-weight: normal;
+}
+
+.is-live-preview
+  div.cm-contentContainer
+  div.HyperMD-header.HyperMD-header-4.cm-line::before {
+  content: "H4";
+  color: #6b6d6f;
+  margin-right: 0px;
+  font-size: 0.8rem;
+  margin-right: 5px;
+  font-weight: normal;
+}
+
+.is-live-preview
+  div.cm-contentContainer
+  div.HyperMD-header.HyperMD-header-5.cm-line::before {
+  content: "H5";
+  color: #6b6d6f;
+  margin-right: 0px;
+  font-size: 0.8rem;
+  margin-right: 5px;
+  font-weight: normal;
+}
+
+.is-live-preview
+  div.cm-contentContainer
+  div.HyperMD-header.HyperMD-header-6.cm-line::before {
+  content: "H6";
+  color: #6b6d6f;
+  margin-right: 0px;
+  font-size: 0.8rem;
+  margin-right: 5px;
+  font-weight: normal;
+}
+
+img {
+  display: block !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.markdown-source-view.mod-cm6 .cm-content > * {
+  margin: auto auto !important;
+}
+
+.hr.cm-line hr,
+.markdown-rendered hr {
+  position: relative;
+  overflow: visible;
+  border-bottom: 1px solid #f0f0f0;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+.hr.cm-line hr::before,
+.markdown-rendered hr::before {
+  position: absolute;
+  content: " ";
+  width: 30px;
+  height: 30px;
+  border: 1px solid #f0f0f0;
+  left: 50%;
+  margin-left: -15px;
+  top: 50%;
+  background: #fff;
+  margin-top: -15px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.hr.cm-line hr::after,
+.markdown-rendered hr::after {
+  position: absolute;
+  content: " ";
+  width: 20px;
+  height: 20px;
+  border: 1px solid #2ca5b9;
+  left: 50%;
+  margin-left: -10px;
+  top: 50%;
+  background: #2ca5b9;
+  margin-top: -10px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/* 1 ~ 9 & A ~ Z */
+.theme-light {
+  --Fold0: #823131d7;
+  --Fold1: #96174ad7;
+  --Fold2: #731a9ad7;
+  --Fold3: #543796d7;
+  --Fold4: #2b3ba2d7;
+  --Fold5: #185898d7;
+  --Fold6: #1e6b95d7;
+  --Fold7: #187782d7;
+  --Fold8: #0d6a5fd7;
+  --Fold9: #1f7624d7;
+  --FoldA: #2f6007ef;
+  --FoldB: #6c7e12ef;
+  --FoldC: #7b7e0def;
+  --FoldD: #7f6c0cef;
+  --FoldE: #7d550cef;
+  --FoldF: #76350aef;
+  --FoldG: #671c14ef;
+  --FoldH: #710d0def;
+  --FoldI: #7a0d36ef;
+  --FoldJ: #710b52ef;
+  --FoldK: #710e7aef;
+  --FoldL: #621287ef;
+  --FoldM: #470f7bef;
+  --FoldN: #381182ef;
+  --FoldO: #1c1089ef;
+  --FoldP: #192698ef;
+  --FoldQ: #1737a2ef;
+  --FoldR: #0e4295ef;
+  --FoldS: #0f5495ef;
+  --FoldT: #0f5f8eef;
+  --FoldU: #0d687eef;
+  --FoldV: #0a7373ef;
+  --FoldW: #0d6e5def;
+  --FoldX: #0b6542ef;
+  --FoldY: #0a642def;
+  --FoldZ: #105b09ef;
+}
+
+/* .nav-folder:nth-child(12n+2) .nav-folder-title {
+  color: red;
+} */
+.nav-folder.mod-root
+  > .nav-folder-children
+  > .nav-folder:nth-child(12n + 0)
+  .nav-folder-title {
+  color: var(--Fold0);
+}
+.nav-folder.mod-root
+  > .nav-folder-children
+  > .nav-folder:nth-child(12n + 1)
+  .nav-folder-title {
+  color: var(--Fold1);
+}
+.nav-folder.mod-root
+  > .nav-folder-children
+  > .nav-folder:nth-child(12n + 2)
+  .nav-folder-title {
+  color: var(--Fold2);
+}
+.nav-folder.mod-root
+  > .nav-folder-children
+  > .nav-folder:nth-child(12n + 3)
+  .nav-folder-title {
+  color: var(--Fold3);
+}
+.nav-folder.mod-root
+  > .nav-folder-children
+  > .nav-folder:nth-child(12n + 4)
+  .nav-folder-title {
+  color: var(--Fold4);
+}
+.nav-folder.mod-root
+  > .nav-folder-children
+  > .nav-folder:nth-child(12n + 5)
+  .nav-folder-title {
+  color: var(--Fold5);
+}
+.nav-folder.mod-root
+  > .nav-folder-children
+  > .nav-folder:nth-child(12n + 6)
+  .nav-folder-title {
+  color: var(--Fold6);
+}
+.nav-folder.mod-root
+  > .nav-folder-children
+  > .nav-folder:nth-child(12n + 7)
+  .nav-folder-title {
+  color: var(--Fold7);
+}
+.nav-folder.mod-root
+  > .nav-folder-children
+  > .nav-folder:nth-child(12n + 8)
+  .nav-folder-title {
+  color: var(--Fold8);
+}
+.nav-folder.mod-root
+  > .nav-folder-children
+  > .nav-folder:nth-child(12n + 9)
+  .nav-folder-title {
+  color: var(--Fold9);
+}
+.nav-folder.mod-root
+  > .nav-folder-children
+  > .nav-folder:nth-child(12n + 10)
+  .nav-folder-title {
+  color: var(--FoldA);
+}
+.nav-folder.mod-root
+  > .nav-folder-children
+  > .nav-folder:nth-child(12n + 11)
+  .nav-folder-title {
+  color: var(--FoldB);
+}
+
+/* https://github.com/nekoshita/obsidian-auto-card-link/blob/main/styles.css#L83-L87 */
+.auto-card-link-thumbnail-img {
+  object-fit: contain;
+}

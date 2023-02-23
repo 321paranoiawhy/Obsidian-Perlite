@@ -96,13 +96,13 @@ set
 查看某个环境变量的值:
 
 ```bash
-set ENV_EXAMPLE
+set ENV_NAME
 ```
 
 设置/修改某个环境变量的值:
 
 ```bash
-set ENV_EXAMPLE=ENV_VALUE
+set ENV_NAME=ENV_VALUE
 ```
 
 > [!caution]
@@ -111,7 +111,7 @@ set ENV_EXAMPLE=ENV_VALUE
 删除某个环境变量:
 
 ```bash
-set ENV_EXAMPLE
+set ENV_NAME
 ```
 
 ## `powershell`
@@ -120,18 +120,19 @@ set ENV_EXAMPLE
 
 ```bash
 Get-ChildItem env:
+ls env:
 ```
 
 查看某个环境变量的值:
 
 ```bash
-$env:ENV_EXAMPLE
+$env:ENV_NAME
 ```
 
 设置/修改某个环境变量的值:
 
 ```bash
-$env:ENV_EXAMPLE=ENV_VALUE
+$env:ENV_NAME=ENV_VALUE
 ```
 
 如设置环境变量 `JAVA_HOME` 的值:
