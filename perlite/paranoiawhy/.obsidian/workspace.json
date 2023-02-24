@@ -46,6 +46,18 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "7e3c13d44bf373cc",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.1.15"
+              },
+              "pinned": true
+            }
           }
         ],
         "currentTab": 2
