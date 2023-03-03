@@ -39,7 +39,7 @@
 }
 ```
 
-`Codepen`: [](https://codepen.io/paraoiawhy/pen/JjZzgKw)
+[Codepen](https://codepen.io/paraoiawhy/pen/JjZzgKw)
 
 # `Div` + `JavaScript`
 

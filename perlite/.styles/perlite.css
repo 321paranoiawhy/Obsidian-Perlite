@@ -82,15 +82,28 @@ img {
   cursor: pointer !important;
 }
 
-/* 平滑滚动 */
-.markdown-rendered {
-  scroll-behavior: smooth;
-}
-
 .tree-item-children a {
   text-decoration: none;
 }
 
+.tree-item code {
+  font-family: initial;
+  /* font-family: var(--font-ui-smaller); */
+}
+
+a.tag {
+  --tag-margin: 0.5rem;
+}
+a.tag:first-of-type {
+  margin-right: var(--tag-margin);
+}
+a.tag:last-of-type {
+  margin-left: var(--tag-margin);
+}
+a.tag:not(:first-of-type, :last-of-type) {
+  margin-left: var(--tag-margin);
+  margin-right: var(--tag-margin);
+}
 
 .markdown-rendered pre {
   position: relative;
@@ -103,15 +116,42 @@ img {
   right: 0.75em;
   opacity: 0.6;
   color: inherit;
-  font-size: var(--code-size);
+  font-size: var(--font-ui-smaller);
+  /* font-family: 'Fira Code'; */
+  font-family: var(--font-monospace);
   line-height: 1;
 }
 
-.footer {
+/* 平滑滚动 */
+.view-content {
+  scroll-behavior: smooth;
+}
+
+/* 平滑滚动 */
+.markdown-rendered {
+  flex-grow: 1;
+  padding-bottom: 0;
+}
+
+footer {
+  padding: 0.5rem 0;
   text-align: center;
-  margin-top: 1rem;
+  /* color: #8DB9ED;
+  background-color: #373737; */
+  flex-grow: 0;
+  flex-shrink: 0;
 }
 
 .tooltip {
   height: auto !important;
+}
+
+body {
+  --font-text-override: "霞鹜文楷 GB 屏幕阅读版 R" !important;
+  --font-monospace-override: "Fira Code Retina" !important;
+  --font-interface-override: "霞鹜文楷 GB 屏幕阅读版 R" !important;
+}
+
+li p {
+  margin: 0;
 }

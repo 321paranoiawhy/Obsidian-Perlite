@@ -11,6 +11,34 @@
 // define home file
 const homeFile = "README";
 
+const countChinese = (Words) => {
+  let iTotal = 0;
+  for (let i = 0; i < Words.length; i++) {
+    let c = Words.charAt(i);
+    // 基本汉字
+    if (c.match(/[\u4e00-\u9fa5]/)) {
+      iTotal++;
+    }
+    // 基本汉字补充
+    else if (c.match(/[\u9FA6-\u9fcb]/)) {
+      iTotal++;
+    }
+  }
+};
+
+const countEnglish = (Words) => {
+  for (let i = 0; i < Words.length; i++) {
+    let c = Words.charAt(i);
+    if (c.match(/[^\x00-\xff]/)) {
+      sTotal++;
+    } else {
+      eTotal++;
+    }
+    if (c.match(/[0-9]/)) {
+      inum++;
+    }
+  }
+};
 
 // get markdown content
 function getContent(str, home = false, popHover = false) {
@@ -42,15 +70,27 @@ function getContent(str, home = false, popHover = false) {
           // set content
           $("#mdContent").html(result);
 
+          // const markdownContent = $('#mdContent').val();
+          // let hanzi, words, biaodian, zimu, shuzi, characters;
+          // countChinese(markdownContent);
+          // countEnglish(markdownContent);
+          // // 汉字
+          // hanzi = iTotal;
+          // // 字数
+          // words = (inum + iTotal);
+          // // 标点
+          // biaodian = sTotal - iTotal;
+          // // 字母
+          // zimu = (eTotal - inum);
+          // // 数字
+          // shuzi = inum;
+          // // 字符
+          // characters = (iTotal * 2 + (sTotal - iTotal) * 2 + eTotal);
+
           const pre = document.querySelectorAll("pre");
           pre.forEach((item)=>{
             item.setAttribute("data-lang",item.children[0].classList[0].substring(9).toUpperCase());
           });
-
-          const footer = document.createElement("div");
-          footer.setAttribute("class", "footer");
-          footer.innerHTML = "Powered with <span style='color: red;'>❤</span> by <a class='external-link' target='_blank' href='https://github.com/secure-77/Perlite'>Perlite</a>";
-          document.querySelector("#mdContent").appendChild(footer);
 
           // set word and char count
           $("#wordCount").text($(".wordCount").text() + ' words');
@@ -141,7 +181,7 @@ function getContent(str, home = false, popHover = false) {
           // trigger graph render on side bar
           renderGraph(false, str);
 
-          //resize graph on windows rezise
+          //resize graph on windows resize
           $(window).resize(function () {
             renderGraph(false, str, false);
           });
@@ -175,7 +215,7 @@ function getContent(str, home = false, popHover = false) {
 
           });
 
-          // Toogle Front Matter Meta Container
+          // Toggle Front Matter Meta Container
           $('.frontmatter-container-header').click(function (e) {
 
             e.preventDefault();
@@ -344,7 +384,7 @@ function renderGraph(modal, path = "", filter_emptyNodes = false) {
   }
 
 
-  // reset backlings count
+  // reset backlinks count
 
   $('#backlinksCount').text(0);
 

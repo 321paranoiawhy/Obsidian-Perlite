@@ -1,6 +1,14 @@
 # Obsidian-Perlite
 
-![GitHub](https://img.shields.io/github/license/321paranoiawhy/Obsidian-Perlite) ![GitHub last commit](https://img.shields.io/github/last-commit/321paranoiawhy/Obsidian-Perlite) [![Netlify Status](https://api.netlify.com/api/v1/badges/53c785f9-c55d-45d7-b493-3e604bb6b21e/deploy-status)](https://app.netlify.com/sites/statuesque-centaur-7942b7/deploys)
+![GitHub](https://img.shields.io/github/license/321paranoiawhy/Obsidian-Perlite) ![GitHub last commit](https://img.shields.io/github/last-commit/321paranoiawhy/Obsidian-Perlite)
+
+```bash
+# docker-compose.yml
+docker-compose up -d
+
+# docker-compose-dev.yml
+docker-compose --file docker-compose-dev.yml up -d
+```
 
 # Thanks to
 

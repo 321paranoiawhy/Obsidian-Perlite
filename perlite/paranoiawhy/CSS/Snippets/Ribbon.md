@@ -1,0 +1,1 @@
+- [Ribbon - CSS-TRICKS](https://css-tricks.com/snippets/css/ribbon/)

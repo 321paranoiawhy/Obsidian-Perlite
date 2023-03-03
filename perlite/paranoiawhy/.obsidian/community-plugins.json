@@ -7,9 +7,11 @@
   "obsidian-image-toolkit",
   "obsidian-paste-image-rename",
   "obsidian-mkdocs-publisher",
-  "obsidian-link-converter",
   "obsidian-scroll-to-top-plugin",
   "obsidian-style-settings",
   "obsidian-title-serial-number-plugin",
-  "editing-toolbar"
+  "editing-toolbar",
+  "table-editor-obsidian",
+  "markdown-table-editor",
+  "obsidian-icon-folder"
 ]

@@ -298,7 +298,7 @@ FROM rabbitmq:3.8-management
 RUN rabbitmq-plugins enable rabbitmq_mqtt rabbitmq_federation_management rabbitmq_stomp
 ```
 
-由上述 `Enable-Rabbitmq-Plugins-Dockerfile` 文件构建镜像 `rabbitmq_with_plugins` :
+由上述 `Enable-Rabbitmq-Plugins-Dockerfile` 文件构建带插件的 `Rabbitmq` 镜像 `rabbitmq_with_plugins` :
 
 ```bash
 docker build -f Enable-Rabbitmq-Plugins-Dockerfile -t rabbitmq_with_plugins .

@@ -8,7 +8,7 @@
 * [How To Use the Resize Observer JavaScript API - DigitalOcean](https://www.digitalocean.com/community/tutorials/js-resize-observer)
 * [ResizeObserver Sample - googlechrome.github.io](https://googlechrome.github.io/samples/resizeobserver/)
 
-# `intersectionObserver`
+# `IntersectionObserver`
 
 * [Intersection Observer - W3C](https://www.w3.org/TR/intersection-observer/)
 

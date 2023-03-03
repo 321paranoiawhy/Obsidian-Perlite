@@ -1,6 +1,6 @@
 {
   "showLineNumber": true,
-  "spellcheck": true,
+  "spellcheck": false,
   "spellcheckLanguages": [
     "zh-CN",
     "en-US"

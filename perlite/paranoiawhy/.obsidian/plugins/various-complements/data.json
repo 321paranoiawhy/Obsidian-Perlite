@@ -1,8 +1,8 @@
 {
-  "strategy": "default",
+  "strategy": "english-only",
   "matchStrategy": "prefix",
   "maxNumberOfSuggestions": 5,
-  "maxNumberOfWordsAsPhrase": 3,
+  "maxNumberOfWordsAsPhrase": 2,
   "minNumberOfCharactersTriggered": 0,
   "minNumberOfWordsTriggeredPhrase": 1,
   "complementAutomatically": true,
@@ -122,8 +122,8 @@
     "Github": {
       "Github": {
         "currentFile": {
-          "count": 6,
-          "lastUpdated": 1676432249657
+          "count": 8,
+          "lastUpdated": 1677229055219
         }
       }
     },
@@ -146,8 +146,8 @@
     "paranoiawhy": {
       "paranoiawhy": {
         "currentFile": {
-          "count": 5,
-          "lastUpdated": 1675601419150
+          "count": 6,
+          "lastUpdated": 1677566201100
         }
       }
     },
@@ -226,8 +226,8 @@
     "powershell": {
       "powershell": {
         "currentFile": {
-          "count": 3,
-          "lastUpdated": 1676880404325
+          "count": 5,
+          "lastUpdated": 1677482061655
         }
       }
     },
@@ -362,8 +362,8 @@
     "Rabbitmq": {
       "Rabbitmq": {
         "currentFile": {
-          "count": 6,
-          "lastUpdated": 1676002838689
+          "count": 7,
+          "lastUpdated": 1677482741274
         }
       }
     },
@@ -500,6 +500,278 @@
         "currentFile": {
           "count": 2,
           "lastUpdated": 1677147630549
+        }
+      }
+    },
+    "Wikipedia": {
+      "Wikipedia": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1677466510509
+        }
+      }
+    },
+    "Codepen": {
+      "Codepen": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1677476723089
+        }
+      }
+    },
+    "Stackblitz": {
+      "Stackblitz": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1677476759694
+        }
+      }
+    },
+    "codesandbox": {
+      "codesandbox": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1677476825640
+        }
+      }
+    },
+    "Microsoft": {
+      "Microsoft": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1677551914787
+        }
+      }
+    },
+    "Heidisql": {
+      "Heidisql": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1677553002996
+        }
+      }
+    },
+    "phpmyadmin": {
+      "phpmyadmin": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1677553058230
+        }
+      }
+    },
+    "Azure": {
+      "Azure": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1677553163078
+        }
+      }
+    },
+    "obsidian-backend": {
+      "obsidian-backend": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1677566485600
+        }
+      }
+    },
+    "kubectl": {
+      "kubectl": {
+        "currentFile": {
+          "count": 8,
+          "lastUpdated": 1677663883151
+        }
+      }
+    },
+    "cluster-info": {
+      "cluster-info": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1677569775918
+        }
+      }
+    },
+    "Powershell": {
+      "Powershell": {
+        "currentFile": {
+          "count": 3,
+          "lastUpdated": 1677642335704
+        }
+      }
+    },
+    "Kubernetes": {
+      "Kubernetes": {
+        "currentFile": {
+          "count": 2,
+          "lastUpdated": 1677573032005
+        }
+      }
+    },
+    "Client": {
+      "Client": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1677573827455
+        }
+      }
+    },
+    "kubernetes": {
+      "kubernetes": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1677573845068
+        }
+      }
+    },
+    "Version": {
+      "Version": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1677573862581
+        }
+      }
+    },
+    "statefulset": {
+      "statefulset": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1677578093188
+        }
+      }
+    },
+    "data-no-count": {
+      "data-no-count": {
+        "currentFile": {
+          "count": 2,
+          "lastUpdated": 1677637828138
+        }
+      }
+    },
+    "Pagination": {
+      "Pagination": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1677639252337
+        }
+      }
+    },
+    "PowerShell": {
+      "PowerShell": {
+        "currentFile": {
+          "count": 5,
+          "lastUpdated": 1677661623155
+        }
+      }
+    },
+    "YAML": {
+      "YAML": {
+        "internalLink": {
+          "count": 2,
+          "lastUpdated": 1677659419229
+        }
+      }
+    },
+    "created": {
+      "created": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1677653927892
+        }
+      }
+    },
+    "Base64": {
+      "Base64": {
+        "currentFile": {
+          "count": 5,
+          "lastUpdated": 1677662656192
+        }
+      }
+    },
+    "toBase64": {
+      "toBase64": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1677661420868
+        }
+      }
+    },
+    "stringData": {
+      "stringData": {
+        "currentFile": {
+          "count": 2,
+          "lastUpdated": 1677662863145
+        }
+      }
+    },
+    "secret": {
+      "secret": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1677663918778
+        }
+      }
+    },
+    "test-secret": {
+      "test-secret": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1677663965131
+        }
+      }
+    },
+    "komodor": {
+      "komodor": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1677746460892
+        }
+      }
+    },
+    "Chocolatey": {
+      "Chocolatey": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1677746478636
+        }
+      }
+    },
+    "Manual": {
+      "Manual": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1677747026707
+        }
+      }
+    },
+    "Material": {
+      "Material": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1677816538047
+        }
+      }
+    },
+    "getbootstrap": {
+      "getbootstrap": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1677817016240
+        }
+      }
+    },
+    "Preloader": {
+      "Preloader": {
+        "currentFile": {
+          "count": 2,
+          "lastUpdated": 1677817497725
+        }
+      }
+    },
+    "Flutter": {
+      "Flutter": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1677823094393
         }
       }
     }

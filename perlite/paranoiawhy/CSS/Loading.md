@@ -125,6 +125,18 @@
 
 [Codepen](https://codepen.io/zerospree/pen/XWaGER)
 
+# `Basketball Hoop Loop`
+
+- [Codepen](https://codepen.io/chrisgannon/pen/NWzqyBY)
+
+类似的圆环上小球环绕加载动画:
+
+- [CSS3 环绕圆环 loading 小组件](https://www.cnblogs.com/btgyoyo/p/5854177.html)
+
+# Heartbeat Preloader 
+
+- [Heartbeat Preloader](https://codepen.io/RaulC/pen/KgWZjo)
+
 # Reference
 
 * [loading.io](https://loading.io/)

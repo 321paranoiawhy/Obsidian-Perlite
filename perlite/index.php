@@ -37,6 +37,12 @@ $jsonGraphData = getfullGraph($rootDir);
     <link rel="stylesheet" href=".styles/vis.min.css" />
     <link rel="stylesheet" href=".styles/katex.min.css">
 
+    <!-- snippets -->
+    <link rel="stylesheet" href=".styles/snippets/heading.css">
+    <link rel="stylesheet" href=".styles/snippets/toc.css">
+    <link rel="stylesheet" href=".styles/snippets/folder.css">
+    <link rel="stylesheet" href=".styles/snippets/table.css">
+
     <script src=".js/jquery-3.6.1.min.js"></script>
     <script src=".js/highlight.min.js"></script>
     <script src=".js/bootstrap.bundle.min.js"></script>
@@ -271,7 +277,12 @@ $jsonGraphData = getfullGraph($rootDir);
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="view-content" style="padding: 0px; overflow: hidden; position: relative;">
+                                    <div class="view-content" style="padding: 0px; overflow: auto; position: relative;">
+                                        <!-- TODO: header -->
+                                        <!-- <header>
+                                            Created at
+                                            Updated at
+                                        </header> -->
                                         <div id="graph_content" style="display: none">
                                             <div id="graph_all"></div>
                                             <div class="graph-controls is-close">
@@ -378,7 +389,7 @@ $jsonGraphData = getfullGraph($rootDir);
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="markdown-reading-view" style="width: 100%; height: 100%; ">
+                                        <div class="markdown-reading-view" style="width: 100%; min-height: 100%; ">
                                             <div class="markdown-preview-view markdown-rendered node-insert-event allow-fold-headings show-indentation-guide allow-fold-lists" style="tab-size: 4;">
                                                 <div class="markdown-preview-pusher" style="width: 1px; height: 0.1px; margin-bottom: 0px;"></div>
                                                 <div class="inline-title" tabindex="-1" enterkeyhint="done"></div>
@@ -417,6 +428,8 @@ $jsonGraphData = getfullGraph($rootDir);
 
                                             </div>
                                         </div>
+                                        <!-- add footer -->
+                                        <footer>Powered with <span style='color: red;'>❤</span> by <a class='external-link' target='_blank' href='https://github.com/secure-77/Perlite'>Perlite</a> & <a class='external-link' target='_blank' href='https://github.com/321paranoiawhy/Obsidian-Perlite'>paranoiawhy</a></footer>
                                     </div>
                                 </div>
                             </div>

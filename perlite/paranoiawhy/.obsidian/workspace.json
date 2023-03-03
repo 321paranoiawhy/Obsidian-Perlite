@@ -4,63 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "b8e139cd40718d2c",
+        "id": "e8bf7588c4986d39",
         "type": "tabs",
         "children": [
           {
-            "id": "4fc38adf5c25ea68",
-            "type": "leaf",
-            "pinned": true,
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Docker/n8n.md",
-                "mode": "source",
-                "source": false
-              },
-              "pinned": true
-            }
-          },
-          {
-            "id": "0cb2753a4870a9c0",
-            "type": "leaf",
-            "pinned": true,
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Docker/Pre-Denpendency/JAVA.md",
-                "mode": "source",
-                "source": false
-              },
-              "pinned": true
-            }
-          },
-          {
-            "id": "15f5482299ad83b6",
+            "id": "d1c038e69ea40f0c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Flutter & Dart/Flutter/Debug/模拟器调试.md",
+                "file": "Publish/腾讯云服务器.md",
                 "mode": "source",
                 "source": false
               }
             }
-          },
-          {
-            "id": "7e3c13d44bf373cc",
-            "type": "leaf",
-            "pinned": true,
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.1.15"
-              },
-              "pinned": true
-            }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -89,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "夜神模拟器",
+                "query": "服务器",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -118,7 +77,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 318.5
+    "width": 270.5
   },
   "right": {
     "id": "7a9fc6cd0a259c7e",
@@ -134,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Flutter & Dart/Flutter/Debug/模拟器调试.md",
+                "file": "Publish/腾讯云服务器.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Flutter & Dart/Flutter/Debug/模拟器调试.md",
+                "file": "Publish/腾讯云服务器.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,8 +133,16 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Flutter & Dart/Flutter/Debug/模拟器调试.md"
+                "file": "Publish/腾讯云服务器.md"
               }
+            }
+          },
+          {
+            "id": "c200acd95a7c6bbc",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {}
             }
           }
         ],
@@ -183,7 +150,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 216.5
+    "width": 338.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -193,20 +160,49 @@
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "publish:Publish changes": false
+      "publish:Publish changes": false,
+      "workspaces:Manage workspace layouts": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "markdown-table-editor:Open Markdown Table Editor": false
     }
   },
-  "active": "15f5482299ad83b6",
+  "active": "830573838b840347",
   "lastOpenFiles": [
-    "Docker/Pre-Denpendency/JAVA.md",
-    "Docker/n8n.md",
-    "Flutter & Dart/Flutter/屏幕.md",
-    "Flutter & Dart/Flutter/All about build in flutter.md",
+    "Tools/Obsidian/Obsidian Publish.md",
     "Flutter & Dart/Flutter/Debug/模拟器调试.md",
-    "Docker/Projects/backend-api-data.md",
-    "Docker/Docker compose/restart.md",
-    "Docker/数据库管理页面.md",
-    "Docker/数据持久化.md",
-    "Publish/publish.md"
+    "k8s/config-k8s.md",
+    "k8s/k8s 初探.md",
+    "CSS/Snippets/Auto Numbering Elements.md",
+    "Flutter & Dart/Flutter/Learning Materials/Examplse.md",
+    "Flutter & Dart/Flutter/Poll.md",
+    "Flutter & Dart/Flutter/Learning Materials",
+    "Flutter & Dart/Flutter/Code Segment.md",
+    "Flutter & Dart/Flutter/note.md",
+    "CSS/Snippets/TabBar.md",
+    "CSS/CSS Tools.md",
+    "CSS/Loading.md",
+    "CSS/Snippets/Sticky Footers.md",
+    "Tools/Obsidian/CSS Snippets.md",
+    "JavaScript/utils.md",
+    "k8s/可视化工具.md",
+    "README.md",
+    "Publish/腾讯云服务器.md",
+    "Tools/Obsidian/Obsidian Plugins.md",
+    "Tools/grep.md",
+    "k8s/Limits & Requests.md",
+    "Tools/Package Manager",
+    "Computer Science/Memory.md",
+    "Computer Science",
+    "Tools/Websites/Whiteboard.md",
+    "Tools/Websites/Docs.md",
+    "PowerShell/PowerShell 初探.md",
+    "k8s/ConfigMaps.md",
+    "CSS/Snippets",
+    "k8s/config-k8s",
+    "Attachments/Kubernetes-current-context.png",
+    "k8s",
+    "Docker/Tools",
+    "PowerShell",
+    "Tools/Websites"
   ]
 }

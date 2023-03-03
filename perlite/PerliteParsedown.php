@@ -364,7 +364,7 @@ class PerliteParsedown extends Parsedown
         }
     }
 
-    # blockHeader seperated from Tags
+    # blockHeader separated from Tags
     protected function blockHeader($Line)
     {
         if (isset($Line['text'][1]) && ($Line['text'][1] === ' ' || $Line['text'][1] === '#')) {

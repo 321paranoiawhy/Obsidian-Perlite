@@ -69,8 +69,8 @@ npm install --global yarn
 > services:
 > 	perlite:
 > 		environment:
-> 			# - HIDE_FOLDERS=docs,private,trash
->       - HIDE_FOLDERS=docs,private,trash,Attachments
+> 		  # - HIDE_FOLDERS=docs,private,trash
+> 	      - HIDE_FOLDERS=docs,private,trash,Attachments
 > ```
 > 这里以 `Attachments` 文件夹为例。
 
@@ -83,31 +83,12 @@ npm install --global yarn
 > ```
 > 本地改动后无须重建 (`rebuild`)
 
-## `Github Actions` 配置 `Docker`
+# 利用 `Github Actions` 构建和推送 `Docker` 镜像
 
-```yaml
-name: Docker Image CI
+- [GitHub Action: Build and push Docker images](https://github.com/marketplace/actions/build-and-push-docker-images)
+- [Git context](https://github.com/marketplace/actions/build-and-push-docker-images#git-context)
 
-on:
-  push:
-    branches: [ "dev" ]
-  pull_request:
-    branches: [ "dev" ]
-
-jobs:
-
-  build:
-
-    runs-on: ubuntu-latest
-
-    steps:
-    - uses: actions/checkout@v3
-    - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
-
-```
-
-# `docker hub`
+## `docker hub`
 
 - 账号: paranoiawhy
 - 密码: why17375774285
@@ -118,13 +99,14 @@ jobs:
 - [Creating encrypted secrets for a repository](https://docs.github.com/en/actions/security-guides/encrypted-secrets#creating-encrypted-secrets-for-a-repository)
 - [Naming your secrets](https://docs.github.com/en/actions/security-guides/encrypted-secrets#naming-your-secrets)
 
-- DOCKERHUB_USERNAME: paranoiawhy
-- DOCKERHUB_TOKEN
+- DOCKER_HUB_USERNAME: paranoiawhy
+- DOCKER_HUB_TOKEN
 
-# 利用 `Github Actions` 构建和推送 `Docker` 镜像
+## `GitHub Access Token`
 
-- [GitHub Action: Build and push Docker images](https://github.com/marketplace/actions/build-and-push-docker-images)
-- [Git context](https://github.com/marketplace/actions/build-and-push-docker-images#git-context)
+- [Creating a personal access token (classic) - GitHub Docs](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token#creating-a-personal-access-token-classic)
+
+**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**
 
 # `Flowershow`
 
@@ -194,7 +176,7 @@ jobs:
 - [Obsidian Plugin Developers Docs - GitHub](https://github.com/marcusolsson/obsidian-plugin-docs)
 - [Obsidian Plugin Developers Docs Demo](https://marcus.se.net/obsidian-plugin-docs/)
 
-![[../Attachments/Obsidian Plugin Developers Docs Demo.png]]
+![[../../Attachments/Obsidian Plugin Developers Docs Demo.png]]
 
 > [!note]
 > 技术栈:
@@ -206,4 +188,4 @@ jobs:
 2. 项目根目录下 (与 `package.json` 同级) 运行: `npm run start` [start - package.json](https://github.com/marcusolsson/obsidian-plugin-docs/blob/main/package.json#L7)
 3. 打开 http://localhost:3000/obsidian-plugin-docs/ 即可预览 `Web` 界面
 
-![[../Attachments/Obsidian Plugin Developers Docs 运行示意.png]]
+![[../../Attachments/Obsidian Plugin Developers Docs 运行示意.png]]
