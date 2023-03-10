@@ -1,10 +1,8 @@
 #Obsidian #Plugins
 # `Gist`
 
-> [!tip]- 由 `Gist ID` 生成对应的 `Gist` 代码块
-> ```gist
+> [!tip] 由 `Gist ID` 生成对应的 `Gist` 代码块
 > 4dfac7e1ac623b1546e4d55ae7bb68d5
-> ```
 
 > [!tip]
 > `https://gist.github.com/321paranoiawhy/4dfac7e1ac623b1546e4d55ae7bb68d5` 中 `4dfac7e1ac623b1546e4d55ae7bb68d5` 即为 `Gist ID`。
@@ -80,3 +78,7 @@
 > 选中需要添加至 `callout` 的内容 (如文本、代码块等),  `Ctrl + P` 搜索 `insert`, 选择 `Insert callout`
 
 - [Use callouts - Obsidian Help](https://help.obsidian.md/How+to/Use+callouts)
+
+# `metadata-extractor`
+
+- [metadata-extractor - GitHub](https://github.com/kometenstaub/metadata-extractor)

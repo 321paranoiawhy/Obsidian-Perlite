@@ -1,5 +1,5 @@
 #Docker #Getting-Started
-# 运行 `docker`
+# 运行 docker
 
 > [!quote]
 > `Build once, run everywhere`
@@ -15,9 +15,9 @@ wsl --update
 > 正在安装: 适用于 Linux 的 Windows 子系统
 > 已安装 适用于 Linux 的 Windows 子系统。
 
-# 查看 `docker` 版本
+# 查看 docker 版本
 
-## `docker version`
+## docker version
 
 ```bash
 docker version
@@ -54,7 +54,7 @@ docker version
 >   Version:          0.19.0
 >   GitCommit:        de40ad0
 
-## `docker -v`
+## docker -v
 
 ```bash
 docker -v
@@ -63,7 +63,7 @@ docker -v
 > [!info] docker -v
 > Docker version 20.10.22, build 3a2c30b
 
-# 查看 `docker` 帮助
+# 查看 docker 帮助
 
 ```bash
 docker --help
@@ -75,9 +75,9 @@ docker sbom
 
 - [Announcing Docker SBOM: A step towards more visibility into Docker images](https://www.docker.com/blog/announcing-docker-sbom-a-step-towards-more-visibility-into-docker-images/)
 
-# `Tutorial`
+# Tutorial
 
-## `docker run`
+## docker run
 
 > [!note] docker run
 > ```bash
@@ -92,7 +92,7 @@ docker sbom
 > b4f093b99828: Download complete
 > ^C
 
-## `docker cp`
+## docker cp
 
 > [!note] docker cp
 > ```bash
@@ -103,7 +103,7 @@ docker sbom
 > [!info]
 > Error: No such container:path: repo:/git/getting-started/
 
-# `docker search`
+# docker search
 
 从 `https://hub.docker.com/` 上查询 `centos` 镜像是否存在:
 
@@ -187,7 +187,7 @@ docker ps
 > fcc9c7b01999   docker/getting-started   "/docker-entrypoint.…"   5 minutes ago   Up 5 minutes   0.0.0.0:80->80/tcp   trusting_swanson
 > ```
 
-# `docker run` 参数
+# docker run 参数
 
 语法:
 
@@ -197,12 +197,12 @@ docker run [OPTIONS] IMAGE [COMMAND] [ARG...]
 
 - [docker run](https://docs.docker.com/engine/reference/commandline/run/)
 
-## `-d`
+## -d
 
 | --detach , -d | <span style="color: rgb(0, 0, 0); font-family: Roboto, sans-serif; font-size: 14px; background-color: rgb(247, 247, 247);">Run container in background and print container ID</span> |
 |:--------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 
-# `-p`
+# -p
 
 - [docker run --publish](https://docs.docker.com/engine/reference/commandline/run/#publish)
 
@@ -256,7 +256,7 @@ docker ps -a
 > - `Created`: 表示已终止
 > - `Up`: 表示运行中
 
-## `docker start`
+## docker start
 
 - [docker start](https://docs.docker.com/engine/reference/commandline/start/)
 
@@ -266,7 +266,7 @@ docker ps -a
 docker start CONTAINER
 ```
 
-## `docker restart`
+## docker restart
 
 - [docker restart](https://docs.docker.com/engine/reference/commandline/restart/)
 
@@ -298,7 +298,7 @@ docker stop CONTAINER
 docker kill CONTAINER
 ```
 
-# `docker cp`
+# docker cp
 
 复制
 
@@ -349,6 +349,30 @@ docker logs [OPTIONS] CONTAINER
 - `Stopped`
 - `Deleted`
 
-# `WASM`
+# 列出所有容器
+
+```bash
+docker ps -aq
+```
+
+# 停止所有容器
+
+```bash
+docker stop $(docker ps -aq)
+```
+
+# 删除所有容器
+
+```bash
+docker rm $(docker ps -aq)
+```
+
+# 删除所有镜像
+
+```bash
+docker rmi $(docker images -q)
+```
+
+# WASM
 
 - [Docker+Wasm (Beta)](https://docs.docker.com/desktop/wasm/)

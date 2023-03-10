@@ -1,6 +1,6 @@
 # Local
 
-## `Dockerfile`
+## Dockerfile
 
 ```bash
 docker build -t n8n .
@@ -10,7 +10,7 @@ docker build -t n8n .
 docker run --name n8n -p 5678:5678 -p 443:443 -d n8n
 ```
 
-### `Dockerfile` 配置:
+### Dockerfile 配置
 
 ```dockerfile
 # packages/cli/config/index.ts
@@ -42,7 +42,7 @@ STORAGE_REDIS_PORT: process.env.STORAGE_REDIS_PORT ?? '6379',
 > - [process.env - node.js](https://nodejs.org/dist/latest-v8.x/docs/api/process.html#process_process_env)
 > - [来，让我们一起来盘盘 Nodejs 环境变量 (process.env)](https://juejin.cn/post/6915214622601674760)
 
-## `npm`
+## npm
 
 ```bash
 npm install -g lerna
@@ -142,7 +142,7 @@ $env:DB_MYSQLDB_DATABASE="n8n";$env:DB_MYSQLDB_HOST="localhost";$env:DB_MYSQLDB_
 
 # Official
 
-## `npm`
+## npm
 
 - [npm](https://docs.n8n.io/hosting/installation/npm/)
 
@@ -152,7 +152,7 @@ npx n8n
 
 本地打开链接 `http://localhost:5678/` 即可。
 
-## `Docker`
+## Docker
 
 - [Docker Installation](https://docs.n8n.io/hosting/installation/docker/)
 

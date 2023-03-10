@@ -1,5 +1,5 @@
 #Java
-# `JDK 8`
+# JDK 8
 
 [JDK 8 windows](https://www.oracle.com/java/technologies/downloads/#java8-windows)
 [超详细！JDK 8 下载、安装和环境配置（macOS 和 Windows 版本）](https://cloud.tencent.com/developer/article/1803374)
@@ -22,7 +22,7 @@
 > Java(TM) SE Runtime Environment (build 1.8.0_361-b09)
 > Java HotSpot(TM) 64-Bit Server VM (build 25.361-b09, mixed mode)
 
-# `VS Code` 报错
+# VS Code 报错
 
 > [!danger]
 > Please download and install a JDK to compile your project. You can configure your projects with different JDKs by the setting 'java.configuration.runtimes'
@@ -50,24 +50,24 @@
 > 
 > "path":"C:\\Program Files\\Java\\jdk1.8.0_161".
 
-## `JAVA` 相关环境变量设置
+## JAVA 相关环境变量设置
 
 - `JAVA_HOME` : `D:\Java\jdk1.8.0_361`
 - `%JAVA_HOME%\bin` 加入 `Path` 环境变量中
 
-### 查看 `java` 版本
+### 查看 java 版本
 
 ```bash
 java -version
 ```
 
-### 查看 `javac` 版本
+### 查看 javac 版本
 
 ```bash
 javac -version
 ```
 
-### `Hello World`
+### Hello World
 
 ```java
 public class HelloWorld {
@@ -85,7 +85,7 @@ java HelloWorld
 
 # 环境变量
 
-## `cmd`
+## cmd
 
 查看所有环境变量的值:
 
@@ -114,7 +114,7 @@ set ENV_NAME=ENV_VALUE
 set ENV_NAME
 ```
 
-## `powershell`
+## powershell
 
 查看所有环境变量的值:
 

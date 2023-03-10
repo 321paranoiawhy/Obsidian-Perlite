@@ -206,6 +206,18 @@ kubectl cluster-info
 > 
 > To further debug and diagnose cluster problems, use 'kubectl cluster-info dump'.
 
+## 查看服务
+
+查看服务的 `TYPE`、` CLUSTER-IP`、`EXTERNAL-IP`、`PORT(S)` 信息:
+
+```bash
+kubectl get services -o wide
+```
+
+- `TYPE` 默认值为 `ClusterIP`
+- `TYPE` 的[枚举值](https://kubernetes.io/docs/concepts/services-networking/service/#type-nodeport)为: `ClusterIP`、`NodePort`、`LoadBalancer` 和 `ExternalName`
+- 可在 `kind` 为 `Service` 的 `yaml` 文件中指定 `spec.type` 为 `NodePort`
+
 ## 发布到 `k8s`
 
 切至 `config-k8s\k8s\mysql` :
@@ -243,6 +255,12 @@ kubectl describe pods <pod-name>
 
 ```bash
 kubectl logs <pod-name>
+```
+
+可指定 `--previous` :
+
+```bash
+kubectl logs <pod-name> --previous
 ```
 
 ## 获取 `k8s` 的上下文指向

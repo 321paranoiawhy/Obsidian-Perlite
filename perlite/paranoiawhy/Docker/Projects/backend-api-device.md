@@ -12,7 +12,7 @@ docker build -t backend-api-device .
 docker run --name backend-api-device -p 1235:8080 -d backend-api-device
 ```
 
-# `docker-compose`
+# docker-compose
 
 `docker-compose.yml` :
 

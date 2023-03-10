@@ -2,13 +2,13 @@
   "strategy": "english-only",
   "matchStrategy": "prefix",
   "maxNumberOfSuggestions": 5,
-  "maxNumberOfWordsAsPhrase": 2,
+  "maxNumberOfWordsAsPhrase": 1,
   "minNumberOfCharactersTriggered": 0,
   "minNumberOfWordsTriggeredPhrase": 1,
   "complementAutomatically": true,
   "delayMilliSeconds": 0,
   "disableSuggestionsDuringImeOn": false,
-  "insertAfterCompletion": true,
+  "insertAfterCompletion": false,
   "firstCharactersDisableSuggestions": ":/^",
   "showMatchStrategy": true,
   "showComplementAutomatically": true,
@@ -47,78 +47,6 @@
   },
   "showLogAboutPerformanceInConsole": false,
   "selectionHistoryTree": {
-    "Prelite": {
-      "Prelite": {
-        "currentFile": {
-          "count": 2,
-          "lastUpdated": 1675586610847
-        }
-      }
-    },
-    "Flowershow": {
-      "Flowershow": {
-        "currentFile": {
-          "count": 2,
-          "lastUpdated": 1675522955809
-        }
-      }
-    },
-    "GitHub": {
-      "GitHub": {
-        "currentFile": {
-          "count": 3,
-          "lastUpdated": 1675524966151
-        }
-      }
-    },
-    "MindStone": {
-      "MindStone": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1675521655946
-        }
-      }
-    },
-    "Pubsidian": {
-      "Pubsidian": {
-        "currentFile": {
-          "count": 2,
-          "lastUpdated": 1675522630615
-        }
-      }
-    },
-    "Obsidian": {
-      "Obsidian": {
-        "currentFile": {
-          "count": 2,
-          "lastUpdated": 1675523032447
-        }
-      }
-    },
-    "Publish": {
-      "Publish": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1675523039573
-        }
-      }
-    },
-    "Digital": {
-      "Digital": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1675523475045
-        }
-      }
-    },
-    "Energy": {
-      "Energy": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1675581020486
-        }
-      }
-    },
     "Github": {
       "Github": {
         "currentFile": {
@@ -135,14 +63,6 @@
         }
       }
     },
-    "Attachments": {
-      "Attachments": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1675589946434
-        }
-      }
-    },
     "paranoiawhy": {
       "paranoiawhy": {
         "currentFile": {
@@ -151,67 +71,11 @@
         }
       }
     },
-    "why17375774285": {
-      "why17375774285": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1675601359430
-        }
-      }
-    },
-    "paranoiawhy@gmail": {
-      "paranoiawhy@gmail": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1675601420334
-        }
-      }
-    },
-    "tryParse": {
-      "tryParse": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1675651844945
-        }
-      }
-    },
-    "download": {
-      "download": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1675654048357
-        }
-      }
-    },
-    "hightlight": {
-      "hightlight": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1675654069070
-        }
-      }
-    },
-    "Dart": {
-      "Dart": {
-        "internalLink": {
-          "count": 1,
-          "lastUpdated": 1675654131387
-        }
-      }
-    },
     "Dockerfile": {
       "Dockerfile": {
         "currentFile": {
           "count": 10,
           "lastUpdated": 1675742423234
-        }
-      }
-    },
-    "code-runner": {
-      "code-runner": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1675664564370
         }
       }
     },
@@ -228,14 +92,6 @@
         "currentFile": {
           "count": 5,
           "lastUpdated": 1677482061655
-        }
-      }
-    },
-    "requirements": {
-      "requirements": {
-        "currentFile": {
-          "count": 2,
-          "lastUpdated": 1675677272346
         }
       }
     },
@@ -362,8 +218,8 @@
     "Rabbitmq": {
       "Rabbitmq": {
         "currentFile": {
-          "count": 7,
-          "lastUpdated": 1677482741274
+          "count": 10,
+          "lastUpdated": 1678179884756
         }
       }
     },
@@ -386,8 +242,8 @@
     "rabbitmq": {
       "rabbitmq": {
         "currentFile": {
-          "count": 1,
-          "lastUpdated": 1676003185558
+          "count": 4,
+          "lastUpdated": 1678075199175
         }
       }
     },
@@ -402,8 +258,8 @@
     "Downloads": {
       "Downloads": {
         "currentFile": {
-          "count": 1,
-          "lastUpdated": 1676009905598
+          "count": 3,
+          "lastUpdated": 1678156019882
         }
       }
     },
@@ -514,8 +370,8 @@
     "Codepen": {
       "Codepen": {
         "currentFile": {
-          "count": 1,
-          "lastUpdated": 1677476723089
+          "count": 2,
+          "lastUpdated": 1678331799454
         }
       }
     },
@@ -578,8 +434,8 @@
     "kubectl": {
       "kubectl": {
         "currentFile": {
-          "count": 8,
-          "lastUpdated": 1677663883151
+          "count": 12,
+          "lastUpdated": 1678085148491
         }
       }
     },
@@ -772,6 +628,458 @@
         "currentFile": {
           "count": 1,
           "lastUpdated": 1677823094393
+        }
+      }
+    },
+    "handleScroll": {
+      "handleScroll": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1678069591709
+        }
+      }
+    },
+    "create": {
+      "create": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1678075237540
+        }
+      }
+    },
+    "delete": {
+      "delete": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1678075967146
+        }
+      }
+    },
+    "services": {
+      "services": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1678082847489
+        }
+      }
+    },
+    "Service": {
+      "Service": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1678083018700
+        }
+      }
+    },
+    "NodePort": {
+      "NodePort": {
+        "currentFile": {
+          "count": 2,
+          "lastUpdated": 1678083109548
+        }
+      }
+    },
+    "backend-integration-hub": {
+      "backend-integration-hub": {
+        "currentFile": {
+          "count": 2,
+          "lastUpdated": 1678083334868
+        }
+      }
+    },
+    "AIOHTTP": {
+      "AIOHTTP": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1678087559309
+        }
+      }
+    },
+    "Middlewares": {
+      "Middlewares": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1678087562050
+        }
+      }
+    },
+    "aiohttp": {
+      "aiohttp": {
+        "currentFile": {
+          "count": 2,
+          "lastUpdated": 1678089433801
+        }
+      }
+    },
+    "Continuous-integration": {
+      "Continuous-integration": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1678089543804
+        }
+      }
+    },
+    "MQTTFX": {
+      "MQTTFX": {
+        "currentFile": {
+          "count": 3,
+          "lastUpdated": 1678155505488
+        }
+      }
+    },
+    "MQTTX": {
+      "MQTTX": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1678155508233
+        }
+      }
+    },
+    "flex-shrink": {
+      "flex-shrink": {
+        "currentFile": {
+          "count": 2,
+          "lastUpdated": 1678158209560
+        }
+      }
+    },
+    "margin-top": {
+      "margin-top": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1678158187478
+        }
+      }
+    },
+    "metadata-extractor": {
+      "metadata-extractor": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1678175413603
+        }
+      }
+    },
+    "DataGrip": {
+      "DataGrip": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1678177222746
+        }
+      }
+    },
+    "DBeaver": {
+      "DBeaver": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1678177259595
+        }
+      }
+    },
+    "Definitions": {
+      "Definitions": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1678179924375
+        }
+      }
+    },
+    "Metadata": {
+      "Metadata": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1678180858369
+        }
+      }
+    },
+    "Network": {
+      "Network": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1678181682171
+        }
+      }
+    },
+    "Discord": {
+      "Discord": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1678182358128
+        }
+      }
+    },
+    "Image": {
+      "Image": {
+        "internalLink": {
+          "count": 1,
+          "lastUpdated": 1678250833546
+        }
+      }
+    },
+    "loading": {
+      "loading": {
+        "currentFile": {
+          "count": 2,
+          "lastUpdated": 1678255140678
+        }
+      }
+    },
+    "document": {
+      "document": {
+        "currentFile": {
+          "count": 2,
+          "lastUpdated": 1678264155010
+        }
+      }
+    },
+    "All about Types in dart": {
+      "All about Types in dart": {
+        "internalLink": {
+          "count": 1,
+          "lastUpdated": 1678256304755
+        }
+      }
+    },
+    "Promise": {
+      "Promise": {
+        "currentFile": {
+          "count": 4,
+          "lastUpdated": 1678259681383
+        }
+      }
+    },
+    "rejected": {
+      "rejected": {
+        "currentFile": {
+          "count": 2,
+          "lastUpdated": 1678258601651
+        }
+      }
+    },
+    "fulfilled": {
+      "fulfilled": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1678258572458
+        }
+      }
+    },
+    "allSettled": {
+      "allSettled": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1678258664616
+        }
+      }
+    },
+    "Stackoverflow": {
+      "Stackoverflow": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1678259373293
+        }
+      }
+    },
+    "result": {
+      "result": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1678259946129
+        }
+      }
+    },
+    "lazysizes": {
+      "lazysizes": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1678262834190
+        }
+      }
+    },
+    "iframe": {
+      "iframe": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1678263092740
+        }
+      }
+    },
+    "querySelector": {
+      "querySelector": {
+        "currentFile": {
+          "count": 2,
+          "lastUpdated": 1678269217343
+        }
+      }
+    },
+    "Reference": {
+      "Reference": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1678264483750
+        }
+      }
+    },
+    "preload": {
+      "preload": {
+        "currentFile": {
+          "count": 2,
+          "lastUpdated": 1678264701313
+        }
+      }
+    },
+    "Copilot": {
+      "Copilot": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1678329269657
+        }
+      }
+    },
+    "codeium": {
+      "codeium": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1678329548510
+        }
+      }
+    },
+    "SVG-Edit": {
+      "SVG-Edit": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1678341925293
+        }
+      }
+    },
+    "max-height": {
+      "max-height": {
+        "currentFile": {
+          "count": 2,
+          "lastUpdated": 1678414342329
+        }
+      }
+    },
+    "transition": {
+      "transition": {
+        "currentFile": {
+          "count": 3,
+          "lastUpdated": 1678416538443
+        }
+      }
+    },
+    "hover": {
+      "hover": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1678356915130
+        }
+      }
+    },
+    "Loading": {
+      "Loading": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1678357216188
+        }
+      }
+    },
+    "TextField": {
+      "TextField": {
+        "internalLink": {
+          "count": 1,
+          "lastUpdated": 1678357596428
+        }
+      }
+    },
+    "is-collapsed": {
+      "is-collapsed": {
+        "currentFile": {
+          "count": 2,
+          "lastUpdated": 1678414136208
+        }
+      }
+    },
+    "classList": {
+      "classList": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1678414189517
+        }
+      }
+    },
+    "className": {
+      "className": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1678414265694
+        }
+      }
+    },
+    "Collapse": {
+      "Collapse": {
+        "internalLink": {
+          "count": 1,
+          "lastUpdated": 1678414442229
+        },
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1678414531680
+        }
+      }
+    },
+    "collapse": {
+      "collapse": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1678414445308
+        }
+      }
+    },
+    "Element-plus": {
+      "Element-plus": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1678414545836
+        }
+      }
+    },
+    "grid-template-rows": {
+      "grid-template-rows": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1678415459403
+        }
+      }
+    },
+    "scaleY": {
+      "scaleY": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1678416489658
+        }
+      }
+    },
+    "transform": {
+      "transform": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1678416560409
+        }
+      }
+    },
+    "transform-origin": {
+      "transform-origin": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1678416573394
+        }
+      }
+    },
+    "World": {
+      "World": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1678443543131
         }
       }
     }

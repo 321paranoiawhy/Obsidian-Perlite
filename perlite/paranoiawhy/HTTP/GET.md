@@ -15,7 +15,8 @@
 
 ## 浏览器控制台中禁用 `GET` 请求缓存
 
-`Network` 标签页勾选 `Disable cache` (**while DevTools is open**)
+1. `Network` 标签页勾选 `Disable cache` (**while DevTools is open**)
+2. `Network` 标签页选择请求资源, 右键选择 `Clear broswer cache`
 
 ## 快捷键清除缓存
 

@@ -1,5 +1,4 @@
 [
-  "simple-embeds",
   "obsidian-gist",
   "various-complements",
   "recent-files-obsidian",
@@ -13,5 +12,8 @@
   "editing-toolbar",
   "table-editor-obsidian",
   "markdown-table-editor",
-  "obsidian-icon-folder"
+  "obsidian-icon-folder",
+  "metadata-extractor",
+  "dataview",
+  "obsidian-markdown-formatting-assistant-plugin"
 ]

@@ -11,37 +11,71 @@
 // define home file
 const homeFile = "README";
 
-const countChinese = (Words) => {
-  let iTotal = 0;
-  for (let i = 0; i < Words.length; i++) {
-    let c = Words.charAt(i);
-    // 基本汉字
-    if (c.match(/[\u4e00-\u9fa5]/)) {
-      iTotal++;
-    }
-    // 基本汉字补充
-    else if (c.match(/[\u9FA6-\u9fcb]/)) {
-      iTotal++;
-    }
+// add line numbers
+const addLineNumbers = (preNode) => {
+  const lineNumbersDiv = document.createElement("div");
+  lineNumbersDiv.setAttribute("class", "line-numbers-span");
+  preNode.append(lineNumbersDiv);
+  lineNumbersDiv.style.top = preNode.querySelector("code").offsetTop + "px";
+
+  preNode
+    .querySelector("code")
+    .innerHTML.split("\n")
+    .forEach((_, index) => {
+      const span = document.createElement("span");
+      const br = document.createElement("br");
+      span.innerHTML = index + 1;
+      lineNumbersDiv.append(span);
+      lineNumbersDiv.append(br);
+    });
+};
+
+const clipboard = (value) => {
+  // https://www.zhangxinxu.com/wordpress/2021/10/js-copy-paste-clipboard/
+  if (navigator.clipboard) {
+    // clipboard api
+    navigator.clipboard.writeText(value);
+  } else {
+    const textarea = document.createElement("textarea");
+    document.body.appendChild(textarea);
+    // hide textarea
+    textarea.style.position = "fixed";
+    // This property is deprecated. Use clip-path instead: https://developer.mozilla.org/en-US/docs/Web/CSS/clip
+    // textarea.style.clip = "rect(0 0 0 0)";
+    // css-tricks clip-path: https://css-tricks.com/almanac/properties/c/clip-path/
+    textarea.style.clipPath = "circle(0)";
+    textarea.style.top = "10px";
+    // assign value
+    textarea.value = value;
+    textarea.select();
+    document.execCommand("copy", true);
+    // remove
+    document.body.removeChild(textarea);
   }
 };
 
-const countEnglish = (Words) => {
-  for (let i = 0; i < Words.length; i++) {
-    let c = Words.charAt(i);
-    if (c.match(/[^\x00-\xff]/)) {
-      sTotal++;
-    } else {
-      eTotal++;
-    }
-    if (c.match(/[0-9]/)) {
-      inum++;
-    }
-  }
+// copy to clipboard
+const copyToClipboard = (preNode) => {
+  const copySpan = document.createElement("span");
+  copySpan.setAttribute("class", "copy-span");
+  preNode.append(copySpan);
+  copySpan.innerHTML = "Copy to Clipboard";
+  const code = preNode.querySelector("code").innerHTML;
+  copySpan.onclick = () => {
+    // https://www.zhangxinxu.com/wordpress/2021/10/js-copy-paste-clipboard/
+    clipboard(code);
+    // change content tip
+    copySpan.innerHTML = "Copied!";
+    setTimeout(() => {
+      // recover content
+      copySpan.innerHTML = "Copy to Clipboard";
+    }, 1000);
+  };
 };
 
 // get markdown content
 function getContent(str, home = false, popHover = false) {
+  console.log(str);
 
   // reset content if request is empty
   if (str.length == 0) {
@@ -54,7 +88,7 @@ function getContent(str, home = false, popHover = false) {
 
     if (home) {
       if ($("div.no-mobile").css("display") == "none") {
-        return
+        return;
       }
       requestPath = "content.php?home";
 
@@ -66,80 +100,100 @@ function getContent(str, home = false, popHover = false) {
     $.ajax({
       url: requestPath, success: function (result) {
         if (popHover == false) {
-
           // set content
           $("#mdContent").html(result);
 
-          // const markdownContent = $('#mdContent').val();
-          // let hanzi, words, biaodian, zimu, shuzi, characters;
-          // countChinese(markdownContent);
-          // countEnglish(markdownContent);
-          // // 汉字
-          // hanzi = iTotal;
-          // // 字数
-          // words = (inum + iTotal);
-          // // 标点
-          // biaodian = sTotal - iTotal;
-          // // 字母
-          // zimu = (eTotal - inum);
-          // // 数字
-          // shuzi = inum;
-          // // 字符
-          // characters = (iTotal * 2 + (sTotal - iTotal) * 2 + eTotal);
+          // scroll to top when change content (on click left file tab)
+          // if (document.querySelector(".view-content").scrollTop !== 0 && !window.location.href.includes("#")) {
+          //   document.querySelector(".view-content").scrollTo({
+          //     top: 0,
+          //     behavior: "smooth",
+          //   });
+          // }
 
-          const pre = document.querySelectorAll("pre");
-          pre.forEach((item)=>{
-            item.setAttribute("data-lang",item.children[0].classList[0].substring(9).toUpperCase());
-          });
+          // codepen embed
+          document
+            .querySelectorAll(".external-link.perlite-external-link")
+            .forEach((a) => {
+              // https://blog.codepen.io/documentation/embedded-pens/
+              // https://blog.codepen.io/documentation/prefill-embeds/
+              if (a.href?.includes("codepen.io")) {
+                let iframe = document.createElement("iframe");
+                iframe.setAttribute("allowfullscreen", true);
+                iframe.setAttribute("allowpaymentrequest", true);
+                iframe.setAttribute("allowtransparency", true);
+                iframe.setAttribute("frameborder", "0");
+                iframe.setAttribute("height", "300");
+                iframe.setAttribute("width", "100%");
+                iframe.setAttribute("scrolling", "no");
+                iframe.setAttribute("loading", "lazy");
+                // Change /pen/ in Pen’s URL to /embed/
+                iframe.setAttribute(
+                  "src",
+                  a.href.replace(/\/pen\//, "/embed/")
+                );
+                a.parentElement.replaceChild(iframe, a);
+              }
+            });
 
           // set word and char count
-          $("#wordCount").text($(".wordCount").text() + ' words');
-          $("#charCount").text($(".charCount").text() + ' characters');
+          $("#wordCount").text($(".wordCount").text() + " words");
+          $("#charCount").text($(".charCount").text() + " characters");
 
           // set Browser, document title and nav path
           var title = $("div.mdTitleHide").first().text();
           if (title) {
-
-            hrefTitle = '<a href=?link=' + encodeURIComponent(title) + '>' + title + '</a>'
-            title = title.substring(1)
-            titleElements = title.split('/')
-            title = titleElements.splice(-1)
-            parentTitle = titleElements.join(' / ')
+            hrefTitle =
+              "<a href=?link=" +
+              encodeURIComponent(title) +
+              ">" +
+              title +
+              "</a>";
+            title = title.substring(1);
+            titleElements = title.split("/");
+            title = titleElements.splice(-1);
+            parentTitle = titleElements.join(" / ");
             if (parentTitle) {
-              parentTitle = parentTitle + ' / ';
+              parentTitle = parentTitle + " / ";
             }
             $("div.view-header-title-parent").text(parentTitle);
             $("div.view-header-title").text(title);
             $(".inline-title").text(title);
 
             // $("title").text(title + ' - ' + $("p.vault").text() + ' - ' + $("p.perliteTitle").text());
-            $("title").text(title + ' - ' + $("p.vault").text());
+            $("title").text(title + " - " + $("p.vault").text());
             // $("title").text($(".view-header-title-container.mod-at-start").text());
 
             // set edit button url
-            $('.clickable-icon.view-action[aria-label="Click to edit"]')
-              .attr("href", "obsidian://open?vault=" + encodeURIComponent($("p.vault").text()) + "&file=" + encodeURIComponent(title))
-
+            $('.clickable-icon.view-action[aria-label="Click to edit"]').attr(
+              "href",
+              "obsidian://open?vault=" +
+                encodeURIComponent($("p.vault").text()) +
+                "&file=" +
+                encodeURIComponent(title)
+            );
           }
 
           // Outlines
           var toc = "";
           var level = 0;
 
-          document.getElementById("mdContent").innerHTML =
-            document.getElementById("mdContent").innerHTML.replace(
+          document.getElementById("mdContent").innerHTML = document
+            .getElementById("mdContent")
+            .innerHTML.replace(
               // /<h([\d])>([^<]+)<\/h([\d])>/gi,
               /<h([\d])>(.*)<\/h([\d])>/gi,
               function (str, openLevel, titleText, closeLevel) {
-
                 if (openLevel != closeLevel) {
                   return str;
                 }
 
                 if (openLevel > level) {
-                  toc += (new Array(openLevel - level + 1)).join('<div class="tree-item"><div class="tree-item-children">');
+                  toc += new Array(openLevel - level + 1).join(
+                    '<div class="tree-item"><div class="tree-item-children">'
+                  );
                 } else if (openLevel < level) {
-                  toc += (new Array(level - openLevel + 1)).join("</div></div>");
+                  toc += new Array(level - openLevel + 1).join("</div></div>");
                 }
 
                 level = parseInt(openLevel);
@@ -149,24 +203,67 @@ function getContent(str, home = false, popHover = false) {
                 //   + '</a></div>';
                 toc += `<a href="#${anchor}"><div class="tree-item-self is-clickable">${titleText}</div></a>`;
 
-                return "<h" + openLevel + "><a name='" + anchor + "' >"
-                  + "" + "</a>" + titleText + "</h" + closeLevel + ">";
+                return `<h${openLevel}><a name=${anchor}></a>${titleText}<button data-tip='¶' data-href=${anchor}></button></h${closeLevel}>`;
 
+                return (
+                  "<h" +
+                  openLevel +
+                  "><a name='" +
+                  anchor +
+                  "' >" +
+                  "" +
+                  "</a>" +
+                  titleText + "<button data-tip='¶' " + "data-href=" + anchor + ">" + "</button>"+
+                  "</h" +
+                  closeLevel +
+                  ">"
+                );
               }
             );
 
           if (level) {
-            toc += (new Array(level + 1)).join("</div></div>");
+            toc += new Array(level + 1).join("</div></div>");
           }
 
           document.getElementById("toc").innerHTML = toc;
 
+          const pre = document.querySelectorAll("pre");
+          pre.forEach((item) => {
+            item.setAttribute(
+              "data-lang",
+              item.children[0].classList[0].substring(9).toUpperCase()
+            );
+            addLineNumbers(item);
+            copyToClipboard(item);
+          });
+
+          const headingButton = document.querySelectorAll(
+            "h1 button, h2 button, h3 button, h4 button, h5 button, h6 button"
+          );
+          headingButton.forEach((item) => {
+            item.onclick = () => {
+              const href = item.getAttribute("data-href");
+              if(window.location.href.includes("#")) {
+                clipboard(window.location.href);
+              } else {
+                clipboard(window.location.href + "#" + href);
+              }
+              // clipboard(window.location.href);
+              const initialTip = item.getAttribute("data-tip");
+              item.setAttribute("data-tip", "Copied!");
+              setTimeout(() => {
+                item.setAttribute("data-tip", initialTip);
+              }, 1000);
+            };
+          });
 
           // add Image Click popup
           $(".pop").on("click", function () {
-
             var path = $(this).find("img").attr("src");
-            result = '<div class="modal-body imgModalBody"><img src="' + path + '" class="imagepreview"></div>';
+            result =
+              '<div class="modal-body imgModalBody"><img src="' +
+              path +
+              '" class="imagepreview"></div>';
             $("div.modal-content").html(result);
             $(".modal").css("width", "unset");
             $(".modal").css("height", "unset");
@@ -174,9 +271,7 @@ function getContent(str, home = false, popHover = false) {
             $(".modal").css("max-height", "100%");
             $(".modal-title").text("Image preview");
             $(".modal-container.mod-dim").css("display", "flex");
-
           });
-
 
           // trigger graph render on side bar
           renderGraph(false, str);
@@ -186,16 +281,22 @@ function getContent(str, home = false, popHover = false) {
             renderGraph(false, str, false);
           });
 
-
           // update the url
           if (home == false) {
-            window.history.pushState({}, "", location.protocol + '//' + location.host + location.pathname + "?link=" + str);
+            window.history.pushState(
+              {},
+              "",
+              location.protocol +
+                "//" +
+                location.host +
+                location.pathname +
+                "?link=" +
+                str
+            );
           }
 
-
           // on Tag click -> start search
-          $('.tag').click(function (e) {
-
+          $(".tag").click(function (e) {
             e.preventDefault();
 
             target = $(e.target);
@@ -205,27 +306,25 @@ function getContent(str, home = false, popHover = false) {
 
             // on mobile go to search
             if ($(window).width() < 990) {
-
-              $('.workspace').addClass('is-left-sidedock-open');
-              $('.mod-left-split').removeClass('is-sidedock-collapse');
-              $('.mod-left').removeClass('is-collapsed');
-              $('.workspace-ribbon.side-dock-ribbon.mod-left').css('display', 'flex');
-
-            };
-
+              $(".workspace").addClass("is-left-sidedock-open");
+              $(".mod-left-split").removeClass("is-sidedock-collapse");
+              $(".mod-left").removeClass("is-collapsed");
+              $(".workspace-ribbon.side-dock-ribbon.mod-left").css(
+                "display",
+                "flex"
+              );
+            }
           });
 
           // Toggle Front Matter Meta Container
-          $('.frontmatter-container-header').click(function (e) {
-
+          $(".frontmatter-container-header").click(function (e) {
             e.preventDefault();
 
-            if ($('.frontmatter-container').hasClass('is-collapsed')) {
-              $('.frontmatter-container').removeClass('is-collapsed');
+            if ($(".frontmatter-container").hasClass("is-collapsed")) {
+              $(".frontmatter-container").removeClass("is-collapsed");
             } else {
-              $('.frontmatter-container').addClass('is-collapsed');
+              $(".frontmatter-container").addClass("is-collapsed");
             }
-
           });
 
           // on hover internal link
@@ -238,57 +337,56 @@ function getContent(str, home = false, popHover = false) {
 
           stopThis = false;
           // enter the hover box
-          $('.popover.hover-popover').mouseenter(function (e) {
-            stopThis = true
-            $('.popover.hover-popover').css('display', 'unset');
-          })
+          $(".popover.hover-popover").mouseenter(function (e) {
+            stopThis = true;
+            $(".popover.hover-popover").css("display", "unset");
+          });
           // leave the hover box
-          $('.popover.hover-popover').mouseleave(function (e) {
+          $(".popover.hover-popover").mouseleave(function (e) {
             e.preventDefault();
 
             hoverTimer = setTimeout(function () {
-
-              $('.popover.hover-popover').css('display', 'none');
+              $(".popover.hover-popover").css("display", "none");
               stopThis = false;
-
             }, 500);
-          })
+          });
 
           // leave the link
-          $('.internal-link').mouseleave(function (e) {
+          $(".internal-link").mouseleave(function (e) {
             e.preventDefault();
 
             hoverTimer = setTimeout(function () {
-
               if (stopThis == false) {
-                $('.popover.hover-popover').css('display', 'none');
+                $(".popover.hover-popover").css("display", "none");
               }
             }, 1200);
-          })
+          });
 
-          $('.internal-link').mouseenter(function (e) {
+          $(".internal-link").mouseenter(function (e) {
             e.preventDefault();
 
             // update position for hover element
-            $('.popover.hover-popover').css({ top: currentMousePos.y, left: currentMousePos.x });
+            $(".popover.hover-popover").css({
+              top: currentMousePos.y,
+              left: currentMousePos.x,
+            });
 
-            const urlParams = new URLSearchParams(this.href.split('?')[1]);
-            if (urlParams.has('link')) {
-              var target = urlParams.get('link');
+            const urlParams = new URLSearchParams(this.href.split("?")[1]);
+            if (urlParams.has("link")) {
+              var target = urlParams.get("link");
               target = encodeURIComponent(target);
             }
             // get content of link
             if (target) {
-              getContent(target, false, true)
+              getContent(target, false, true);
             }
-
           });
 
           //check setting if metadata is collapsed or not
-          if ($('.metadataOption').hasClass('is-enabled')) {
-            $('.frontmatter-container-header').trigger('click')
+          if ($(".metadataOption").hasClass("is-enabled")) {
+            $(".frontmatter-container-header").trigger("click");
           }
-          mdContent = $("#mdContent")[0]
+          mdContent = $("#mdContent")[0];
 
           // handle pop up and hover
         } else {
@@ -366,7 +464,7 @@ function renderGraph(modal, path = "", filter_emptyNodes = false) {
 
   // no graph found exit
   if ($("#allGraphNodes").length == 0 || $("#allGraphNodes").text == '[]') {
-    console.log("Graph: no data found")
+    console.log("Graph: no data found.")
     return;
   }
 
@@ -619,6 +717,9 @@ function isMobile() {
 
     hideLeftMobile();
 
+    // hide status bar when is mobile
+    document.querySelector('.status-bar').style.display = 'none';
+
     //disable mousehover on mobile
     $('.internal-link').unbind("mouseenter");
     $('.internal-link').unbind("mouseleave");
@@ -855,12 +956,13 @@ $(document).ready(function () {
   };
 
 
-  //check for graph and hide local graph if none exists
-  if ($("#allGraphNodes").length == 0 || $("#allGraphNodes").text == '[]') {
+  // check for graph and hide local graph if none exists
+  // if ($("#allGraphNodes").length == 0 || $("#allGraphNodes").text == '[]') {
+  if (true) {
 
-    $('.clickable-icon.side-dock-ribbon-action[aria-label="Open graph view"]').css('display', 'none')
+    $('.clickable-icon.side-dock-ribbon-action[aria-label="Open graph view"]').css('display', 'unset')
     $('.clickable-icon.view-action[aria-label="Open outline"]').css('display', 'none')
-    $('.clickable-icon.view-action[aria-label="Open localGraph"]').css('display', 'none')
+    $('.clickable-icon.view-action[aria-label="Open localGraph"]').css('display', 'unset')
     $('#mynetwork').css('display', 'none')
     $('#outline').css('display', 'unset')
 
@@ -879,14 +981,14 @@ $(document).ready(function () {
   if (target != "") {
 
     target = encodeURIComponent(target)
-
     getContent(target);
     openNavMenu(target);
 
   } else {
 
     // load index page
-    getContent("home", true);
+    // getContent("home", true);
+    getContent(homeFile, true);
   }
 
 
@@ -906,7 +1008,7 @@ $(document).ready(function () {
     e.preventDefault();
     $('.perlite-link').removeClass('perlite-link-active is-active');
 
-    $(this).addClass('perlite-link-active is-active');
+    $(this).addClass('perlite-link-active is-active');    
   });
 
 
@@ -1163,7 +1265,7 @@ $(document).ready(function () {
   });
 
 
-  // rezise Handler right
+  // resize Handler right
   const rightDockContainer = $('.workspace-split.mod-horizontal.mod-right-split')
   $('.workspace-leaf-resize-handle.right-dock').mousedown(function (e) {
 
@@ -1183,7 +1285,7 @@ $(document).ready(function () {
   });
 
 
-  // rezise Handler left
+  // resize Handler left
   const leftDockContainer = $('.workspace-split.mod-horizontal.mod-left-split')
   $('.workspace-leaf-resize-handle.left-dock').mousedown(function (e) {
 
@@ -1614,6 +1716,7 @@ $(document).ready(function () {
 
   // local Graph & Outline Switch
   $('.clickable-icon.view-action[aria-label="Open outline"]').click(function (e) {
+    console.log('outline')
 
     $('.clickable-icon.view-action[aria-label="Open outline"]').css('display', 'none')
     $('.clickable-icon.view-action[aria-label="Open localGraph"]').css('display', 'unset')

@@ -1,196 +1,20 @@
 {
   "recentFiles": [
     {
-      "basename": "腾讯云服务器",
-      "path": "Publish/腾讯云服务器.md"
-    },
-    {
-      "basename": "Obsidian Publish",
-      "path": "Tools/Obsidian/Obsidian Publish.md"
-    },
-    {
-      "basename": "模拟器调试",
-      "path": "Flutter & Dart/Flutter/Debug/模拟器调试.md"
-    },
-    {
-      "basename": "config-k8s",
-      "path": "k8s/config-k8s.md"
-    },
-    {
-      "basename": "k8s 初探",
-      "path": "k8s/k8s 初探.md"
-    },
-    {
       "basename": "Auto Numbering Elements",
       "path": "CSS/Snippets/Auto Numbering Elements.md"
     },
     {
-      "basename": "Examplse",
-      "path": "Flutter & Dart/Flutter/Learning Materials/Examplse.md"
-    },
-    {
-      "basename": "Poll",
-      "path": "Flutter & Dart/Flutter/Poll.md"
-    },
-    {
-      "basename": "Code Segment",
-      "path": "Flutter & Dart/Flutter/Code Segment.md"
-    },
-    {
-      "basename": "note",
-      "path": "Flutter & Dart/Flutter/note.md"
-    },
-    {
-      "basename": "TabBar",
-      "path": "CSS/Snippets/TabBar.md"
-    },
-    {
-      "basename": "CSS Tools",
-      "path": "CSS/CSS Tools.md"
-    },
-    {
-      "basename": "Loading",
-      "path": "CSS/Loading.md"
-    },
-    {
-      "basename": "Sticky Footers",
-      "path": "CSS/Snippets/Sticky Footers.md"
-    },
-    {
-      "basename": "CSS Snippets",
-      "path": "Tools/Obsidian/CSS Snippets.md"
-    },
-    {
-      "basename": "utils",
-      "path": "JavaScript/utils.md"
-    },
-    {
-      "basename": "可视化工具",
-      "path": "k8s/可视化工具.md"
-    },
-    {
-      "basename": "README",
-      "path": "README.md"
-    },
-    {
-      "basename": "Obsidian Plugins",
-      "path": "Tools/Obsidian/Obsidian Plugins.md"
-    },
-    {
-      "basename": "grep",
-      "path": "Tools/grep.md"
-    },
-    {
-      "basename": "Limits & Requests",
-      "path": "k8s/Limits & Requests.md"
-    },
-    {
-      "basename": "Memory",
-      "path": "Computer Science/Memory.md"
-    },
-    {
-      "basename": "Whiteboard",
-      "path": "Tools/Websites/Whiteboard.md"
-    },
-    {
-      "basename": "Docs",
-      "path": "Tools/Websites/Docs.md"
-    },
-    {
-      "basename": "PowerShell 初探",
-      "path": "PowerShell/PowerShell 初探.md"
-    },
-    {
-      "basename": "ConfigMaps",
-      "path": "k8s/ConfigMaps.md"
-    },
-    {
-      "basename": "secret",
-      "path": "k8s/secret.md"
-    },
-    {
-      "basename": "YAML",
-      "path": "k8s/YAML.md"
+      "basename": "backend-api-device",
+      "path": "Docker/Projects/backend-api-device.md"
     },
     {
       "basename": "n8n",
       "path": "Docker/n8n.md"
     },
     {
-      "basename": "Future",
-      "path": "Flutter & Dart/Flutter/Request/Future.md"
-    },
-    {
-      "basename": "Ribbon",
-      "path": "CSS/Snippets/Ribbon.md"
-    },
-    {
-      "basename": "Tooltip",
-      "path": "CSS/Snippets/Tooltip.md"
-    },
-    {
-      "basename": "Notes",
-      "path": "Tools/Websites/Notes.md"
-    },
-    {
-      "basename": "Scrollbar",
-      "path": "CSS/Scrollbar.md"
-    },
-    {
-      "basename": "All about the observer API in JavaScript",
-      "path": "JavaScript/All about the observer API in JavaScript.md"
-    },
-    {
-      "basename": "SQL",
-      "path": "Tools/Websites/SQL.md"
-    },
-    {
-      "basename": "RabbitMQ",
-      "path": "Docker/Pre-Denpendency/RabbitMQ.md"
-    },
-    {
-      "basename": "Navicat",
-      "path": "Docker/Tools/Navicat.md"
-    },
-    {
-      "basename": "backend-api-portal",
-      "path": "Docker/Projects/backend-api-portal.md"
-    },
-    {
-      "basename": "GET",
-      "path": "HTTP/GET.md"
-    },
-    {
-      "basename": "Front-End",
-      "path": "Tools/Websites/Front-End.md"
-    },
-    {
-      "basename": "Lowcode & Nocode",
-      "path": "Tools/Websites/Lowcode & Nocode.md"
-    },
-    {
-      "basename": "JAVA",
-      "path": "Docker/Pre-Denpendency/JAVA.md"
-    },
-    {
-      "basename": "Flutter Lowcode Websites",
-      "path": "Tools/Websites/Flutter Lowcode Websites.md"
-    },
-    {
-      "basename": "屏幕",
-      "path": "Flutter & Dart/Flutter/屏幕.md"
-    },
-    {
-      "basename": "All about build in flutter",
-      "path": "Flutter & Dart/Flutter/All about build in flutter.md"
-    },
-    {
-      "basename": "backend-api-data",
-      "path": "Docker/Projects/backend-api-data.md"
-    },
-    {
-      "basename": "restart",
-      "path": "Docker/Docker compose/restart.md"
+      "basename": "Getting Started",
+      "path": "Docker/Getting Started.md"
     },
     {
       "basename": "数据库管理页面",
@@ -199,6 +23,182 @@
     {
       "basename": "数据持久化",
       "path": "Docker/数据持久化.md"
+    },
+    {
+      "basename": "Navicat",
+      "path": "Docker/Tools/Navicat.md"
+    },
+    {
+      "basename": "cluster",
+      "path": "Docker/Projects/cluster.md"
+    },
+    {
+      "basename": "backend-project-kt6562",
+      "path": "Docker/Projects/backend-project-kt6562.md"
+    },
+    {
+      "basename": "backend-api-portal",
+      "path": "Docker/Projects/backend-api-portal.md"
+    },
+    {
+      "basename": "backend-api-gateway",
+      "path": "Docker/Projects/backend-api-gateway.md"
+    },
+    {
+      "basename": "backend-api-data",
+      "path": "Docker/Projects/backend-api-data.md"
+    },
+    {
+      "basename": "backend",
+      "path": "Docker/Projects/backend.md"
+    },
+    {
+      "basename": "RabbitMQ",
+      "path": "Docker/Pre-Denpendency/RabbitMQ.md"
+    },
+    {
+      "basename": "Maven",
+      "path": "Docker/Pre-Denpendency/Maven.md"
+    },
+    {
+      "basename": "JAVA",
+      "path": "Docker/Pre-Denpendency/JAVA.md"
+    },
+    {
+      "basename": "restart",
+      "path": "Docker/Docker compose/restart.md"
+    },
+    {
+      "basename": "docker-compose file",
+      "path": "Docker/Docker compose/docker-compose file.md"
+    },
+    {
+      "basename": "docker-compose",
+      "path": "Docker/Docker compose/docker-compose.md"
+    },
+    {
+      "basename": "docker logs",
+      "path": "Docker/Docker Commands/docker logs.md"
+    },
+    {
+      "basename": "docker inspect",
+      "path": "Docker/Docker Commands/docker inspect.md"
+    },
+    {
+      "basename": "Scrollbar",
+      "path": "CSS/Scrollbar.md"
+    },
+    {
+      "basename": "Marquees",
+      "path": "CSS/Marquees.md"
+    },
+    {
+      "basename": "issue",
+      "path": "CSS/issue.md"
+    },
+    {
+      "basename": "CSS Tools",
+      "path": "CSS/CSS Tools.md"
+    },
+    {
+      "basename": "content 属性妙用",
+      "path": "CSS/content 属性妙用.md"
+    },
+    {
+      "basename": "Clock",
+      "path": "CSS/Clock.md"
+    },
+    {
+      "basename": "鼠标跟随动效",
+      "path": "CSS/鼠标跟随动效.md"
+    },
+    {
+      "basename": "视差滚动",
+      "path": "CSS/视差滚动.md"
+    },
+    {
+      "basename": "拼音",
+      "path": "CSS/拼音.md"
+    },
+    {
+      "basename": "Tooltip",
+      "path": "CSS/Snippets/Tooltip.md"
+    },
+    {
+      "basename": "Toggles",
+      "path": "CSS/Snippets/Toggles.md"
+    },
+    {
+      "basename": "Tabs",
+      "path": "CSS/Snippets/Tabs.md"
+    },
+    {
+      "basename": "TabBar",
+      "path": "CSS/Snippets/TabBar.md"
+    },
+    {
+      "basename": "Sticky Footers",
+      "path": "CSS/Snippets/Sticky Footers.md"
+    },
+    {
+      "basename": "Scroll to Top",
+      "path": "CSS/Snippets/Scroll to Top.md"
+    },
+    {
+      "basename": "Ribbon",
+      "path": "CSS/Snippets/Ribbon.md"
+    },
+    {
+      "basename": "Preload",
+      "path": "CSS/Snippets/Preload.md"
+    },
+    {
+      "basename": "Loading",
+      "path": "CSS/Snippets/Loading.md"
+    },
+    {
+      "basename": "Lazy Loading",
+      "path": "CSS/Snippets/Lazy Loading.md"
+    },
+    {
+      "basename": "Collapse",
+      "path": "CSS/Snippets/Collapse.md"
+    },
+    {
+      "basename": "Memory",
+      "path": "Computer Science/Memory.md"
+    },
+    {
+      "basename": "CI",
+      "path": "CI & CD/CI.md"
+    },
+    {
+      "basename": "AI Code Assistant",
+      "path": "Tools/AI Code Assistant.md"
+    },
+    {
+      "basename": "Whiteboard",
+      "path": "Tools/Websites/Whiteboard.md"
+    },
+    {
+      "basename": "config-k8s",
+      "path": "k8s/config-k8s.md"
+    },
+    {
+      "basename": "Promise",
+      "path": "JavaScript/Promise.md"
+    },
+    {
+      "basename": "Obsidian Publish",
+      "path": "Tools/Obsidian/Obsidian Publish.md"
+    },
+    {
+      "basename": "语法",
+      "path": "Tools/Obsidian/语法.md"
+    },
+    {
+      "basename": "检测元素是否在视口",
+      "path": "JavaScript/utils/检测元素是否在视口.md"
     }
   ],
   "omittedPaths": [],

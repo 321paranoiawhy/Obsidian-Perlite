@@ -112,8 +112,10 @@ a.tag:not(:first-of-type, :last-of-type) {
 .markdown-rendered pre::after {
   content: attr(data-lang);
   position: absolute;
-  top: 0.75em;
-  right: 0.75em;
+  /* top: 0.75em; */
+  top: 0.5em;
+  /* right: 0.75em; */
+  left: 0.75em;
   opacity: 0.6;
   color: inherit;
   font-size: var(--font-ui-smaller);

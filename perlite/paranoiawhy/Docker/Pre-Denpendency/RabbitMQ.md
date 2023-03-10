@@ -1,4 +1,4 @@
-# 在 `Docker` 中运行
+# 在 Docker 中运行
 
 - [RabbitMQ](https://hub.docker.com/_/rabbitmq)
 

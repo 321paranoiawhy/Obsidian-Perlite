@@ -15,3 +15,5 @@
 - [MarkText](https://github.com/marktext/marktext)
 - [TiddlyWiki](https://tiddlywiki.com/)
 - [VNote](https://github.com/vnotex/vnote)
+- [appflowy](https://appflowy.io/)
+- [思源笔记](https://b3log.org/siyuan/)

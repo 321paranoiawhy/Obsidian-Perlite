@@ -1,26 +1,26 @@
-# `redis`
+# redis
 
 - [redis -docker hub](https://hub.docker.com/_/redis)
 
-## 安装 `redis`
+## 安装 redis
 
 ```bash
 docker run --name some-redis -d redis
 ```
 
-## 在 `Docker` 中运行 `redis`
+## 在 Docker 中运行 redis
 
 ```bash
 docker run --name redis -p 6379:6379 -d redis
 ```
 
-## 在本地运行 `redis`
+## 在本地运行 redis
 
 #TODO
 
-# `Python`
+# Python
 
-## 安装 `Python`
+## 安装 Python
 
 > [!imporant]
 > - [Python 3.9.13](https://www.python.org/downloads/release/python-3913/)
@@ -30,14 +30,14 @@ docker run --name redis -p 6379:6379 -d redis
 
 命令行下输入 `python` 进行 `Python` 交互模式, 可输入 `exit()` 退出该模式。
 
-## 查看 `Python` 版本
+## 查看 Python 版本
 
 ```bash
 python -V # python --version
 # Python 3.9.13
 ```
 
-## 查看 `Python` 安装路径
+## 查看 Python 安装路径
 
 `CMD` 下使用 `where`:
 
@@ -55,7 +55,7 @@ where.exe python
 > 在 `PowerShell` 下 `where` 是 `Where-Object` 的别名 (`alias`), 因而须用 `where.exe` 查找 `python` 安装路径。
 > 可通过 `Get-Command where` 查看 `where` 命令的详细信息。
 
-# 安装 `yapf` 格式化工具
+# 安装 yapf 格式化工具
 
 ```bash
 pip install yapf
@@ -68,7 +68,7 @@ pip install yapf
 > "python.formatting.provider": "yapf",
 > ```
 
-# 安装 `Python` 依赖
+# 安装 Python 依赖
 
 列出已有依赖包:
 
@@ -76,13 +76,13 @@ pip install yapf
 pip list
 ```
 
-## 安装 `pipreqs`
+## 安装 pipreqs
 
 ```bash
 pip install pipreqs
 ```
 
-## 生成 `requirements.txt` 文件:
+## 生成 requirements.txt 文件:
 
 ```bash
 pipreqs .
@@ -123,7 +123,7 @@ pip install -r requirements.txt
 
 - [Python 项目如何生成 requirements.txt 文件](https://www.cnblogs.com/wintest/p/12813246.html)
 
-# 本地运行 `Python` 项目
+# 本地运行 Python 项目
 
 > [!attention]
 > 在本地运行 `Python` 项目之前, 须运行 `redis` 。
@@ -139,7 +139,7 @@ web.run_app(app, host='localhost', port=8080, access_log=None)
 
 `VS Code` 打开 `app.py`, 右键 `Run Code (Ctrl + Alt + N)` 即可。
 
-# 在 `Docker` 中运行 `Python` 项目
+# 在 Docker 中运行 Python 项目
 
 > [!attention]
 > 在 `Docker` 中运行 `Python` 项目之前, 须运行 `redis` 。
@@ -173,7 +173,7 @@ docker build -t python .
 docker run --name python -p 8080:8080 -d python
 ```
 
-# 使用 `docker-compose.yml`
+# 使用 docker-compose.yml
 
 - [Quick Start](https://github.com/docker/compose#quick-start)
 - [Docker Compose 使用](https://yeasy.gitbook.io/docker_practice/compose/usage)
@@ -221,14 +221,14 @@ docker logs -f CONTAINER
 docker-compose
 ```
 
-# 本地调用 `api`
+# 本地调用 api
 
 > [!tip]
 > 以登录 `login` 为例, 请求的`URL` 应为:
 > - `http://localhost:8080/login`
 > - 其他请求同理。
 
-# `Another Redis Desktop Manager`
+# Another Redis Desktop Manager
 
 - [Another Redis Desktop Manager - Github](https://github.com/qishibo/AnotherRedisDesktopManager)
 - [releases](https://github.com/qishibo/AnotherRedisDesktopManager/releases)

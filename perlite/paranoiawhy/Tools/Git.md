@@ -115,3 +115,11 @@ git rm <filename> -f
 ```bash
 git mv <oldfile> <newfile>
 ```
+
+# 查看提交信息
+
+- [2.3 Git Basics - Viewing the Commit History](https://git-scm.com/book/en/v2/Git-Basics-Viewing-the-Commit-History)
+
+```bash
+git log
+```

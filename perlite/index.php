@@ -37,11 +37,12 @@ $jsonGraphData = getfullGraph($rootDir);
     <link rel="stylesheet" href=".styles/vis.min.css" />
     <link rel="stylesheet" href=".styles/katex.min.css">
 
-    <!-- snippets -->
+    <!-- CSS snippets -->
     <link rel="stylesheet" href=".styles/snippets/heading.css">
     <link rel="stylesheet" href=".styles/snippets/toc.css">
     <link rel="stylesheet" href=".styles/snippets/folder.css">
     <link rel="stylesheet" href=".styles/snippets/table.css">
+    <link rel="stylesheet" href=".styles/snippets/code-block.css">
 
     <script src=".js/jquery-3.6.1.min.js"></script>
     <script src=".js/highlight.min.js"></script>

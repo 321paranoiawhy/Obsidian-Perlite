@@ -1,4 +1,4 @@
-# `overflow-y: auto;`
+# overflow-y: auto
 
 ```css
 div {

@@ -14,7 +14,7 @@
 > - `Rabbitmq`
 > - `MySQL`
 
-### `redis`
+### redis
 
 - [redis docker hub](https://hub.docker.com/_/redis)
 
@@ -24,7 +24,7 @@
 docker run --name redis -p 6379:6379 -d redis
 ```
 
-### `Rabbitmq`
+### Rabbitmq
 
 - [Rabbitmq - docker hub](https://hub.docker.com/_/rabbitmq)
 
@@ -34,7 +34,7 @@ docker run --name redis -p 6379:6379 -d redis
 docker run -d --hostname my-rabbit -p 5672:5672 --name some-rabbit rabbitmq:3
 ```
 
-### `MySQL`
+### MySQL
 
 - [MySQL - docker hub](https://hub.docker.com/_/mysql)
 
@@ -49,7 +49,7 @@ docker run --name some-mysql -p 3306:3306 -e MYSQL_ROOT_PASSWORD=123456 -d mysql
 > - `Rabbitmq` 默认端口号为 `5672`
 > - `mysql` 默认端口号为 `3306`
 
-## 在 `Dockerfile` 中配置环境变量
+## 在 Dockerfile 中配置环境变量
 
 `k8s\deployment.yaml` :
 
@@ -174,7 +174,7 @@ List<DeviceData> queryLiveDataByBatch(@RequestParam String[] deviceKeys) {
 > [!tip]
 > 也可在浏览器里直接输入链接 `http://localhost:1234/data/devices/devices_batch/live?deviceKeys=test` , 页面将显示上述 `json` 。
 
-# `docker-compose`
+# docker-compose
 
 ```yml
 version: '3'
@@ -230,7 +230,7 @@ INFLUXDB_URL=http://influxdb:8086
 docker-compose up
 ```
 
-# `docker-rabbitmq-cluster`
+# docker-rabbitmq-cluster
 
 - [Cluster RabbitMQ](https://github.com/pardahlman/docker-rabbitmq-cluster)
 
@@ -243,7 +243,7 @@ docker-compose up
 
 `cluster-entrypoint.sh` `Select End of Line Sequence` 由 `CRLF` 改为 `LF`
 
-# `Clustering RabbitMQ Docker containers`
+# Clustering RabbitMQ Docker containers
 
 ```bash
 docker network create rabbitmq-cluster
@@ -273,23 +273,23 @@ docker network rm
 > - MYSQL_ALLOW_EMPTY_PASSWORD
 > - MYSQL_RANDOM_ROOT_PASSWORD
 
-## `MYSQL_ROOT_PASSWORD`
+## MYSQL_ROOT_PASSWORD
 
 > [!quote]
 > This variable is mandatory and specifies the password that will be set for the MySQL root superuser account. In the above example, it was set to my-secret-pw.
 
-## `MYSQL_ALLOW_EMPTY_PASSWORD`
+## MYSQL_ALLOW_EMPTY_PASSWORD
 
 > [!quote]
 > This is an optional variable. Set to a non-empty value, like yes, to allow the container to be started with a blank password for the root user. NOTE: Setting this variable to yes is not recommended unless you really know what you are doing, since this will leave your MySQL instance completely unprotected, allowing anyone to gain complete superuser access.
 
-## `MYSQL_RANDOM_ROOT_PASSWORD`
+## MYSQL_RANDOM_ROOT_PASSWORD
 
 > [!quote]
 > This is an optional variable. Set to a non-empty value, like yes, to generate a random initial password for the root user (using pwgen). The generated root password will be printed to stdout (GENERATED ROOT PASSWORD: .....).
 
 
-## `Rabbitmq` 插件
+## Rabbitmq 插件
 
 `Enable-Rabbitmq-Plugins-Dockerfile` :
 
@@ -304,7 +304,7 @@ RUN rabbitmq-plugins enable rabbitmq_mqtt rabbitmq_federation_management rabbitm
 docker build -f Enable-Rabbitmq-Plugins-Dockerfile -t rabbitmq_with_plugins .
 ```
 
-## `MySQL`
+## MySQL
 
 - [MySQL Community Server Download](https://downloads.mysql.com/archives/community/)
 - `5.7.10`

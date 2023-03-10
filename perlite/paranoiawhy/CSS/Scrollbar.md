@@ -1,4 +1,36 @@
-# `CSS`
+# 隐藏滚动条
+
+以 `body` 元素为例, 其余元素替换 `body` 即可。
+
+## Chrome / Safari
+
+```css
+body::-webkit-scrollbar {
+	display: none;
+}
+```
+
+# Firefox
+
+```css
+body {
+	scrollbar-width: none;
+}
+```
+
+# IE
+
+```css
+body {
+	-ms-overflow-style: none;
+}
+```
+
+# Reference
+
+- [CSS 隐藏滚动条的方法](https://www.feiniaomy.com/post/680.html)
+
+# CSS
 
 [div.proposed-sets-list__container-scroll](https://unicode-table.com/cn/blocks/arrows/)
 [::-webkit-scrollbar - MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/::-webkit-scrollbar)
@@ -41,7 +73,7 @@
 
 [Codepen](https://codepen.io/paraoiawhy/pen/JjZzgKw)
 
-# `Div` + `JavaScript`
+# Div + JavaScript
 
 ```HTML
 
@@ -50,7 +82,7 @@
 ```JavaScript
 ```
 
-# `Obsidian` 滚动条
+# Obsidian 滚动条
 
 ```css
 .theme-light {

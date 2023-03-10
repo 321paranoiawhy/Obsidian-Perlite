@@ -9,5 +9,6 @@
   "alwaysUpdateLinks": true,
   "attachmentFolderPath": "Attachments",
   "newLinkFormat": "relative",
-  "tabSize": 2
+  "tabSize": 2,
+  "showFrontmatter": true
 }

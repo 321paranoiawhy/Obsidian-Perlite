@@ -1,8 +1,8 @@
-# 什么是 `Maven`
+# 什么是 Maven
 
 `Maven` 是 `JAVA` 项目的依赖管理工具。
 
-# 下载 `3.6.3` 版本
+# 下载 3.6.3 版本
 
 - [Maven Previous Release](https://maven.apache.org/download.cgi#previous-releases)
 - [Index of /dist/maven/maven-3/3.6.3/binaries](https://archive.apache.org/dist/maven/maven-3/3.6.3/binaries/)

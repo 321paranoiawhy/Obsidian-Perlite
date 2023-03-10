@@ -13,7 +13,7 @@
 > - `Rabbitmq`
 > - `influxdb`
 
-### `redis`
+### redis
 
 - [redis docker hub](https://hub.docker.com/_/redis)
 
@@ -23,7 +23,7 @@
 docker run --name redis -p 6379:6379 -d redis
 ```
 
-### `Rabbitmq`
+### Rabbitmq
 
 - [Rabbitmq - docker hub](https://hub.docker.com/_/rabbitmq)
 
@@ -33,7 +33,7 @@ docker run --name redis -p 6379:6379 -d redis
 docker run -d --hostname my-rabbit -p 5672:5672 --name some-rabbit rabbitmq:3
 ```
 
-### `influxdb`
+### influxdb
 
 - [influxdb - docker hub](https://hub.docker.com/_/influxdb)
 
@@ -48,7 +48,7 @@ docker run -p 8086:8086 -v myInfluxVolume:/var/lib/influxdb2 influxdb:2.3-alpine
 > - `Rabbitmq` 默认端口号为 `5672`
 > - `influxdb` 默认端口号为 `8086`
 
-## 在 `Dockerfile` 中配置环境变量
+## 在 Dockerfile 中配置环境变量
 
 `k8s\deployment.yaml` :
 
@@ -173,7 +173,7 @@ List<DeviceData> queryLiveDataByBatch(@RequestParam String[] deviceKeys) {
 > [!tip]
 > 也可在浏览器里直接输入链接 `http://localhost:1234/data/devices/devices_batch/live?deviceKeys=test` , 页面将显示上述 `json` 。
 
-# `docker-compose`
+# docker-compose
 
 ```yml
 version: '3'

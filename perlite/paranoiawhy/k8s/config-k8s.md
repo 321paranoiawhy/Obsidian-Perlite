@@ -105,6 +105,46 @@ kubectl create -f cluster-operator.yaml
 kubectl create -f rabbitmq.yaml
 ```
 
+> [!caution]
+> 须按上述顺序创建, 否则会创建失败:
+> Error from server (NotFound): error when creating ".\\rabbitmq.yaml": the server could not find the requested resource (post rabbitmqclusters.rabbitmq.com)
+
+删除:
+
+```bash
+kubectl delete -f rabbitmq.yaml
+kubectl delete -f cluster-operator.yaml
+```
+
+> [!caution]
+> 须按上述顺序删除, 否则无法删除。
+
+在 `k8s` 中, `rabbitmq` 默认用户名和密码为随机字符串, 须通过 `kubectl` 命令获取并 `Base64` 解码, 这样才能登录 [rabbitmq 管理页面](localhost:15672)。
+
+- `docker` 中如果未配置环境变量 `RABBITMQ_DEFAULT_USER` 和 `RABBITMQ_DEFAULT_PASS` , 则默认用户名和密码均为 `guest`
+- 登录后可创建同样权限的管理员用户 `guest/guest`
+
+[Access the RabbitMQ Management UI](https://www.rabbitmq.com/kubernetes/operator/quickstart-operator.html)
+
+`PowerShell` 下获取 `k8s` 中 `rabbitmq` 默认用户和密码:
+
+```bash
+# 设置变量 username 的值为 rabbitmq 默认用户名
+$username=kubectl get secret rabbitmq-default-user -o jsonpath='{.data.username}'
+
+[Text.Encoding]::ASCII.GetString([Convert]::FromBase64String($username))
+
+# 设置变量 password 的值为 rabbitmq 默认密码
+$password=kubectl get secret rabbitmq-default-user -o jsonpath='{.data.password}'
+[Text.Encoding]::ASCII.GetString([Convert]::FromBase64String($password))
+```
+
+在 `Rabbitmq` 管理页面新增 `user` 和 `vhost` 并给 `user` 配置权限:
+
+![[../Attachments/add user and vhost in rabbitmq.png]]
+
+在 `Rabbitmq` 管理页面首页可**导出/导入数据** (`Export Definitions / Import Definitions`)。
+
 # `redis`
 
 ## `redis-cache`
@@ -201,7 +241,7 @@ docker build -t gcr.io/cereb-platform-v2/backend-api-auth-center:beta-jenkins-bu
 
 项目类型: **JAVA**
 
-切至 `backend-api-gateway` :
+切至 `backend-api-gateway\k8s` :
 
 ```bash
 docker tag backend-api-gateway gcr.io/cereb-platform-v2/backend-api-gateway:beta-jenkins-build.IMAGE_TAG_PLACEHOLDER
@@ -215,7 +255,7 @@ kubectl create -f deployment.yaml
 
 项目类型: **JAVA**
 
-切至 `backend-api-portal` :
+切至 `backend-api-portal\k8s` :
 
 ```bash
 docker tag backend-api-portal gcr.io/cereb-platform-v2/backend-api-portal:beta-jenkins-build.IMAGE_TAG_PLACEHOLDER
@@ -224,3 +264,48 @@ kubectl create -f service.yaml
 kubectl create -f deployment.yaml
 ```
 
+# `backend-integration-hub`
+
+项目类型: **Python**
+
+构建镜像:
+
+```bash
+docker build -t gcr.io/cereb-platform-v2/backend-integration-hub:beta-jenkins-build.IMAGE_TAG_PLACEHOLDER .
+```
+
+切至 `backend-integration-hub\k8s` :
+
+```bash
+kubectl create -f service.yaml
+kubectl create -f deployment.yaml
+```
+
+删除后重新运行:
+
+```powershell
+kubectl delete -f deployment.yaml;kubectl delete -f service.yaml;kubectl create -f service.yaml;kubectl create -f deployment.yaml
+```
+
+> [!info]
+> deployment.apps "integration-hub" deleted
+> service "integration-hub" deleted
+> service/integration-hub created
+> deployment.apps/integration-hub created
+
+# `backend-integration-airthings`
+
+项目类型: **Python**
+
+构建镜像:
+
+```bash
+docker build -t gcr.io/cereb-platform-v2/backend-integration-airthings:beta-jenkins-build.IMAGE_TAG_PLACEHOLDER .
+```
+
+切至 `backend-integration-airthings\k8s` :
+
+```bash
+kubectl create -f service.yaml
+kubectl create -f deployment.yaml
+```

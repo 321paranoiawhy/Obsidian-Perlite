@@ -12,7 +12,7 @@ docker build -t backend-api-gateway .
 docker run --name backend-api-gateway -p 1236:8080 -d backend-api-gateway
 ```
 
-# `docker-compose`
+# docker-compose
 
 `docker-compose.yml` :
 

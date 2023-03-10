@@ -44,3 +44,19 @@
   content: counter(h1) "." counter(h2) "." counter(h3) "." counter(h4) "."
     counter(h5) "." counter(h6) ". ";
 }
+
+h1 button::after, h2 button::after, h3 button::after, h4 button::after, h5 button::after, h6 button::after {
+  content: attr(data-tip);
+}
+
+h1 button, h2 button, h3 button, h4 button, h5 button, h6 button {
+  opacity: 0;
+  cursor: pointer;
+  margin-left: 5px;
+  /* padding-top: ; */
+  transition: opacity 0.2s ease-in-out;
+}
+
+h1:hover button, h2:hover button, h3:hover button, h4:hover button, h5:hover button, h6:hover button {
+  opacity: 1;
+}

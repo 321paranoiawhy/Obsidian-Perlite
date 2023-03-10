@@ -75,18 +75,20 @@ class PerliteParsedown extends Parsedown
                 <path d="M3 8L12 17L21 8"></path>
             </svg></div>Metadata</div>';
 
-            # Parse Aliase if they are there
+            # Parse Aliases if they are there
             if (array_key_exists("aliases", $parsed)) {
                 $yamlText .= '<div class="frontmatter-section mod-aliases"><span class="frontmatter-section-label">Aliases</span>
                 <div class="frontmatter-section-aliases">';
-                foreach ($parsed["aliases"] as $alias) {
+                echo $parsed["aliases"];
+                // foreach ($parsed["aliases"] as $alias) {
+                foreach (explode(',' ,$parsed["aliases"]) as $alias) {
                     $yamlText .=  '<span class="frontmatter-alias"><span
                     class="frontmatter-alias-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                         viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                         stroke-linejoin="round" class="svg-icon lucide-forward">
                         <polyline points="15 17 20 12 15 7"></polyline>
                         <path d="M4 18v-2a4 4 0 0 1 4-4h12"></path>
-                    </svg></span>' . $alias . '</span>';
+                    </svg></span>' . trim($alias) . '</span>';
                 }
 
                 $yamlText .= '</div></div>';
@@ -99,12 +101,12 @@ class PerliteParsedown extends Parsedown
                 <div class="frontmatter-section mod-tags"><span class="frontmatter-section-label">Tags</span>
                 <div class="frontmatter-section-tags">';
 
-                foreach ($parsed["tags"] as $tag) {
+                foreach (explode(",", $parsed["tags"]) as $tag) {
 
                     $Block = array(
                         'element' => array(
                             'name' => 'p',
-                            'text' => '#' . $tag,
+                            'text' => '#' . trim($tag),
                             'handler' => 'line',
                         ),
                     );

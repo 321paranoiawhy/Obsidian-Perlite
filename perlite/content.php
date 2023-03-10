@@ -163,10 +163,13 @@ function translateLink($pattern, $content, $path, $sameFolder) {
 
 		# split by # to keep the reference
 		$splitLink = explode("#", $urlPath);
+		global $refName;
 		if (count($splitLink) > 1) {
-			
 			$urlPath = $splitLink[0];
 			$refName = $splitLink[1];
+			// if (strlen($refName) > 0) {
+			// 	$refName = '#'.$refName;
+			// }
 		}
 
 		# replace amp back to & (comming from parsedown)

@@ -1,10 +1,12 @@
-- [利用 CSS 对标题进行自动编号](https://razonyang.com/zh-hans/notes/css/numberify-headings/)
-- [3 段 h1 标题 CSS 美化代码](https://www.wdzzz.com/jiaocheng/css/2020-08-14/1528.html)
-- [Example of a nested counter](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Counter_Styles/Using_CSS_counters#example_of_a_nested_counter)
+---
+tags: CSS,Snippets
+---
 
-# `Heading`
+# Heading
 
-## 忽略 `h1` 标题, 仅对 `h2 ~ h6` 标题进行编号
+[[Sticky Footers]]
+
+## 忽略 h1 标题, 仅对 h2 ~ h6 标题进行编号
 
 通常一篇文章仅一个 `h1` 标题且无需编号, 仅对 `h2 ~ h6` 标题进行编号:
 
@@ -47,19 +49,9 @@ h6:before {
   content: counter(h2) "." counter(h3) "." counter(h4) "." counter(h5) "."
     counter(h6) ". ";
 }
-
-
-h2.nocount:before,
-h3.nocount:before,
-h4.nocount:before,
-h5.nocount:before,
-h6.nocount:before {
-  content: "";
-  counter-increment: none;
-}
 ```
 
-## 对 `h1 ~ h6` 标题均进行编号
+## h1 ~ h6 标题均进行编号
 
 如果文章有多个 `h1` 标题且各标题均需编号:
 
@@ -128,32 +120,31 @@ h6.nocount:before {
 }
 ```
 
-添加 `data-no-count` 属性并使用 `:not` 选择器:
-
-```html
-<h1 data-no-count></h1>
-```
-
-```css
-h1:not([data-no-count]) {
-  /* ... */
-}
-```
-
 不需要编号的标题如:
 - Introduction
 - Conclusion
 - ...
 
-Reference:
+## 更改编号格式
+
+可将上述 `CSS` 代码中的 `.` 改为 `-` 或 `/` :
+
+- 1.1.1.1
+- 1-1-1-1
+- 1/1/1/1
+
+## Reference
 
 - [Automatic Heading Numbers with CSS](https://philarcher.org/diary/2013/headingnumbers/)
 - [Numbered headings made with CSS counter](https://nikitahl.com/numbered-headings-with-css-counter)
 - [CSS, auto numbering elements : headings, lists, pagination](https://www.sqlpac.com/en/documents/html-css-auto-numbering-elements-counters.htm)
+- [利用 CSS 对标题进行自动编号](https://razonyang.com/zh-hans/notes/css/numberify-headings/)
+- [3 段 h1 标题 CSS 美化代码](https://www.wdzzz.com/jiaocheng/css/2020-08-14/1528.html)
+- [Example of a nested counter](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Counter_Styles/Using_CSS_counters#example_of_a_nested_counter)
 
-# `ul/ol li`
+# ul/ol li
 
-## `ul li`
+## ul li
 
 ```css
 ul {
@@ -202,7 +193,7 @@ ul li::before {
 </ul>
 ```
 
-## `ol li`
+## ol li
 
 - [Example of a nested counter](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Counter_Styles/Using_CSS_counters#example_of_a_nested_counter)
 
@@ -255,7 +246,7 @@ ol li::before {
 
 - [Codepen Demo](https://codepen.io/paraoiawhy/pen/MWqJLpX)
 
-# `Pagination`
+# Pagination
 
 ```html
 <ul class="paging">

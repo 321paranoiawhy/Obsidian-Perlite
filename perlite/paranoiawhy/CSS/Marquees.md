@@ -1,4 +1,4 @@
-# `HTML`
+# HTML
 
 ```HTML
 <marquee>This text will scroll from right to left</marquee>
@@ -6,7 +6,7 @@
 <marquee direction="up">This text will scroll from bottom to top</marquee>
 ```
 
-# `CSS`
+# CSS
 
 ```HTML
 <div class="bounce">Bouncing text...</div>

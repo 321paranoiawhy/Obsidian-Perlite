@@ -8,3 +8,5 @@ div::before {
 ```
 
 # 计数器
+
+[[Snippets/Auto Numbering Elements]]

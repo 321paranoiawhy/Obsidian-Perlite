@@ -1,5 +1,5 @@
 #Docker 
-# 验证 `docker-compose.yml` 文件
+# 验证 docker-compose.yml 文件
 
 验证 `docker-compose.yml` 文件格式是否正确, 若格式正确则显示配置内容, 反之则显示错误原因:
 
@@ -100,7 +100,7 @@ docker-compose down
 > [!tip]
 > `up` 和 `down` 相辅相成。
 
-# 列出 `docker-compose` 所有容器
+# 列出 docker-compose 所有容器
 
 ```bash
 docker-compose ps

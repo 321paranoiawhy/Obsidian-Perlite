@@ -24,9 +24,9 @@ docker-compose up
 docker-compose up -d
 ```
 
-# 本地连接至 `Docker` 中的 `MySQL`
+# 本地连接至 Docker 中的 MySQL
 
-## `docker run`
+## docker run
 
 ```bash
 docker run --name some-mysql -e MYSQL_ROOT_PASSWORD=123456 -p 3310:3306 -d mysql:5.7
@@ -38,13 +38,13 @@ mysql -h localhost -P 3310 -u root
 # mysql -P 3310 --protocol=tcp -u root -p
 ```
 
-## `docker-compose`
+## docker-compose
 
 ```bash
 mysql -P 3307 --protocol=tcp -u root -p
 ```
 
-## 获取容器 `ip`
+## 获取容器 ip
 
 ```bash
 docker inspect -f '{{range.NetworkSettings.Networks}}{{.IPAddress}}{{end}}' container_name_or_id

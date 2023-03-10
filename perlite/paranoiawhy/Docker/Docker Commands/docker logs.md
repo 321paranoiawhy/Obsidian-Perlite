@@ -34,7 +34,7 @@ docker logs --until="2013-01-02T13:23:37Z" CONTAINER
 docker logs --until 2013-01-02T13:23:37Z CONTAINER
 ```
 
-# 仅查看最新的 `N` 条输出
+# 仅查看最新的 N 条输出
 
 仅查看最新的 `10` 条输出:
 
