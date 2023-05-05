@@ -1,0 +1,6 @@
+- [quicktype ](https://app.quicktype.io/?l=ts)
+- [transform](https://transform.tools/json-to-typescript)
+- [JSON formatter](https://jsonformatter.org/json-to-typescript)
+- [Json to TS - GitHub](https://github.com/MariusAlch/json-to-ts)
+- [Code Beautify](https://codebeautify.org/json-to-typescript-pojo-generator)
+- [MakeTypes](https://jvilk.com/MakeTypes/)

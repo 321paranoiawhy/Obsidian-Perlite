@@ -1,0 +1,1 @@
+- [Design Patterns in Node.js: A Fun TypeScript Adventure!](https://devhoangkien.com/design-patterns-in-node-js-a-fun-typescript-adventure-8bf977c2549b)

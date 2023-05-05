@@ -62,7 +62,18 @@ cf9aff1884d586358c4157fab60d36c8
 21f710a8d3960f41f9ece27496298b55
 ```
 
+```dart
+class Singleton {
+  Singleton._internal();
+  
+  factory Singleton() => _instance;
+  
+  static late final Singleton _instance = Singleton._internal();
+}
+```
+
 - [how-do-you-build-a-singleton-in-dart - stackoverflow](https://stackoverflow.com/questions/12649573/how-do-you-build-a-singleton-in-dart)
+- [Dart 单例模式](https://flutter.cn/community/tutorials/singleton-pattern-in-flutter-n-dart#dart-%E5%8C%96)
 
 # `Rust` Implement
 

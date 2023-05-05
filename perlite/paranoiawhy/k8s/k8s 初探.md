@@ -83,6 +83,18 @@ k8s describe node docker-desktop
 | hugepages-1Gi     |       0 (0%) |        0 (0%) |
 | hugepages-2Mi     |       0 (0%) |        0 (0%) |
 
+# 查看 pods 环境变量
+
+```bash
+kubectl exec <Pod Name> -- printenv
+```
+
+# 查看 Exit Code
+
+```bash
+docker inspect <container-id> --format='{{.State.ExitCode}}'
+```
+
 # 命令缩写
 
 - [Resource types and abbreviated aliases](https://kubernetes.io/docs/reference/kubectl/#resource-types)

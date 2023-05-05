@@ -290,6 +290,47 @@ body {
 }
 ```
 
+# W3Schools
+
+```html
+<div id="runloader"></div>
+```
+
+`keyframes` 定义:
+
+```css
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+```
+
+样式定义:
+
+```css
+#runloader {
+  color: #ffffff;
+  box-sizing: border-box;
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  border: 10px solid #333;
+  border-top: 10px solid #04aa6d;
+  border-radius: 50%;
+  max-width: 150px;
+  max-height: 150px;
+  animation: spin 2s linear infinite;
+  width: 118.4px;
+  height: 118.4px;
+}
+```
+
+[Codepen Demo](https://codepen.io/paraoiawhy/pen/LYJQQyp)
+
 # Reference
 
 * [loading.io](https://loading.io/)

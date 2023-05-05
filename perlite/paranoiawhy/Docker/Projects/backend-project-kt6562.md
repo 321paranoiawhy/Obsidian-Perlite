@@ -111,6 +111,13 @@ pipreqs . --encoding=utf8
 > PyJWT==2.6.0
 > ```
 
+> [!warning]
+> WARNING: requirements.txt already exists, use --force to overwrite it
+
+```bash
+pipreqs . --encoding=utf8 --force
+```
+
 ## 安装相应依赖
 
 根据生成的 `requirements.txt` 文件安装相应的 `Python` 依赖:

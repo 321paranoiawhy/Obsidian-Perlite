@@ -58,6 +58,16 @@ git branch -delete local # git branch -d local
 git branch -D local
 ```
 
+# 本地创建新分支
+
+```bash
+# 创建 new_branch 分支并切至该分支
+git checkout -b new_branch
+
+# 仅创建 another_new_branch 分支但不切至该分支
+git branch another_new_branch
+```
+
 # 切换本地分支
 
 ```bash
@@ -123,3 +133,49 @@ git mv <oldfile> <newfile>
 ```bash
 git log
 ```
+
+# 克隆远程指定文件夹到本地
+
+```bash
+mkdir local_project_name
+cd local_project_name
+git init
+
+git remote add -f origin <remote-repo-url>
+git config core.sparsecheckout true  # 开启 sparse clone
+
+echo <specified-folder> >> .git/info/sparse-checkout # 设定指定文件夹
+git pull origin <remote-branch> # 拉取远程仓库分支
+```
+
+示例；
+
+```bash
+mkdir thrid_login_flutter
+cd thrid_login_flutter
+git init
+git remote add -f origin https://github.com/zeqinjie/thrid_login_demo.git
+git config core.sparsecheckout true
+echo "thrid_login_flutter" >> .git/info/sparse-checkout
+git pull origin main
+```
+
+上述示例中原仓库 `thrid` 为笔误, 实际应为 `third`
+
+# fatal: refusing to merge unrelated histories
+
+- [The “fatal: refusing to merge unrelated histories” Git error](https://www.educative.io/answers/the-fatal-refusing-to-merge-unrelated-histories-git-error)
+
+```bash
+git pull origin master --allow-unrelated-histories
+```
+
+# 删除误上传到远程仓库的文件或者文件夹
+
+- [Git 如何忽略已经上传的文件或文件夹？](https://blog.csdn.net/weixin_43352244/article/details/120842927)
+
+```bash
+git rm -r --cached <file name or folder name>
+```
+
+执行上述命令后, 重新提交代码即可删除掉远程相应的文件或文件夹。

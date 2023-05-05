@@ -21,3 +21,18 @@ showDialog(
 	 )
 );
 ```
+
+# 传参
+
+```dart
+class Example extends StatelessWidget {
+  final String title;
+  final VoidCallback onPressed;
+  const Example({Key? key, required this.title, required this.onPressed}) : super(key: key);
+
+	@override
+	Widget build(BuildContext context) {
+		return Text('Example');
+	}
+}
+```

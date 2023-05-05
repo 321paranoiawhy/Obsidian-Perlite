@@ -1,11 +1,10 @@
 {
-  "cssTheme": "",
+  "cssTheme": "Atom",
   "accentColor": "",
   "baseFontSize": 14,
   "theme": "moonstone",
   "translucency": false,
   "enabledCssSnippets": [
-    "custom",
     "table",
     "headings",
     "heading"

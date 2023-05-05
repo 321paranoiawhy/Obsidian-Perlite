@@ -193,6 +193,14 @@ kubectl create -f zoo-keeper.yaml
 > error: resource mapping not found for name: "zk-pdb" namespace: "" from ".\\zoo-keeper.yaml": no matches for kind "PodDisruptionBudget" in version "policy/v1beta1"
 > ensure CRDs are installed first
 
+# 数据库用户和密码
+
+|  数据库  | 端口  | 用户名 |  密码  |           连接工具            |
+| :------: | :---: | :----: | :----: | :---------------------------: |
+|  mysql   | 30306 |  root  | 123456 |            Navicat            |
+|  redis   | 30379 |   无   |   无   | Another Redis Desktop Manager |
+| rabbitmq | 15672 | guest  | guest  |        localhost:15672        |
+
 # `backend-api-data`
 
 项目类型: **JAVA**

@@ -9,7 +9,7 @@ DateTime parse(String formattedString)
 将字符串转换为 `DateTime`:
 
 ```dart
- // 结果均为 DateTime 标准格式 2023-01-06 00:00:00.000
+// 结果均为 DateTime 标准格式 2023-01-06 00:00:00.000
 DateTime.parse("2023-01-06");
 DateTime.parse("20230106");
 DateTime.parse("+20230106");

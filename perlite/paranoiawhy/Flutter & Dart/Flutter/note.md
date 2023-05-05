@@ -26,6 +26,22 @@ intB = null;
 
 [Operators - dart.dev](https://dart.dev/guides/language/language-tour#operators)
 
+# Null Safety
+
+> [!tip]
+> 空安全在 Dart 2.12 版本之后引入。
+
+- [Dart 2.x and null safety](https://dart.dev/null-safety#enable-null-safety)
+
+In Dart 2.12 to 2.19, null safety is a configuration option in the pubspec. Null safety is not available in SDK versions prior to Dart 2.12.
+
+To enable sound null safety, set the [SDK constraint lower-bound](https://dart.dev/tools/pub/pubspec#sdk-constraints) to a [language version](https://dart.dev/guides/language/evolution#language-versioning) of 2.12 or later. For example, your `pubspec.yaml` file might have the following constraints:
+
+```yaml
+environment:
+  sdk: '>=2.12.0 <3.0.0'
+```
+
 # 冒泡背景
 
 [Flutter 实现冒泡背景](https://wenjie.store/archives/flutter%E5%AE%9E%E7%8E%B0%E5%86%92%E6%B3%A1%E8%83%8C%E6%99%AF)

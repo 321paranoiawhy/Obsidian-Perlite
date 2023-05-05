@@ -1141,12 +1141,15 @@ $(document).ready(function () {
     $('.tooltip').css("left", target.offset().left);
     $('.tooltip').css("display", "unset");
 
-    navigator.clipboard.writeText(text).then(function () {
-      $('.tooltip').text("URL copied to clipboard!");
-    }, function (err) {
-      $('.tooltip').text("Could not copy URL");
-      console.error('Async: Could not copy URL: ', err);
-    });
+    clipboard(text);
+    $('.tooltip').text("URL copied to clipboard!");
+
+    // navigator.clipboard.writeText(text).then(function () {
+    //   $('.tooltip').text("URL copied to clipboard!");
+    // }, function (err) {
+    //   $('.tooltip').text("Could not copy URL");
+    //   console.error('Async: Could not copy URL: ', err);
+    // });
 
     setTimeout(hideTooltip, 1500);
   });

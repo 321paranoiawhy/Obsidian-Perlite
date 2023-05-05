@@ -14,37 +14,24 @@
 
 ## `JavaScript` Implement
 
-```js
-const shuffle = (arr, start = 0, end) => {
-	if (end === undefined) {
-		end = arr.length;
-	}
-	
-	if (typeof start !== "number" || typeof end !== "number") {
-		throw new Error("请检查起始和终点下标值");
-	}
-	
-	if (end < start) {
-	    // 互换
-	    let temp = start;
-	    start = end;
-	    end = temp;
-	}
+```ts
+/**
+ *
+ * @param array 待乱序的数组
+ * @returns 乱序后的数组
+ */
+export const shuffle = (array: Array<number>) => {
+  for (let index = array.length - 1; index > 0; index--) {
+    // prettier-ignore
+    // random index from 0 to index
+    const randomIndex = Math.floor(Math.random() * (index + 1));
 
-	if (end === start) {
-		return arr;
-	}
-  
-	let length = end - start;
-	let pos;
-	while(length) {
-		pos = Math.floor(Math.random() * length);
-		length--;
-		// swap
-		[arr[start + pos], arr[start + length]] = [arr[start + length], arr[start + pos]];
-	}
-	return arr;
-};
+    // prettier-ignore
+    // swap elements array[index] and array[randomIndex]
+    [array[index], array[randomIndex]] = [array[randomIndex], array[index]];
+  }
+  return array
+}
 ```
 
 ## `Dart` Implement
