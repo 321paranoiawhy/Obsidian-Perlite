@@ -23,7 +23,7 @@ onTimeUpdate(e) {
 - [微信小程序动态加载组件](https://juejin.cn/s/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E5%8A%A8%E6%80%81%E5%8A%A0%E8%BD%BD%E7%BB%84%E4%BB%B6)
 - [自定义组件 - Component 构造器](https://developers.weixin.qq.com/miniprogram/dev/framework/custom-component/component.html)
 
-> [!warning]
+> [!danger]
 > 注意：在组件 `wxss` 中不应使用 `ID` 选择器、属性选择器和标签名选择器。
 > 推荐使用类选择器。
 

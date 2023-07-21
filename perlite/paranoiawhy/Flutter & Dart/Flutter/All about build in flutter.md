@@ -1,4 +1,3 @@
-#Build #Flutter #Android #iOS #Web
 # `Android apk`
 
 ## 普通打包

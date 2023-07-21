@@ -27,7 +27,7 @@ ENV STORAGE_REDIS_HOST=10.10.21.86
 ENV STORAGE_REDIS_PORT=6379
 ```
 
-> [!attention]
+> [!caution]
 > `MySQL` 中须有 `n8n` 数据表。
 
 `packages/nodes-base/config/index.ts` :

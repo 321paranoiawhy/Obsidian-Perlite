@@ -4,7 +4,7 @@
 [JDK 8 windows](https://www.oracle.com/java/technologies/downloads/#java8-windows)
 [超详细！JDK 8 下载、安装和环境配置（macOS 和 Windows 版本）](https://cloud.tencent.com/developer/article/1803374)
 
-> [!attention]
+> [!caution]
 > 验证 `JDK` 是否下载成功:
 > 
 > ```bash

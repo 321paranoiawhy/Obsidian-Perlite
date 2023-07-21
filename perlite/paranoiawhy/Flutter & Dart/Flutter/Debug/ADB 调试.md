@@ -30,7 +30,7 @@ adb devices
 > [!info]
 > Launching lib\main.dart on Redmi K30 in debug mode...
 
-> [!warning]
+> [!danger]
 > adb: failed to install ... Failure [INSTALL_FAILED_USER_RESTRICTED: Install canceled by user]
 > Error launching application on Redmi K30.
 

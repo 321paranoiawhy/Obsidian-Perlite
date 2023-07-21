@@ -1,4 +1,3 @@
-#CSS #Snippets #Custom
 # 多彩标签
 
 > [!tip]- 多彩标签
@@ -70,7 +69,7 @@
 > }
 > ```
 
-> [!attention]
+> [!caution]
 > 此 `CSS` 代码片段仅适用于部分主题如 `Blue Topaz`, 不适用于 `Atom` 主题。
 
 - [CSS片段-标签多彩小丸子](https://coffeetea.top/zh/css-snippets/%E6%A0%87%E7%AD%BE%E5%A4%9A%E5%BD%A9%E5%B0%8F%E4%B8%B8%E5%AD%90.html)

@@ -237,7 +237,7 @@ docker ps -a
 
 # 启动容器
 
-> [!attention]
+> [!caution]
 > 在启动容器之前, 请查看运行中和已终止的所有容器:
 > ```bash
 > docker ps -a

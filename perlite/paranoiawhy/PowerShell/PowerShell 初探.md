@@ -132,7 +132,7 @@ $profile
 > [!info] $PROFILE
 > C:\Users\Administrator\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1
 
-> [!attention]
+> [!caution]
 > 如果该文件不存在, 可通过如下命令创建:
 > 
 > ```bash
@@ -163,4 +163,138 @@ Remove-Item alias:test
 
 ```bash
 Set-Alias k8s kubectl
+```
+
+## 设置代理
+
+### PowerShell
+
+#### 查看代理
+
+```bash
+netsh winhttp show proxy
+```
+
+#### 临时设置代理
+
+直接设置 `HTTP_PROXY` 和 `HTTPS_PROXY` 环境变量:
+
+```bash
+$env:HTTP_PROXY="http://127.0.0.1:7890"
+
+$env:HTTPS_PROXY="http://127.0.0.1:7890"
+```
+
+`netsh` 设置代理:
+
+```bash
+netsh winhttp set proxy 127.0.0.1:7890
+```
+
+`netsh` 取消所有代理:
+
+```bash
+netsh winhttp reset proxy
+```
+
+测试是否代理成功:
+
+```bash
+curl.exe -vvvk https://www.google.com
+
+curl.exe -vvvk https://www.google.com.hk
+
+curl.exe -vvvk https://www.youtube.com/
+```
+
+#### 永久设置
+
+使用 `VS Code` 打开 `PowerShell` 配置文件:
+
+```bash
+code $PROFILE
+```
+
+在 `macOS` 下可使用 `open` 命令:
+
+```bash
+open $
+```
+
+### cmd
+
+#### 临时设置代理
+
+```bash
+set http_proxy=http://127.0.0.1:7890
+
+set https_proxy=http://127.0.0.1:7890
+```
+
+#### 永久配置
+
+配置系统环境变量即可。
+
+### zsh
+
+#### 临时设置代理
+
+临时设置(仅当前终端窗口有效):
+
+```bash
+export http_proxy="http://127.0.0.1:7890"
+
+export https_proxy="http://127.0.0.1:7890"
+```
+
+#### 永久配置
+
+打开 `~/.zshrc`:
+
+```bash
+open ~/.zshrc
+```
+
+添加如下配置:
+
+```bash
+# where proxy
+proxy () {
+  export http_proxy="http://127.0.0.1:7890"
+  export https_proxy="http://127.0.0.1:7890"
+  echo "HTTP(S) Proxy on"
+}
+
+# where noproxy
+noproxy () {
+  unset http_proxy
+  unset https_proxy
+  echo "HTTP(S) Proxy off"
+}
+```
+
+使配置生效:
+
+```bash
+source ~/.zshrc
+```
+
+使用时输入 `proxy` 开启终端代理, 输入 `noproxy` 关闭终端代理。
+
+### git
+
+设置代理:
+
+```bash
+git config --global http.proxy http://127.0.0.1:7890
+
+git config --global https.proxy https://127.0.0.1:7890
+```
+
+取消代理:
+
+```bash
+git config --global --unset http.proxy
+
+git config --global --unset https.proxy
 ```

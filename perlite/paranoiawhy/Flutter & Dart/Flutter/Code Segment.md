@@ -1,4 +1,3 @@
-#Flutter #CodeSegment
 # 获取图片原始尺寸
 
 ```dart

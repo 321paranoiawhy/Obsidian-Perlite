@@ -92,7 +92,7 @@ Promise.any(tasks).then((result) => console.log(result));
 // 1
 ```
 
-> [!attention]
+> [!caution]
 > `Node.js` 版本必须大于 `15.0.0` , 否则不支持 Promise.any
 > - [Getting error TypeError: Promise.any is not a function - Stackoverflow](https://stackoverflow.com/questions/63123579/getting-error-typeerror-promise-any-is-not-a-function)
 > - [Implement Promise.any - node issue](https://github.com/nodejs/node/issues/35045)

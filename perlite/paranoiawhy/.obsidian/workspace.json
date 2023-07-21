@@ -4,28 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "f817aaeacb1d3f48",
+        "id": "ec65e86131a2cc29",
         "type": "tabs",
         "children": [
           {
-            "id": "678dba1cfcfbdd9a",
+            "id": "14c0d28f906210c3",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Flutter & Dart/Flutter/内存泄漏.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "58b460191af7f2f1",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Flutter & Dart/Flutter/Request/Future.md",
+                "file": "重学系列/Flutter/特殊组件.md",
                 "mode": "source",
                 "source": false
               }
@@ -61,7 +49,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "cancel",
+                "query": "didPopNext",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -85,6 +73,14 @@
               "type": "recent-files",
               "state": {}
             }
+          },
+          {
+            "id": "348874cce6b784ee",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
           }
         ]
       }
@@ -106,7 +102,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Flutter & Dart/Flutter/内存泄漏.md",
+                "file": "重学系列/Flutter/特殊组件.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,7 +119,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Flutter & Dart/Flutter/内存泄漏.md",
+                "file": "重学系列/Flutter/特殊组件.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -146,7 +142,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Flutter & Dart/Flutter/内存泄漏.md"
+                "file": "重学系列/Flutter/特殊组件.md"
               }
             }
           },
@@ -171,10 +167,11 @@
       }
     ],
     "direction": "horizontal",
-    "width": 351.5
+    "width": 211.5
   },
   "left-ribbon": {
     "hiddenItems": {
+      "publish:Publish changes...": false,
       "obsidian-markdown-formatting-assistant-plugin:Open Markdown Formatting Assistant": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
@@ -182,57 +179,56 @@
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "publish:Publish changes": false,
       "workspaces:Manage workspace layouts": false,
       "table-editor-obsidian:Advanced Tables Toolbar": false,
       "markdown-table-editor:Open Markdown Table Editor": false
     }
   },
-  "active": "830573838b840347",
+  "active": "14c0d28f906210c3",
   "lastOpenFiles": [
-    "HTTP/JSON To TypeScript.md",
-    "Flutter & Dart/Flutter/Request/Future.md",
-    "HTTP/API Doc.md",
-    "Flutter & Dart/Dart/DateTime/DateTime.md",
-    "Private/Template/YAML Front Matter.md",
+    "重学系列/Flutter/状态管理.md",
+    "Flutter & Dart/Flutter/路由/路由管理.md",
+    "Flutter & Dart/Flutter/All about build in flutter.md",
+    "重学系列/Flutter/登录注册实现方式.md",
+    "重学系列/Flutter/SSE.md",
+    "重学系列/Flutter/Singleton 单例模式.md",
+    "重学系列/Flutter/shared_preferences.md",
     "Tools/Git.md",
-    "Vite/vite.config.ts.md",
-    "Flutter & Dart/Flutter/屏幕.md",
-    "Vite/性能优化.md",
+    "Flutter & Dart/Flutter/回调函数.md",
+    "重学系列/Flutter/特殊组件.md",
+    "重学系列/Vue 2.md",
+    "重学系列/CSS/Scroll-Driven.md",
+    "重学系列/CSS/Observer.md",
+    "重学系列/CSS",
+    "重学系列/Flutter/点击事件.md",
+    "PowerShell/PowerShell 初探.md",
+    "Flutter & Dart/Flutter/监听 Widget 变化.md",
+    "重学系列/Flutter/动画效果.md",
+    "Vue/样式穿透.md",
     "CSS/Scrollbar.md",
-    "Vue/Snippets.md",
-    "TypeScript/Snippets.md",
-    "Private/Template",
-    "Private",
-    "FrontEnd/字体加载.md",
-    "Flutter & Dart/Flutter/内存泄漏.md",
-    "Flutter & Dart/Flutter/Debug/ADB 调试.md",
-    "You Don't Know Algorithms/Shuffle.md",
-    "FrontEnd",
-    "You Don't Know Desigin Patterns/Singleton.md",
-    "HTTP/Mock API.md",
-    "CSS/渐变圆角边框.md",
-    "Tools/组件库.md",
-    "Tools/Websites/图床.md",
-    "Tools/Request API.md",
-    "Tools/Image.md",
-    "CSS/你不知道的 CSS.md",
-    "CSS/Snippets/Collapse.md",
-    "Flutter & Dart/Flutter/配置.md",
+    "Flutter & Dart/Flutter/Widgets/WillPopScope.md",
+    "Flutter & Dart/Flutter/路由",
+    "You Do Not Know Algorithms/Shuffle.md",
+    "重学系列/Flutter/Loading 动画.md",
+    "Flutter & Dart/Flutter/Snippets.md",
+    "重学系列/Flutter/setState 探秘.md",
+    "重学系列/Flutter/父组件调用子组件方法.md",
+    "手写系列/JavaScript/函数式编程.md",
+    "重学系列/Flutter",
+    "重学系列",
+    "Flutter & Dart/Flutter/Design Patterns",
+    "错误处理",
+    "手写系列/JavaScript",
+    "手写系列",
+    "Backend/Python",
+    "Backend",
     "Attachments/google oauth.png",
-    "MySQL",
     "Attachments/Generating a token in SonarQube.png",
     "Attachments/SonarQube Scanner Jenkins Plugin Installation.png",
     "Attachments/Sonar-Scanner-h-v.png",
     "Attachments/Sonar-Scanner.png",
     "Attachments/sonarQube 安装成功.png",
     "Attachments/add user and vhost in rabbitmq.png",
-    "metadata.json",
-    "Tools/Backend",
-    "CI & CD",
-    "Python",
-    "JavaScript/utils",
-    "Flutter & Dart/Flutter/Learning Materials",
     "Attachments/Kubernetes-current-context.png"
   ]
 }

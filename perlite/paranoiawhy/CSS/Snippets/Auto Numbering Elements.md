@@ -1,5 +1,5 @@
 ---
-tags: CSS,Snippets
+tags: [CSS, Snippets]
 ---
 
 # Heading

@@ -32,13 +32,13 @@ body {
 
 # CSS
 
-[div.proposed-sets-list__container-scroll](https://unicode-table.com/cn/blocks/arrows/)
-[::-webkit-scrollbar - MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/::-webkit-scrollbar)
-[Custom Scrollbars in WebKit - CSS Tricks](https://css-tricks.com/custom-scrollbars-in-webkit/)
-[How TO - Custom Scrollbar - W3Schools](https://www.w3schools.com/howto/howto_css_custom_scrollbar.asp)
-[Customize the Browser's Scrollbar with CSS](https://codepen.io/akinjide/pen/BpggrZ)
+- [div.proposed-sets-list__container-scroll](https://unicode-table.com/cn/blocks/arrows/)
+- [::-webkit-scrollbar - MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/::-webkit-scrollbar)
+- [Custom Scrollbars in WebKit - CSS Tricks](https://css-tricks.com/custom-scrollbars-in-webkit/)
+- [How TO - Custom Scrollbar - W3Schools](https://www.w3schools.com/howto/howto_css_custom_scrollbar.asp)
+- [Customize the Browser's Scrollbar with CSS](https://codepen.io/akinjide/pen/BpggrZ)
 
-```CSS
+```css
 .scrollbar {
 	--scrollbar-width: 4px; /* 竖直滚动条宽度  */
 	--scrollbar-height: 4px; /* 水平滚动条高度 */
@@ -75,23 +75,16 @@ body {
 
 # Div + JavaScript
 
-```HTML
-
-```
-
-```JavaScript
-```
-
 # Obsidian 滚动条
 
 ```css
 .theme-light {
-	--mono-rgb-0: 255, 255, 255;
+    --mono-rgb-0: 255, 255, 255;
     --mono-rgb-100: 0, 0, 0;
 }
 
 body {
-	--radius-s: 4px;
+    --radius-s: 4px;
     --radius-m: 8px;
     --radius-l: 10px;
     --radius-xl: 16px;

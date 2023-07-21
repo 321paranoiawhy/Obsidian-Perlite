@@ -31,7 +31,7 @@ kubectl create -f influxdb.yaml
 kubectl describe pods influxdb-0
 ```
 
-> [!warning] kubectl describe pods influxdb-0
+> [!danger] kubectl describe pods influxdb-0
 > 0/1 nodes are available: 1 pod has unbound immediate PersistentVolumeClaims. preemption: 0/1 nodes are available: 1 Preemption is not helpful for scheduling.
 
 [pod has unbound persistentvolumeclaims](https://stackoverflow.com/questions/52668938/pod-has-unbound-persistentvolumeclaims)

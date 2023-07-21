@@ -23,7 +23,7 @@
 
 # 右侧目录点击跳转范围应扩大
 
-> [!warning]
+> [!danger]
 > 仅点击 `a` 标签时才能跳转至相应标题, 实际应当是点击 `div.tree-item-self.is-clickable` 即可跳转相应标题。
 
 源码 `perlite/.js/perlite.js` 中
@@ -48,7 +48,7 @@ toc += `<a href="#${anchor}"><div class="tree-item-self is-clickable">${titleTex
 
 # 右侧目录渲染问题
 
-> [!warning]
+> [!danger]
 > 当 `h1 ~ h6` 标签内嵌有元素时, 该标题不会出现在右侧的 `Table of Contents` 中。
 
 > [!tip]
@@ -123,7 +123,7 @@ pre.forEach((item)=>{
 
 # 图片居中
 
-> [!warning]
+> [!danger]
 > 默认图片居左对齐。
 
 > [!tip]
@@ -146,7 +146,7 @@ pre.forEach((item)=>{
 
 # 去除图片右上角箭头 
 
-> [!warning]
+> [!danger]
 > 默认图片右上角有一箭头。
 
 > [!tip]

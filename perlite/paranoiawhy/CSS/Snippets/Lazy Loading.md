@@ -36,7 +36,7 @@ const isLoadingSupported = "loading" in HTMLIFrameElement.prototype;
 // const isLoadingSupported = "loading" in document.createElement("iframe");
 ```
 
-> [!attention]
+> [!caution]
 > - [FireFox](https://caniuse.com/loading-lazy-attr) 不支持 `iframe` 标签的 `loading` 属性。
 > - [iframe browser compatibility - MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe#browser_compatibility)
 
@@ -58,7 +58,7 @@ const imageLoadingDone = image.complete;
 Object.getOwnPropertyDescriptor(document.querySelector("img").__proto__, "complete");
 ```
 
-`img` 加载完成的回调事件为 `load` :
+`img` 加载完成的回调事件 `onload` :
 
 ```js
 const image = document.querySelector("img");
@@ -129,7 +129,7 @@ image.onerror = () => {};
 </video>
 ```
 
-> [!attention]
+> [!caution]
 > 须确保未设置 `autoplay` 属性, 否则 `preload` 属性无效。
 
 设置 `video` 的 `poster` 属性占位, 避免浏览器间样式差异:

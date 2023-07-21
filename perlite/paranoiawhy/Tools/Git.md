@@ -89,6 +89,14 @@ git push origin local:origin
 git pull origin dev
 ```
 
+# 本地创建新分支并拉取远程分支
+
+本地创建新分支 `local_sample`, 并与远程分支 `origin_sample` 同步, 同时本地切换到 `local_sample` 分支:
+
+```bash
+git checkout -b local_sample origin/origin_sample
+```
+
 # 本地分支合并至远程分支
 
 ```bash
@@ -179,3 +187,42 @@ git rm -r --cached <file name or folder name>
 ```
 
 执行上述命令后, 重新提交代码即可删除掉远程相应的文件或文件夹。
+
+# 撤回本地提交
+
+撤回本地上一次提交, 但保留代码和新添加文件:
+
+```bash
+git reset --soft HEAD^
+git reset --soft HEAD~1
+```
+
+撤回本地两次提交:
+
+```bash
+git reset --soft HEAD~2
+```
+
+`--soft` 表示**软**撤回, 不删除本地代码和新添加文件, 只撤回提交信息;
+
+`--hard` 表示**硬**撤回, 删除本地代码和新添加文件, 并撤回提交信息。
+
+## 提交多行信息
+
+```bash
+git commit 'This is first line,
+this is second line'
+```
+
+
+```json
+"workspaces": [
+    "packages/cli",
+    "packages/core",
+    "packages/editor-ui",
+    "packages/node-dev",
+    "packages/nodes-base",
+    "packages/workflow"
+  ],
+```
+

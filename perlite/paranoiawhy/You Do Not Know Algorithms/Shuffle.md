@@ -36,6 +36,8 @@ export const shuffle = (array: Array<number>) => {
 
 ## `Dart` Implement
 
+- [shuffle function](https://api.flutter.dev/flutter/package-collection_collection/shuffle.html)
+
 ```dart
 void shuffle(List elements, [int start = 0, int? end, Random? random]) {
   random ??= Random();

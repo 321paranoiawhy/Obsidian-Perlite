@@ -51,7 +51,7 @@ where python
 where.exe python
 ```
 
-> [!attention]
+> [!caution]
 > 在 `PowerShell` 下 `where` 是 `Where-Object` 的别名 (`alias`), 因而须用 `where.exe` 查找 `python` 安装路径。
 > 可通过 `Get-Command where` 查看 `where` 命令的详细信息。
 
@@ -111,7 +111,7 @@ pipreqs . --encoding=utf8
 > PyJWT==2.6.0
 > ```
 
-> [!warning]
+> [!danger]
 > WARNING: requirements.txt already exists, use --force to overwrite it
 
 ```bash
@@ -132,7 +132,7 @@ pip install -r requirements.txt
 
 # 本地运行 Python 项目
 
-> [!attention]
+> [!caution]
 > 在本地运行 `Python` 项目之前, 须运行 `redis` 。
 
 `app.py`:
@@ -148,7 +148,7 @@ web.run_app(app, host='localhost', port=8080, access_log=None)
 
 # 在 Docker 中运行 Python 项目
 
-> [!attention]
+> [!caution]
 > 在 `Docker` 中运行 `Python` 项目之前, 须运行 `redis` 。
 
 `app.py` 应修改如下:
@@ -168,7 +168,7 @@ web.run_app(app, host='0.0.0.0', port=8080, access_log=None)
 docker build -t python .
 ```
 
-> [!attention]
+> [!caution]
 > - `.` 表示上下文 `context`, 不可简单理解为 `Dockerfile` 文件路径
 > - 如果不额外指定 `Dockerfile` 文件路径, `Docker` 会将上下文目录中的 `Dockerfile` 作为 `Dockerfile`
 > - 可通过 `--file` 或 `-f`指定 `Dockerfile` 文件路径

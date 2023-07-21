@@ -1,12 +1,11 @@
-
-# `!.`
+## `!.`
 
 ```dart
 Map testMap = {"A": "a", "B": "b", "C": "c"};
 testMap!
 ```
 
-# 定义可空变量 `null`
+## 定义可空变量 `null`
 
 ```dart
 int intA = 1;
@@ -22,35 +21,19 @@ int? intB = 2;
 intB = null;
 ```
 
-# `operators`
+## `operators`
 
 [Operators - dart.dev](https://dart.dev/guides/language/language-tour#operators)
 
-# Null Safety
-
-> [!tip]
-> 空安全在 Dart 2.12 版本之后引入。
-
-- [Dart 2.x and null safety](https://dart.dev/null-safety#enable-null-safety)
-
-In Dart 2.12 to 2.19, null safety is a configuration option in the pubspec. Null safety is not available in SDK versions prior to Dart 2.12.
-
-To enable sound null safety, set the [SDK constraint lower-bound](https://dart.dev/tools/pub/pubspec#sdk-constraints) to a [language version](https://dart.dev/guides/language/evolution#language-versioning) of 2.12 or later. For example, your `pubspec.yaml` file might have the following constraints:
-
-```yaml
-environment:
-  sdk: '>=2.12.0 <3.0.0'
-```
-
-# 冒泡背景
+## 冒泡背景
 
 [Flutter 实现冒泡背景](https://wenjie.store/archives/flutter%E5%AE%9E%E7%8E%B0%E5%86%92%E6%B3%A1%E8%83%8C%E6%99%AF)
 
-# `Google Assistant`
+## `Google Assistant`
 
 [Define capabilities in shortcuts.xml](https://developer.android.com/develop/ui/views/launch/shortcuts/adding-capabilities)
 
-## `android:targetPackage`
+### `android:targetPackage`
 
 > 跳转的目标应用包名
 
@@ -69,7 +52,7 @@ environment:
 android:targetPackage="net.touchcapture.qr.flutterqrexample"
 ```
 
-## `android:targetClass`
+### `android:targetClass`
 
 > 跳转的目标类
 
@@ -106,7 +89,7 @@ android:targetClass="net.touchcapture.qr.flutterqrexample"
 > 
 > * [shortcuts.xml](https://android.googlesource.com/platform/packages/apps/Settings/+/master/res/xml/shortcuts.xml)
 
-## `android:shortcutShortLabel`
+### `android:shortcutShortLabel`
 
 > 快捷方式短标签 (简要描述)
 
@@ -143,14 +126,14 @@ android:targetClass="net.touchcapture.qr.flutterqrexample"
 > 
 > `android:icon` 为快捷方式的图标配置。
 
-## `android:shortcutLongLabel`
+### `android:shortcutLongLabel`
 
 > 快捷方式长标签 (详细描述)
 
 > [!hint]
 > `android:shortcutLongLabel` 可能的话长度不超过 `25`。
 
-## `intent`
+### `intent`
 
 > [!hint]
 > `intent` 标签必须有 `android:action` 属性, 其默认值为 `android.intent.action.VIEW`。
@@ -181,3 +164,11 @@ android:targetClass="net.touchcapture.qr.flutterqrexample"
 
 > [!hint]
 > `android:key` 属性值同 `capability` 的 `android:name` 属性值。
+
+## `type 'List<dynamic>' is not a subtype of type 'List<Map<String, dynamic>>'`
+
+```dart
+(data as List).cast<Map>()
+```
+
+- [reddit](https://www.reddit.com/r/dartlang/comments/zllptq/comment/j067mp7/?utm_source=share&utm_medium=web2x&context=3)

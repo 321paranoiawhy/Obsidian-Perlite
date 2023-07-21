@@ -2,3 +2,14 @@
 table {
   margin: 0 auto;
 }
+
+code:not([class*="language-"]),
+.cm-s-obsidian span.cm-inline-code {
+  color: #128b4e;
+  background-color: #e7f3ed;
+}
+
+.callout code {
+  color: inherit !important;
+  background-color: var(--code-background);
+}

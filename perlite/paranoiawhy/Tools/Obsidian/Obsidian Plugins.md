@@ -46,7 +46,7 @@
 - `Title Serial Number Plugin: Set Serial Number For Title`
 - `Title Serial Number Plugin: Set Clear Number For Title`
 
-> [!attention]
+> [!caution]
 > 该插件不能自动更新标题编号, 当文档标题变化后须手动重设标题编号。
 
 # `Auto Card Link`

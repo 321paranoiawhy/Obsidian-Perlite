@@ -10,7 +10,7 @@
 
 [sonarqube 7.1 版本下载](https://binaries.sonarsource.com/Distribution/sonarqube/sonarqube-7.1.zip)
 
-> [!warning]
+> [!danger]
 > `sonarqube 7.9` 版本之后不再支持 `MySQL` [See here](https://github.com/SonarSource/docker-sonarqube/issues/563#issuecomment-1205710633)
 
 下载 `7.1` 版本后解压, 双击 `bin\windows-x86-64\StartSonar.bat` 即可。
@@ -64,7 +64,7 @@ sonar-scanner -v
 sonar-scanner
 ```
 
-> [!warning]
+> [!danger]
 > 文件名必须是 [sonar-project.properties](https://community.sonarsource.com/t/you-must-define-the-following-mandatory-properties-for-unknown-sonar-projectkey/41793/6), 否则会报错:
 > 
 > You must define the following mandatory properties for 'Unknown': sonar.projectKey, sonar.sources

@@ -227,6 +227,42 @@ Container(
 )
 ```
 
+`CircleAvatar`:
+
+```dart
+CircleAvatar(
+  // 头像半径
+  radius: 60,
+  // 头像图片
+  backgroundImage: Image.asset('example.png'),
+)
+```
+
+`ClipOval`:
+
+```dart
+ClipOval(
+  child: Image.asset('example.png'),
+)
+```
+
+`ClipRRect`:
+
+```dart
+ClipRRect(
+  borderRadius: BorderRadius.circular(30),
+  child: Image.asset('example.png', width: 60, height: 60, fit: BoxFit.cover),
+)
+```
+
+## 各种边框形状
+
+- 斜切角: `BeveledRectangleBorder`
+- 圆角: `RoundedRectangleBorder`
+- 超椭圆: `SuperellipseShape`
+- 体育场: `StadiumBorder`
+- 圆形: `CircleBorder`
+
 # 更改图片颜色
 
 - [Color Filtered Widget — Apply multiple colors over images in Flutter | Image Color Filters](https://medium.com/vijay-r/color-filtered-widget-apply-multiple-colors-over-images-in-flutter-image-color-filters-746f45f90080)
@@ -274,5 +310,183 @@ SingleChildScrollView(key: const PageStorageKey(1))
 
 # WebView
 
-- []()
 - [将 WebView 添加到您的 Flutter 应用](https://codelabs.developers.google.com/codelabs/flutter-webview?hl=zh-cn#0)
+
+## Flutter webview 加载本地 HTML 文件
+
+- [加载本地文件](https://juejin.cn/post/7032940950468952078#heading-3)
+- [Flutter 开发：项目加载本地 html 文件的步骤](https://xie.infoq.cn/article/b96fe89b678d38ce1d04442eb)
+
+在 `pubsec.yaml` 中声明 `index.html` 文件的路径:
+
+```yaml
+flutter:
+	assets:
+		- assets/index.html
+```
+
+# Null Safety
+
+> [!tip]
+> 空安全在 Dart 2.12 版本之后引入。
+
+- [Dart 2.x and null safety](https://dart.dev/null-safety#enable-null-safety)
+
+In Dart 2.12 to 2.19, null safety is a configuration option in the pubspec. Null safety is not available in SDK versions prior to Dart 2.12.
+
+To enable sound null safety, set the [SDK constraint lower-bound](https://dart.dev/tools/pub/pubspec#sdk-constraints) to a [language version](https://dart.dev/guides/language/evolution#language-versioning) of 2.12 or later. For example, your `pubspec.yaml` file might have the following constraints:
+
+```yaml
+environment:
+  sdk: '>=2.12.0 <3.0.0'
+```
+
+# 去除滚动容器的水波纹效果
+
+`Flutter` 滚动容器在安卓等平台上滚动到顶部和底部都会出现水波纹, 有些时候是不想要这个效果的, 可通过以下两种方式予以去除:
+
+- `ScrollConfiguration`
+- `NotificationListener`
+
+### ScrollConfiguration
+
+```dart
+/// 自定义一个 NoShadowScrollBehavior
+///
+/// 去除 Android 的水波纹效果
+class NoGlowScrollBehavior extends ScrollBehavior {
+  @override
+  Widget buildViewportChrome(
+      BuildContext context, Widget child, AxisDirection axisDirection) {
+    switch (getPlatform(context)) {
+      case TargetPlatform.iOS:
+      case TargetPlatform.macOS:
+        return child;
+      case TargetPlatform.android:
+      case TargetPlatform.fuchsia:
+      case TargetPlatform.linux:
+      case TargetPlatform.windows:
+        return GlowingOverscrollIndicator(
+          child: child,
+          // 不显示头部水波纹
+          showLeading: false,
+          // 不显示尾部水波纹
+          showTrailing: false,
+          axisDirection: axisDirection,
+          // https://docs.flutter.dev/release/breaking-changes/theme-data-accent-properties#accentcolor
+          // color: Theme.of(context).accentColor,
+          color: Theme.of(context).colorScheme.secondary,
+        );
+    }
+  }
+}
+```
+
+按如下方式**局部调用**:
+
+```dart
+ScrollConfiguration(
+    behavior: NoGlowScrollBehavior(),
+    child: SingleChildScrollView(
+      child: ...
+    )
+);
+```
+
+> [!tip]
+> 滚动容器有:
+> 
+> - `SingleChildScrollView`
+> - `ListView`
+> - `GridView`
+> - `PageView`
+> - `SingleChildScrollView`
+> - `TabBarView`
+> - `AnimatedList`
+
+全局调用:
+
+```dart
+MaterialApp(
+  builder: (BuildContext _, Widget? child) => ScrollConfiguration(
+    behavior: const NoGlowScrollBehavior(),
+    child: child!,
+  ),
+);
+```
+
+### NotificationListener
+
+使用 `NotificationListener`:
+
+```dart
+NotificationListener<OverscrollIndicatorNotification>(
+    onNotification: (OverscrollIndicatorNotification? overscroll) {
+      // overscroll?.disallowGlow();
+      overscroll?.disallowIndicator();
+      return true;
+    },
+  child: ...,
+),
+```
+
+# 去除按钮的水波纹效果
+
+- [Flutter 彻底去除水波纹效果](https://blog.csdn.net/studying_ios/article/details/107342953)
+- [Flutter 禁用水波纹](https://blog.bombox.org/2020-06-12/flutter-disable-ripple/)
+
+```dart
+class NoInteractiveInkFeatureFactory extends InteractiveInkFeatureFactory {
+  @override
+  InteractiveInkFeature create({
+    required MaterialInkController controller,
+    required RenderBox referenceBox,
+    required Offset position,
+    required Color color,
+    required TextDirection textDirection,
+    bool containedInkWell = false,
+    RectCallback? rectCallback,
+    BorderRadius? borderRadius,
+    ShapeBorder? customBorder,
+    double? radius,
+    VoidCallback? onRemoved,
+  }) {
+    return _NoInteractiveInkFeature(
+        controller: controller, referenceBox: referenceBox, color: color);
+  }
+}
+
+class _NoInteractiveInkFeature extends InteractiveInkFeature {
+  _NoInteractiveInkFeature({
+    required MaterialInkController controller,
+    required RenderBox referenceBox,
+    required Color color,
+    VoidCallback? onRemoved,
+  }) : super(
+            controller: controller,
+            referenceBox: referenceBox,
+            color: color,
+            onRemoved: onRemoved);
+
+  @override
+  void paintFeature(Canvas canvas, Matrix4 transform) {}
+}
+```
+
+`ThemeData` 中**全局**或**局部**配置:
+
+```dart
+ThemeData(
+	splashFactory: NoInteractiveInkFeatureFactory(),
+	// 按钮点击时的高亮颜色
+	highlightColor: Colors.transparent,
+	// 按钮点击后不松手的水波纹扩散颜色
+	splashColor: Colors.transparent,
+)
+```
+
+带水波纹效果的组件:
+
+- `RaisedButton`
+- `InkWell`
+- `BottomNavigationBarItem`

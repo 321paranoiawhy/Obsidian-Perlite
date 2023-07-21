@@ -1,4 +1,3 @@
-#Key #Flutter
 # `Key`
 
 [Key class](https://api.flutter.dev/flutter/foundation/Key-class.html)

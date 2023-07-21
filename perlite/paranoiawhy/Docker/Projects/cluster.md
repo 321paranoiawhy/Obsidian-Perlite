@@ -61,7 +61,7 @@ docker-compose up -d
 
 # Warning
 
-> [!warning]
+> [!danger]
 > network default: network.external.name is deprecated. Please set network.name with external: true
 
 ```yml

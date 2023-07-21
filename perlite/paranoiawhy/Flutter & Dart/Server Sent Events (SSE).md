@@ -1,0 +1,4 @@
+- [Server-sent-events - whatwg](https://html.spec.whatwg.org/multipage/server-sent-events.html)
+- [Server-Sent Events](https://gist.github.com/sma/fa5ebd85fd54a2c973186d02c8fae467)
+- [eventsource - pub.dev](https://pub.dev/packages/eventsource)
+- [Server-sent-events - whatwg](https://html.spec.whatwg.org/multipage/server-sent-events.html)

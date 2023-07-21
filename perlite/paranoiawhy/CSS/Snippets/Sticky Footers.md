@@ -1,5 +1,5 @@
 ---
-tags: CSS, Snippets, Sticky-Footers
+tags: [CSS, Snippets, Sticky-Footers]
 ---
 # Flexbox
 

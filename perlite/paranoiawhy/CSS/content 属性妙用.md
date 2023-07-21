@@ -1,5 +1,4 @@
-#content #CSS
-# 背景图片
+## 背景图片
 
 ```css
 div::before {
@@ -7,6 +6,6 @@ div::before {
 }
 ```
 
-# 计数器
+## 计数器
 
 [[Snippets/Auto Numbering Elements]]
