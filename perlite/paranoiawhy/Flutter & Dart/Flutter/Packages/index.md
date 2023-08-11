@@ -4,6 +4,16 @@
 - [video_player](https://pub.dev/packages/video_player) 官方出品的 video_player
 - [better_player](https://pub.dev/packages/better_player)
 - [fijkplayer](https://pub.dev/packages/fijkplayer) `Bilibili` ijkplayer 移植版
+- [chewie](https://pub.dev/packages/chewie) 基于 `video_player`
+- [dart_vlc](https://pub.dev/packages/dart_vlc) 仅支持 `Windows` 和 `Linux`
+- [media_kit](https://pub.dev/packages/media_kit) 基于 `libmpv`, 底层为 [mpv-player](https://mpv.io/)
+
+`windows` 下命令行打开 `rtsp` 链接:
+
+```bash
+# https://github.com/mpv-player/mpv/issues/4845#issuecomment-1151929780
+mpv rtsp://10.10.21.201:8083/test --rtsp-transport=udp
+```
 
 ## 图片
 
@@ -19,6 +29,7 @@
 - [fluttertoast](https://pub.dev/packages/fluttertoast)
 - [flutter_smart_dialog](https://pub.dev/packages/flutter_smart_dialog)
 - [flutter_easyloading](https://pub.dev/packages/flutter_easyloading)
+- [oktoast](https://pub.dev/packages/oktoast)
 
 ```dart
 ScaffoldMessenger.of(context).showSnackBar(
@@ -49,3 +60,9 @@ ScaffoldMessenger.of(context).showSnackBar(
 
 - [markdownlivepreview](https://markdownlivepreview.com/)
 - [Dart Markdown Live Editor](https://dart-lang.github.io/markdown/)
+
+# Webview
+
+- [webview_flutter](https://pub.dev/packages/webview_flutter)
+- [flutter_inappwebview](https://pub.dev/packages/flutter_inappwebview)
+- [flutter_webview_plugin](https://pub.dev/packages/flutter_webview_plugin) 已停止维护

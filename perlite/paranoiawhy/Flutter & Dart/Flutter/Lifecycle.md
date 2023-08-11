@@ -8,6 +8,26 @@
 # `AppLifecycleState`
 
 ```dart
+class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
+	...
+  @override
+  void initState() {
+    super.initState();
+    // 添加观察者
+    WidgetsBinding.instance.addObserver(this);
+  }
+  
+  @override
+  void dispose() {
+    // 移除观察者
+    WidgetsBinding.instance.removeObserver(this);
+    super.dispose();
+  }
+}
+
+```
+
+```dart
 @override
 void didChangeAppLifecycleState(AppLifecycleState state) {
   super.didChangeAppLifecycleState(state);

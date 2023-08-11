@@ -334,7 +334,7 @@ docker create --name CONTAINER IMAGE
 docker delete <IMAGE NAME>
 ```
 
-## 查看容器日志
+# 查看容器日志
 
 ```bash
 docker logs [OPTIONS] CONTAINER

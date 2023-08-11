@@ -167,8 +167,20 @@ android:targetClass="net.touchcapture.qr.flutterqrexample"
 
 ## `type 'List<dynamic>' is not a subtype of type 'List<Map<String, dynamic>>'`
 
+假定 `data` 的类型为 `List<dynamic>`
+
 ```dart
 (data as List).cast<Map>()
 ```
 
 - [reddit](https://www.reddit.com/r/dartlang/comments/zllptq/comment/j067mp7/?utm_source=share&utm_medium=web2x&context=3)
+
+# `Don't use 'BuildContext's across async gaps. Try rewriting the code to not reference the 'BuildContext'`
+
+使用前利用 `context.mounted` 判断:
+
+```dart
+if(context.mounted) {
+	...
+}
+```

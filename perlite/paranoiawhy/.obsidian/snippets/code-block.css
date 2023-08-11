@@ -1,0 +1,60 @@
+.markdown-rendered pre {
+    box-sizing: border-box;
+    padding-left: 3.8em !important;
+    padding-top: 1.5em !important;
+  }
+  
+  .markdown-rendered pre code {
+    padding: 0 !important;
+  }
+  
+  .markdown-rendered pre,
+  .markdown-rendered pre code {
+    white-space: pre !important;
+    word-spacing: normal !important;
+    word-break: normal !important;
+    word-wrap: normal !important;
+  }
+  
+  .markdown-rendered pre:hover .copy-span {
+    opacity: 1 !important;
+  }
+  
+  .markdown-rendered pre .copy-span {
+    transition: all 0.3s ease-in-out;
+    position: absolute;
+    top: 0.3em;
+    right: 0.3em;
+    padding: 0 0.5em;
+    cursor: pointer;
+    border-radius: 0.5em;
+    /* color: red; */
+    color: var(--text-accent);
+    background-color: rgba(224, 224, 224, 0.2);
+    box-shadow: 0 2px 0 0 rgb(0 0 0 / 20%);
+    opacity: 0;
+    z-index: 99999999;
+    user-select: none;
+    font-family: var(--font-monospace);
+  }
+  
+  .markdown-rendered pre .line-numbers-span {
+    position: absolute;
+    top: 1.5em;
+    left: 0;
+    width: 3em;
+    border-right: 2px solid #999;
+    color: red;
+    user-select: none;
+    /* https://colobu.com/2018/05/15/Stop-and-remove-all-docker-containers-and-images/ */
+    border-image-source: linear-gradient(to bottom, #49c895, #26c6da);
+    border-image-slice: 1;
+    text-align: center;
+    font-family: var(--font-monospace);
+    font-size: var(--code-size);
+    line-height: var(--line-height-normal);
+  }
+  
+  .markdown-rendered pre .line-numbers-span br{
+    user-select: none;
+  }

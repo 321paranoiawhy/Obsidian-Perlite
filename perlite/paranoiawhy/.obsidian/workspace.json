@@ -8,18 +8,61 @@
         "type": "tabs",
         "children": [
           {
-            "id": "14c0d28f906210c3",
+            "id": "53236b619fa45c25",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "重学系列/Flutter/Flutter 千问.md",
+                "mode": "source",
+                "source": false
+              },
+              "pinned": true
+            }
+          },
+          {
+            "id": "d346f4a425f50889",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "重学系列/Flutter/状态管理/EventBus 最简实现.md",
+                "mode": "source",
+                "source": false
+              },
+              "pinned": true
+            }
+          },
+          {
+            "id": "1ef2edfecc1886c6",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "重学系列/Flutter/basic/Symbol.md",
+                "mode": "source",
+                "source": false
+              },
+              "pinned": true
+            }
+          },
+          {
+            "id": "80f3de5ff560b82e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "重学系列/Flutter/特殊组件.md",
+                "file": "重学系列/Flutter/Flutter 千问.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
+        "currentTab": 3,
         "stacked": true
       }
     ],
@@ -49,7 +92,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "didPopNext",
+                "query": "toInt",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -86,7 +129,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 287.5
+    "width": 355.5
   },
   "right": {
     "id": "7a9fc6cd0a259c7e",
@@ -102,7 +145,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "重学系列/Flutter/特殊组件.md",
+                "file": "重学系列/Flutter/Flutter 千问.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -119,7 +162,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "重学系列/Flutter/特殊组件.md",
+                "file": "重学系列/Flutter/Flutter 千问.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -142,7 +185,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "重学系列/Flutter/特殊组件.md"
+                "file": "重学系列/Flutter/Flutter 千问.md"
               }
             }
           },
@@ -167,7 +210,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 211.5
+    "width": 320.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -184,44 +227,44 @@
       "markdown-table-editor:Open Markdown Table Editor": false
     }
   },
-  "active": "14c0d28f906210c3",
+  "active": "80f3de5ff560b82e",
   "lastOpenFiles": [
-    "重学系列/Flutter/状态管理.md",
-    "Flutter & Dart/Flutter/路由/路由管理.md",
+    "Flutter & Dart/Flutter/Code Segment.md",
+    "Flutter & Dart/Dart/All about Types in dart.md",
+    "重学系列/Flutter/basic/All about Types in dart.md",
+    "Flutter & Dart/Dart/All about the question mark in dart.md",
+    "重学系列/Flutter/basic/All about the question mark in dart.md",
+    "Flutter & Dart/Dart/类型转换.md",
+    "重学系列/Flutter/basic/类型转换.md",
+    "Flutter & Dart/Flutter/路由.md",
+    "Flutter & Dart/Flutter/内存泄漏.md",
+    "Flutter & Dart/Flutter/配置.md",
+    "Flutter & Dart/Flutter/屏幕.md",
+    "Flutter & Dart/Flutter/注解.md",
     "Flutter & Dart/Flutter/All about build in flutter.md",
-    "重学系列/Flutter/登录注册实现方式.md",
-    "重学系列/Flutter/SSE.md",
-    "重学系列/Flutter/Singleton 单例模式.md",
-    "重学系列/Flutter/shared_preferences.md",
-    "Tools/Git.md",
+    "Flutter & Dart/Flutter/All about Key in Flutter.md",
+    "重学系列/Flutter/basic/Symbol.md",
     "Flutter & Dart/Flutter/回调函数.md",
+    "Flutter & Dart/Enum.md",
+    "重学系列/Flutter/basic/Enum.md",
+    "重学系列/Flutter/Flutter 千问.md",
+    "重学系列/Flutter/状态管理/EventBus 最简实现.md",
+    "重学系列/Flutter/basic",
+    "重学系列/Flutter/工具.md",
+    "重学系列/Flutter/utils/debounce.md",
+    "重学系列/Flutter/utils",
     "重学系列/Flutter/特殊组件.md",
-    "重学系列/Vue 2.md",
-    "重学系列/CSS/Scroll-Driven.md",
-    "重学系列/CSS/Observer.md",
+    "重学系列/Flutter/路由动画.md",
+    "Flutter & Dart/Flutter/Widgets/TextField.md",
+    "重学系列/Flutter/状态管理/Provider 最简实现.md",
+    "重学系列/Flutter/状态管理",
+    "重学系列/JavaScript",
     "重学系列/CSS",
-    "重学系列/Flutter/点击事件.md",
-    "PowerShell/PowerShell 初探.md",
-    "Flutter & Dart/Flutter/监听 Widget 变化.md",
-    "重学系列/Flutter/动画效果.md",
-    "Vue/样式穿透.md",
-    "CSS/Scrollbar.md",
-    "Flutter & Dart/Flutter/Widgets/WillPopScope.md",
     "Flutter & Dart/Flutter/路由",
-    "You Do Not Know Algorithms/Shuffle.md",
-    "重学系列/Flutter/Loading 动画.md",
-    "Flutter & Dart/Flutter/Snippets.md",
-    "重学系列/Flutter/setState 探秘.md",
-    "重学系列/Flutter/父组件调用子组件方法.md",
-    "手写系列/JavaScript/函数式编程.md",
     "重学系列/Flutter",
     "重学系列",
     "Flutter & Dart/Flutter/Design Patterns",
     "错误处理",
-    "手写系列/JavaScript",
-    "手写系列",
-    "Backend/Python",
-    "Backend",
     "Attachments/google oauth.png",
     "Attachments/Generating a token in SonarQube.png",
     "Attachments/SonarQube Scanner Jenkins Plugin Installation.png",

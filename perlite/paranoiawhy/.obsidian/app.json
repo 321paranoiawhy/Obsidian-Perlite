@@ -1,10 +1,7 @@
 {
   "showLineNumber": true,
   "spellcheck": false,
-  "spellcheckLanguages": [
-    "zh-CN",
-    "en-US"
-  ],
+  "spellcheckLanguages": null,
   "trashOption": "local",
   "alwaysUpdateLinks": true,
   "attachmentFolderPath": "Attachments",

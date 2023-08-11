@@ -11,3 +11,7 @@
   content: counters(section, ".") ".";
   margin-right: 5px;
 }
+
+.view-header-title {
+  overflow: unset !important;
+}

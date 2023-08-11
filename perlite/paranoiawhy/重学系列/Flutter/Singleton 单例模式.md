@@ -9,3 +9,7 @@ class Singleton {
   static late final Singleton _instance = Singleton._internal();
 }
 ```
+
+# 使用 get_it 插件
+
+- [get_it](https://pub.dev/packages/get_it)

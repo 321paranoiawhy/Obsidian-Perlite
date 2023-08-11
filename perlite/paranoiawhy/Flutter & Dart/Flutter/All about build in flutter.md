@@ -18,6 +18,12 @@ flutter build apk
 > [!important] 构建完成的 `APK` 路径
 > build\app\outputs\flutter-apk\app-release.apk
 
+`--no-tree-shake-icons`:
+
+```bash
+flutter build apk --no-tree-shake-icons
+```
+
 ## 上架
 
 ```bash
@@ -77,10 +83,14 @@ flutter devices
 
 观察到 `Chrome/Server` 即表明支持 `Web`。
 
-可通过如下命令开启 `Web`:
+可通过如下命令开启和关闭 `Web`:
 
 ```bash
+# 开启 web 支持
 flutter config --enable-web
+
+# 关闭 web 支持
+flutter config --no-enable-web
 ```
 
 运行:

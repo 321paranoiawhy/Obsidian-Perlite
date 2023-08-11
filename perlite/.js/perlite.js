@@ -199,25 +199,15 @@ function getContent(str, home = false, popHover = false) {
                 level = parseInt(openLevel);
 
                 var anchor = titleText.replace(/ /g, "_");
+                
+                if(anchor.includes('<code>') && anchor.includes('</code>')) {
+                  anchor = anchor.replaceAll('<code>','').replaceAll('</code>','');
+                }
                 // toc += '<div class="tree-item-self is-clickable"><a href="#' + anchor + '">' + titleText
                 //   + '</a></div>';
                 toc += `<a href="#${anchor}"><div class="tree-item-self is-clickable">${titleText}</div></a>`;
 
                 return `<h${openLevel}><a name=${anchor}></a>${titleText}<button data-tip='¶' data-href=${anchor}></button></h${closeLevel}>`;
-
-                return (
-                  "<h" +
-                  openLevel +
-                  "><a name='" +
-                  anchor +
-                  "' >" +
-                  "" +
-                  "</a>" +
-                  titleText + "<button data-tip='¶' " + "data-href=" + anchor + ">" + "</button>"+
-                  "</h" +
-                  closeLevel +
-                  ">"
-                );
               }
             );
 
@@ -229,10 +219,18 @@ function getContent(str, home = false, popHover = false) {
 
           const pre = document.querySelectorAll("pre");
           pre.forEach((item) => {
-            item.setAttribute(
-              "data-lang",
-              item.children[0].classList[0].substring(9).toUpperCase()
-            );
+            const code = item.children[0].classList[0];
+            if(code && code.length>=9){
+              item.setAttribute(
+                "data-lang",
+                item.children[0].classList[0].substring(9).toUpperCase()
+              );
+            }
+            // console.log(item.children[0].classList[0]);
+            // item.setAttribute(
+            //   "data-lang",
+            //   item.children[0].classList[0].substring(9).toUpperCase()
+            // );
             addLineNumbers(item);
             copyToClipboard(item);
           });

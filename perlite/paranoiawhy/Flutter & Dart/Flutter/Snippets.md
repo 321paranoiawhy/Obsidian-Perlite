@@ -382,6 +382,22 @@ class NoGlowScrollBehavior extends ScrollBehavior {
 }
 ```
 
+可简写为:
+
+```dart
+class NoGlowScrollBehavior extends ScrollBehavior {
+  const NoGlowScrollBehavior();
+
+  @override
+  Widget buildViewportChrome(
+    BuildContext context,
+    Widget child,
+    AxisDirection axisDirection,
+  ) =>
+      child;
+}
+```
+
 按如下方式**局部调用**:
 
 ```dart
@@ -436,7 +452,7 @@ NotificationListener<OverscrollIndicatorNotification>(
 - [Flutter 禁用水波纹](https://blog.bombox.org/2020-06-12/flutter-disable-ripple/)
 
 ```dart
-class NoInteractiveInkFeatureFactory extends InteractiveInkFeatureFactory {
+class NoSplashFactory extends InteractiveInkFeatureFactory {
   @override
   InteractiveInkFeature create({
     required MaterialInkController controller,
@@ -477,7 +493,7 @@ class _NoInteractiveInkFeature extends InteractiveInkFeature {
 
 ```dart
 ThemeData(
-	splashFactory: NoInteractiveInkFeatureFactory(),
+	splashFactory: NoSplashFactory(),
 	// 按钮点击时的高亮颜色
 	highlightColor: Colors.transparent,
 	// 按钮点击后不松手的水波纹扩散颜色

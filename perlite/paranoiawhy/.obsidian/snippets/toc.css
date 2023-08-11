@@ -1,0 +1,17 @@
+#toc .tree-item-children {
+  /* Creates a new instance of the section counter with each element */
+  counter-reset: section;
+  list-style-type: none;
+}
+
+#toc .tree-item .tree-item-self::before {
+  /* Increments only this instance of the section counter */
+  counter-increment: section;
+  /* Combines the values of all instances of the section counter, separated by a period */
+  content: counters(section, ".") ".";
+  margin-right: 5px;
+}
+
+.view-header-title {
+  overflow: none !important;
+}
