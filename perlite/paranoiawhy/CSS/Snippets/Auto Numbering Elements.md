@@ -1,7 +1,3 @@
----
-tags: [CSS, Snippets]
----
-
 # Heading
 
 [[Sticky Footers]]

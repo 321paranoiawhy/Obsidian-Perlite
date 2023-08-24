@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "重学系列/Flutter/utils/shared_preferences.md",
+                "file": "CSS/Snippets/Auto Numbering Elements.md",
                 "mode": "source",
                 "source": false
               }
@@ -102,7 +102,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "重学系列/Flutter/utils/shared_preferences.md",
+                "file": "CSS/Snippets/Auto Numbering Elements.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -119,7 +119,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "重学系列/Flutter/utils/shared_preferences.md",
+                "file": "CSS/Snippets/Auto Numbering Elements.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -142,7 +142,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "重学系列/Flutter/utils/shared_preferences.md"
+                "file": "CSS/Snippets/Auto Numbering Elements.md"
               }
             }
           },
@@ -184,8 +184,9 @@
       "markdown-table-editor:Open Markdown Table Editor": false
     }
   },
-  "active": "830573838b840347",
+  "active": "249cd53367e62280",
   "lastOpenFiles": [
+    "重学系列/Flutter/utils/shared_preferences.md",
     "重学系列/Flutter/设计模式",
     "重学系列/Flutter/basic/setState 探秘.md",
     "重学系列/Flutter/basic/点击事件.md",
@@ -221,7 +222,6 @@
     "重学系列/Flutter/状态管理",
     "重学系列/JavaScript",
     "重学系列/CSS",
-    "Flutter & Dart/Flutter/路由",
     "Attachments/google oauth.png",
     "Attachments/Generating a token in SonarQube.png",
     "Attachments/SonarQube Scanner Jenkins Plugin Installation.png",

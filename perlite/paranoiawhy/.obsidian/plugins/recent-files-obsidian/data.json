@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "Auto Numbering Elements",
+      "path": "CSS/Snippets/Auto Numbering Elements.md"
+    },
+    {
       "basename": "shared_preferences",
       "path": "重学系列/Flutter/utils/shared_preferences.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "document & window 事件",
       "path": "JavaScript/document & window 事件.md"
-    },
-    {
-      "basename": "各种 width 和 height",
-      "path": "JavaScript/各种 width 和 height.md"
     }
   ],
   "omittedPaths": [],
