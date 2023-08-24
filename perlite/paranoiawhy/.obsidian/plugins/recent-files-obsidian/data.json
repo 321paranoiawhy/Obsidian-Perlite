@@ -1,6 +1,14 @@
 {
   "recentFiles": [
     {
+      "basename": "Getting Started",
+      "path": "Docker/Getting Started.md"
+    },
+    {
+      "basename": "Flutter 千问",
+      "path": "重学系列/Flutter/Flutter 千问.md"
+    },
+    {
       "basename": "Auto Numbering Elements",
       "path": "CSS/Snippets/Auto Numbering Elements.md"
     },
@@ -19,10 +27,6 @@
     {
       "basename": "状态管理",
       "path": "重学系列/Flutter/状态管理/状态管理.md"
-    },
-    {
-      "basename": "Flutter 千问",
-      "path": "重学系列/Flutter/Flutter 千问.md"
     },
     {
       "basename": "Symbol",
@@ -183,10 +187,6 @@
     {
       "basename": "模拟器调试",
       "path": "Flutter & Dart/Flutter/Debug/模拟器调试.md"
-    },
-    {
-      "basename": "Getting Started",
-      "path": "Docker/Getting Started.md"
     },
     {
       "basename": "backend",

@@ -10,6 +10,38 @@ docker-compose up -d
 docker-compose --file docker-compose-dev.yml up -d
 ```
 
+服务器安装 `Docker`:
+
+```bash
+sudo wget -qO- https://get.docker.com/ | bash
+```
+
+启动 `Docker` 并设置为开机自启:
+
+```bash
+systemctl start docker
+```
+
+拉取 `paranoiawhy/obsidian-frontend` 和 `paranoiawhy/obsidian-backend` 镜像:
+
+```bash
+docker pull paranoiawhy/obsidian-frontend:latest
+docker pull paranoiawhy/obsidian-backend:latest
+```
+
+运行容器:
+
+```bash
+docker run -itd paranoiawhy/obsidian-frontend
+docker run -itd paranoiawhy/obsidian-backend
+```
+
+查看运行中的容器:
+
+```bash
+docker container ls
+```
+
 # Thanks to
 
 - [Persite - GitHub](https://github.com/secure-77/Perlite)

@@ -20,8 +20,8 @@ services:
     image: sec77/perlite_web:stable
     container_name: obsidian_web_dev
     ports:
-      # - 80:80
-      - 1234:1234
+      - 80:80
+      # - 1234:1234
     volumes:
       - ./perlite:/var/www/perlite
       - ./perlite/Demo:/var/www/perlite/Demo:ro

@@ -10,10 +10,24 @@
           {
             "id": "249cd53367e62280",
             "type": "leaf",
+            "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CSS/Snippets/Auto Numbering Elements.md",
+                "file": "Docker/Getting Started.md",
+                "mode": "source",
+                "source": false
+              },
+              "pinned": true
+            }
+          },
+          {
+            "id": "93303bd9913868ee",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "重学系列/Flutter/Flutter 千问.md",
                 "mode": "source",
                 "source": false
               }
@@ -49,7 +63,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "formato",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -82,7 +96,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -102,7 +117,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CSS/Snippets/Auto Numbering Elements.md",
+                "file": "Docker/Getting Started.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -119,7 +134,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CSS/Snippets/Auto Numbering Elements.md",
+                "file": "Docker/Getting Started.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -142,7 +157,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CSS/Snippets/Auto Numbering Elements.md"
+                "file": "Docker/Getting Started.md"
               }
             }
           },
@@ -186,13 +201,15 @@
   },
   "active": "249cd53367e62280",
   "lastOpenFiles": [
+    "重学系列/Flutter/Flutter 千问.md",
+    "Docker/Getting Started.md",
+    "CSS/Snippets/Auto Numbering Elements.md",
     "重学系列/Flutter/utils/shared_preferences.md",
     "重学系列/Flutter/设计模式",
     "重学系列/Flutter/basic/setState 探秘.md",
     "重学系列/Flutter/basic/点击事件.md",
     "重学系列/Flutter/状态管理/状态管理.md",
     "重学系列/Flutter/路由",
-    "重学系列/Flutter/Flutter 千问.md",
     "重学系列/Flutter/basic/Symbol.md",
     "Tools/Git 常用命令.md",
     "重学系列/Flutter/advanced/CustomPainter.md",
@@ -215,8 +232,6 @@
     "重学系列/Vue/Vue 2.md",
     "重学系列/Flutter/advanced",
     "重学系列/Vue",
-    "重学系列/Flutter/advanced/SSE.md",
-    "Flutter & Dart/Server Sent Events (SSE).md",
     "重学系列/Flutter/basic",
     "重学系列/Flutter/utils",
     "重学系列/Flutter/状态管理",
