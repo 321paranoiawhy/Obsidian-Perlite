@@ -26,14 +26,17 @@ systemctl start docker
 
 ```bash
 docker pull paranoiawhy/obsidian-frontend:latest
+
 docker pull paranoiawhy/obsidian-backend:latest
 ```
 
 运行容器:
 
 ```bash
-docker run -itd paranoiawhy/obsidian-frontend
-docker run -itd paranoiawhy/obsidian-backend
+docker run --name obsidian-frontend -itd  -p 1234:1234 paranoiawhy/obsidian-frontend
+
+# docker run --name perlite -itd -p 9000:9000 paranoiawhy/obsidian-backend
+docker run --name obsidian-backend -itd -p 9000:9000 paranoiawhy/obsidian-backend
 ```
 
 查看运行中的容器:
