@@ -31,8 +31,6 @@ setState(() {
 );
 ```
 
-
-
 ## 空 setState
 
 ```dart

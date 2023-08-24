@@ -276,3 +276,67 @@ class GetImageInfo extends StatelessWidget {
 ```
 
 - [how-do-i-determine-the-width-and-height-of-an-image-in-flutter - stackoverflow](https://stackoverflow.com/questions/44665955/how-do-i-determine-the-width-and-height-of-an-image-in-flutter)
+
+## 可选链
+
+`...?`
+
+```dart
+final List? list = null;
+
+// 如果 list 为 null, newList 则为空数组
+// 否则, newList 为 list 的浅复制
+final newList = [...?list];
+```
+
+`?.`:
+
+```dart
+context.size?.width;
+```
+
+`?[]`:
+
+```dart
+final List? list = null;
+
+print(list?[0]);
+```
+
+## 在 build 方法里条件
+
+`if...else`:
+
+```dart
+if(true)
+	SizedBox(width: 10, height: 10)
+else
+	SizedBox(width: 20, height: 20)
+```
+
+三元运算符:
+
+```dart
+true ? SizedBox(width: 10, height: 10)
+```
+
+## VS Code
+
+### 设置自动保存并格式化
+
+- [Is there a way to auto-format flutter with vscode?](https://stackoverflow.com/a/67472237)
+
+`.vscode/settings.json`:
+
+```json
+{
+  // 保存自动格式化代码
+  "editor.formatOnSave": true,
+  // 配置 Tab 空格数
+  "editor.tabSize": 2,
+  "[dart]": {
+    "editor.defaultFormatter": "Dart-Code.dart-code",
+    "editor.formatOnSave": true
+  }
+}
+```

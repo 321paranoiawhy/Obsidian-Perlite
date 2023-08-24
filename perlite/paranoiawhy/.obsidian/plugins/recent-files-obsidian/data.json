@@ -1,28 +1,112 @@
 {
   "recentFiles": [
     {
+      "basename": "shared_preferences",
+      "path": "重学系列/Flutter/utils/shared_preferences.md"
+    },
+    {
+      "basename": "setState 探秘",
+      "path": "重学系列/Flutter/basic/setState 探秘.md"
+    },
+    {
+      "basename": "点击事件",
+      "path": "重学系列/Flutter/basic/点击事件.md"
+    },
+    {
+      "basename": "状态管理",
+      "path": "重学系列/Flutter/状态管理/状态管理.md"
+    },
+    {
       "basename": "Flutter 千问",
       "path": "重学系列/Flutter/Flutter 千问.md"
     },
     {
-      "basename": "Code Segment",
-      "path": "Flutter & Dart/Flutter/Code Segment.md"
+      "basename": "Symbol",
+      "path": "重学系列/Flutter/basic/Symbol.md"
     },
     {
-      "basename": "路由",
-      "path": "Flutter & Dart/Flutter/路由.md"
+      "basename": "Git 常用命令",
+      "path": "Tools/Git 常用命令.md"
     },
     {
-      "basename": "内存泄漏",
-      "path": "Flutter & Dart/Flutter/内存泄漏.md"
+      "basename": "CustomPainter",
+      "path": "重学系列/Flutter/advanced/CustomPainter.md"
+    },
+    {
+      "basename": "Loading 动画",
+      "path": "重学系列/Flutter/basic/Loading 动画.md"
     },
     {
       "basename": "配置",
       "path": "Flutter & Dart/Flutter/配置.md"
     },
     {
+      "basename": "配置",
+      "path": "重学系列/Nuxt/配置.md"
+    },
+    {
+      "basename": "打包",
+      "path": "重学系列/Nuxt/打包.md"
+    },
+    {
+      "basename": "JAVA",
+      "path": "Docker/Pre-Denpendency/JAVA.md"
+    },
+    {
+      "basename": "TransitionGroup",
+      "path": "重学系列/Vue/TransitionGroup.md"
+    },
+    {
+      "basename": "动画效果",
+      "path": "重学系列/Flutter/basic/动画效果.md"
+    },
+    {
+      "basename": "Packages",
+      "path": "Flutter & Dart/Flutter/Packages/Packages.md"
+    },
+    {
+      "basename": "路由",
+      "path": "Flutter & Dart/Flutter/路由.md"
+    },
+    {
+      "basename": "路由动画",
+      "path": "重学系列/Flutter/路由/路由动画.md"
+    },
+    {
       "basename": "屏幕",
       "path": "Flutter & Dart/Flutter/屏幕.md"
+    },
+    {
+      "basename": "EventBus 最简实现",
+      "path": "重学系列/Flutter/状态管理/EventBus 最简实现.md"
+    },
+    {
+      "basename": "特殊组件",
+      "path": "重学系列/Flutter/basic/特殊组件.md"
+    },
+    {
+      "basename": "工具网站",
+      "path": "重学系列/工具网站.md"
+    },
+    {
+      "basename": "Vue 千问",
+      "path": "重学系列/Vue/Vue 千问.md"
+    },
+    {
+      "basename": "Vue 2",
+      "path": "重学系列/Vue/Vue 2.md"
+    },
+    {
+      "basename": "SSE",
+      "path": "重学系列/Flutter/advanced/SSE.md"
+    },
+    {
+      "basename": "Code Segment",
+      "path": "Flutter & Dart/Flutter/Code Segment.md"
+    },
+    {
+      "basename": "内存泄漏",
+      "path": "Flutter & Dart/Flutter/内存泄漏.md"
     },
     {
       "basename": "注解",
@@ -37,32 +121,16 @@
       "path": "Flutter & Dart/Flutter/All about Key in Flutter.md"
     },
     {
-      "basename": "Symbol",
-      "path": "重学系列/Flutter/basic/Symbol.md"
-    },
-    {
       "basename": "回调函数",
       "path": "Flutter & Dart/Flutter/回调函数.md"
     },
     {
-      "basename": "EventBus 最简实现",
-      "path": "重学系列/Flutter/状态管理/EventBus 最简实现.md"
-    },
-    {
       "basename": "工具",
-      "path": "重学系列/Flutter/工具.md"
+      "path": "重学系列/Flutter/utils/工具.md"
     },
     {
       "basename": "debounce",
       "path": "重学系列/Flutter/utils/debounce.md"
-    },
-    {
-      "basename": "特殊组件",
-      "path": "重学系列/Flutter/特殊组件.md"
-    },
-    {
-      "basename": "路由动画",
-      "path": "重学系列/Flutter/路由动画.md"
     },
     {
       "basename": "TextField",
@@ -73,32 +141,24 @@
       "path": "重学系列/Flutter/状态管理/Provider 最简实现.md"
     },
     {
-      "basename": "index",
-      "path": "Flutter & Dart/Flutter/Packages/index.md"
-    },
-    {
       "basename": "CI & CD",
       "path": "Flutter & Dart/Flutter/CI & CD.md"
     },
     {
       "basename": "Singleton 单例模式",
-      "path": "重学系列/Flutter/Singleton 单例模式.md"
+      "path": "重学系列/Flutter/设计模式/Singleton 单例模式.md"
     },
     {
       "basename": "父组件调用子组件方法",
-      "path": "重学系列/Flutter/父组件调用子组件方法.md"
+      "path": "重学系列/Flutter/basic/父组件调用子组件方法.md"
     },
     {
       "basename": "开发准则",
-      "path": "重学系列/Flutter/开发准则.md"
+      "path": "重学系列/Flutter/basic/开发准则.md"
     },
     {
       "basename": "适配",
       "path": "重学系列/JavaScript/适配.md"
-    },
-    {
-      "basename": "Git 常用命令",
-      "path": "Tools/Git 常用命令.md"
     },
     {
       "basename": "note",
@@ -114,7 +174,7 @@
     },
     {
       "basename": "Dart 3.0",
-      "path": "重学系列/Flutter/Dart 3.0.md"
+      "path": "重学系列/Flutter/advanced/Dart 3.0.md"
     },
     {
       "basename": "模拟器调试",
@@ -139,62 +199,6 @@
     {
       "basename": "各种 width 和 height",
       "path": "JavaScript/各种 width 和 height.md"
-    },
-    {
-      "basename": "路由管理",
-      "path": "Flutter & Dart/Flutter/路由/路由管理.md"
-    },
-    {
-      "basename": "content 属性妙用",
-      "path": "CSS/content 属性妙用.md"
-    },
-    {
-      "basename": "状态管理",
-      "path": "重学系列/Flutter/状态管理.md"
-    },
-    {
-      "basename": "Collapse",
-      "path": "CSS/Snippets/Collapse.md"
-    },
-    {
-      "basename": "Sticky Footers",
-      "path": "CSS/Snippets/Sticky Footers.md"
-    },
-    {
-      "basename": "Ribbon",
-      "path": "CSS/Snippets/Ribbon.md"
-    },
-    {
-      "basename": "Lazy Loading",
-      "path": "CSS/Snippets/Lazy Loading.md"
-    },
-    {
-      "basename": "Auto Numbering Elements",
-      "path": "CSS/Snippets/Auto Numbering Elements.md"
-    },
-    {
-      "basename": "docker logs",
-      "path": "Docker/Docker Commands/docker logs.md"
-    },
-    {
-      "basename": "docker inspect",
-      "path": "Docker/Docker Commands/docker inspect.md"
-    },
-    {
-      "basename": "Observer",
-      "path": "重学系列/CSS/Observer.md"
-    },
-    {
-      "basename": "Scroll-Driven",
-      "path": "重学系列/CSS/Scroll-Driven.md"
-    },
-    {
-      "basename": "README",
-      "path": "README.md"
-    },
-    {
-      "basename": "登录注册实现方式",
-      "path": "重学系列/Flutter/登录注册实现方式.md"
     }
   ],
   "omittedPaths": [],
