@@ -1,6 +1,14 @@
 {
   "recentFiles": [
     {
+      "basename": "父组件调用子组件方法",
+      "path": "重学系列/Flutter/basic/父组件调用子组件方法.md"
+    },
+    {
+      "basename": "可视化工具",
+      "path": "k8s/可视化工具.md"
+    },
+    {
       "basename": "Getting Started",
       "path": "Docker/Getting Started.md"
     },
@@ -157,10 +165,6 @@
       "path": "重学系列/Flutter/设计模式/Singleton 单例模式.md"
     },
     {
-      "basename": "父组件调用子组件方法",
-      "path": "重学系列/Flutter/basic/父组件调用子组件方法.md"
-    },
-    {
       "basename": "开发准则",
       "path": "重学系列/Flutter/basic/开发准则.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "腾讯云服务器",
       "path": "Publish/腾讯云服务器.md"
-    },
-    {
-      "basename": "document & window 事件",
-      "path": "JavaScript/document & window 事件.md"
     }
   ],
   "omittedPaths": [],

@@ -22,6 +22,22 @@ sudo wget -qO- https://get.docker.com/ | bash
 systemctl start docker
 ```
 
+服务器安装 `Docker-Compose`:
+
+```bash
+# 下载 1.24.1 版本
+sudo curl -L "https://github.com/docker/compose/releases/download/1.24.1/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+
+# 将可执行权限应用于二进制文件
+sudo chmod +x /usr/local/bin/docker-compose
+
+# 创建软链
+sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
+
+# 查看版本
+docker-compose --version
+```
+
 拉取 `paranoiawhy/obsidian-frontend` 和 `paranoiawhy/obsidian-backend` 镜像:
 
 ```bash

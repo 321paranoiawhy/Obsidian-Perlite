@@ -27,13 +27,14 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "重学系列/Flutter/Flutter 千问.md",
+                "file": "重学系列/Flutter/basic/父组件调用子组件方法.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
+        "currentTab": 1,
         "stacked": true
       }
     ],
@@ -63,7 +64,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "formato",
+                "query": "父组件",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -117,7 +118,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Docker/Getting Started.md",
+                "file": "重学系列/Flutter/basic/父组件调用子组件方法.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -134,7 +135,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Docker/Getting Started.md",
+                "file": "重学系列/Flutter/basic/父组件调用子组件方法.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -157,7 +158,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Docker/Getting Started.md"
+                "file": "重学系列/Flutter/basic/父组件调用子组件方法.md"
               }
             }
           },
@@ -199,10 +200,11 @@
       "markdown-table-editor:Open Markdown Table Editor": false
     }
   },
-  "active": "249cd53367e62280",
+  "active": "93303bd9913868ee",
   "lastOpenFiles": [
-    "重学系列/Flutter/Flutter 千问.md",
+    "k8s/可视化工具.md",
     "Docker/Getting Started.md",
+    "重学系列/Flutter/Flutter 千问.md",
     "CSS/Snippets/Auto Numbering Elements.md",
     "重学系列/Flutter/utils/shared_preferences.md",
     "重学系列/Flutter/设计模式",
@@ -229,7 +231,6 @@
     "重学系列/Flutter/basic/特殊组件.md",
     "重学系列/工具网站.md",
     "重学系列/Vue/Vue 千问.md",
-    "重学系列/Vue/Vue 2.md",
     "重学系列/Flutter/advanced",
     "重学系列/Vue",
     "重学系列/Flutter/basic",
