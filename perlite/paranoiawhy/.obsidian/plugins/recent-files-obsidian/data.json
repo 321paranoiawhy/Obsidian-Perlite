@@ -1,20 +1,92 @@
 {
   "recentFiles": [
     {
-      "basename": "父组件调用子组件方法",
-      "path": "重学系列/Flutter/basic/父组件调用子组件方法.md"
+      "basename": "基本操作",
+      "path": "重学系列/Unity/基本操作.md"
     },
     {
-      "basename": "可视化工具",
-      "path": "k8s/可视化工具.md"
+      "basename": "List",
+      "path": "重学系列/Flutter/basic/collections/List.md"
+    },
+    {
+      "basename": "屏幕",
+      "path": "Flutter & Dart/Flutter/屏幕.md"
+    },
+    {
+      "basename": "入门",
+      "path": "重学系列/C Sharp/入门.md"
+    },
+    {
+      "basename": "异常",
+      "path": "重学系列/Flutter/advanced/异常.md"
+    },
+    {
+      "basename": "mixin",
+      "path": "重学系列/Flutter/advanced/mixin.md"
+    },
+    {
+      "basename": "extension",
+      "path": "重学系列/Flutter/advanced/extension.md"
+    },
+    {
+      "basename": "类型转换",
+      "path": "重学系列/Flutter/basic/类型转换.md"
+    },
+    {
+      "basename": "Shuffle",
+      "path": "You Do Not Know Algorithms/Shuffle.md"
+    },
+    {
+      "basename": "Flutter 千问",
+      "path": "重学系列/Flutter/Flutter 千问.md"
+    },
+    {
+      "basename": "动画效果",
+      "path": "重学系列/CSS/动画效果.md"
+    },
+    {
+      "basename": "工具网站",
+      "path": "重学系列/工具网站.md"
+    },
+    {
+      "basename": "工具网站",
+      "path": "重学系列/设计模式/工具网站.md"
+    },
+    {
+      "basename": "Git 常用命令",
+      "path": "Tools/Git 常用命令.md"
+    },
+    {
+      "basename": "插件",
+      "path": "重学系列/Flutter/状态管理/插件.md"
+    },
+    {
+      "basename": "状态管理",
+      "path": "重学系列/Flutter/状态管理/状态管理.md"
+    },
+    {
+      "basename": "easy_debounce",
+      "path": "重学系列/Flutter/插件/easy_debounce.md"
+    },
+    {
+      "basename": "flutter_launcher_icons",
+      "path": "重学系列/Flutter/插件/flutter_launcher_icons.md"
     },
     {
       "basename": "Getting Started",
       "path": "Docker/Getting Started.md"
     },
     {
-      "basename": "Flutter 千问",
-      "path": "重学系列/Flutter/Flutter 千问.md"
+      "basename": "Snippets",
+      "path": "Flutter & Dart/Flutter/Snippets.md"
+    },
+    {
+      "basename": "父组件调用子组件方法",
+      "path": "重学系列/Flutter/basic/父组件调用子组件方法.md"
+    },
+    {
+      "basename": "可视化工具",
+      "path": "k8s/可视化工具.md"
     },
     {
       "basename": "Auto Numbering Elements",
@@ -33,16 +105,8 @@
       "path": "重学系列/Flutter/basic/点击事件.md"
     },
     {
-      "basename": "状态管理",
-      "path": "重学系列/Flutter/状态管理/状态管理.md"
-    },
-    {
       "basename": "Symbol",
       "path": "重学系列/Flutter/basic/Symbol.md"
-    },
-    {
-      "basename": "Git 常用命令",
-      "path": "Tools/Git 常用命令.md"
     },
     {
       "basename": "CustomPainter",
@@ -89,20 +153,12 @@
       "path": "重学系列/Flutter/路由/路由动画.md"
     },
     {
-      "basename": "屏幕",
-      "path": "Flutter & Dart/Flutter/屏幕.md"
-    },
-    {
       "basename": "EventBus 最简实现",
       "path": "重学系列/Flutter/状态管理/EventBus 最简实现.md"
     },
     {
       "basename": "特殊组件",
       "path": "重学系列/Flutter/basic/特殊组件.md"
-    },
-    {
-      "basename": "工具网站",
-      "path": "重学系列/工具网站.md"
     },
     {
       "basename": "Vue 千问",
@@ -143,62 +199,6 @@
     {
       "basename": "工具",
       "path": "重学系列/Flutter/utils/工具.md"
-    },
-    {
-      "basename": "debounce",
-      "path": "重学系列/Flutter/utils/debounce.md"
-    },
-    {
-      "basename": "TextField",
-      "path": "Flutter & Dart/Flutter/Widgets/TextField.md"
-    },
-    {
-      "basename": "Provider 最简实现",
-      "path": "重学系列/Flutter/状态管理/Provider 最简实现.md"
-    },
-    {
-      "basename": "CI & CD",
-      "path": "Flutter & Dart/Flutter/CI & CD.md"
-    },
-    {
-      "basename": "Singleton 单例模式",
-      "path": "重学系列/Flutter/设计模式/Singleton 单例模式.md"
-    },
-    {
-      "basename": "开发准则",
-      "path": "重学系列/Flutter/basic/开发准则.md"
-    },
-    {
-      "basename": "适配",
-      "path": "重学系列/JavaScript/适配.md"
-    },
-    {
-      "basename": "note",
-      "path": "Flutter & Dart/Flutter/note.md"
-    },
-    {
-      "basename": "Snippets",
-      "path": "Flutter & Dart/Flutter/Snippets.md"
-    },
-    {
-      "basename": "Lifecycle",
-      "path": "Flutter & Dart/Flutter/Lifecycle.md"
-    },
-    {
-      "basename": "Dart 3.0",
-      "path": "重学系列/Flutter/advanced/Dart 3.0.md"
-    },
-    {
-      "basename": "模拟器调试",
-      "path": "Flutter & Dart/Flutter/Debug/模拟器调试.md"
-    },
-    {
-      "basename": "backend",
-      "path": "Docker/Projects/backend.md"
-    },
-    {
-      "basename": "腾讯云服务器",
-      "path": "Publish/腾讯云服务器.md"
     }
   ],
   "omittedPaths": [],
