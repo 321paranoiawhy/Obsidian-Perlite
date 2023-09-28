@@ -24,17 +24,31 @@
           {
             "id": "891f880013ef487f",
             "type": "leaf",
+            "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
-                "file": "重学系列/Unity/基本操作.md",
+                "file": "重学系列/Unity/Basic.md",
+                "mode": "source",
+                "source": false
+              },
+              "pinned": true
+            }
+          },
+          {
+            "id": "2298a32bfde04b93",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "重学系列/C Sharp/工具网站.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 1,
+        "currentTab": 2,
         "stacked": true
       }
     ],
@@ -64,7 +78,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "横屏",
+                "query": "coco",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -117,7 +131,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "重学系列/Unity/基本操作.md",
+                "file": "重学系列/C Sharp/工具网站.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -134,7 +148,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "重学系列/Unity/基本操作.md",
+                "file": "重学系列/C Sharp/工具网站.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -157,7 +171,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "重学系列/Unity/基本操作.md"
+                "file": "重学系列/C Sharp/工具网站.md"
               }
             }
           },
@@ -199,44 +213,44 @@
       "markdown-table-editor:Open Markdown Table Editor": false
     }
   },
-  "active": "891f880013ef487f",
+  "active": "2298a32bfde04b93",
   "lastOpenFiles": [
-    "重学系列/Flutter/basic/collections/List.md",
-    "重学系列/Unity/基本操作.md",
-    "重学系列/Unity",
-    "Flutter & Dart/Flutter/屏幕.md",
+    "重学系列/C Sharp/平台相关.md",
+    "重学系列/C Sharp/打包.md",
+    "重学系列/C Sharp/工具网站.md",
+    "重学系列/C Sharp/常用 api.md",
+    "重学系列/Unity/Basic.md",
+    "重学系列/Unity/Visual Studio.md",
+    "重学系列/C Sharp/Time.md",
+    "重学系列/C Sharp/gitignore.md",
+    "重学系列/C Sharp/CI CD.md",
+    "重学系列/C Sharp/延时操作.md",
     "重学系列/C Sharp/入门.md",
-    "重学系列/Flutter/advanced/异常.md",
-    "重学系列/Flutter/advanced/mixin.md",
-    "重学系列/Flutter/advanced/extension.md",
-    "重学系列/Flutter/basic/类型转换.md",
-    "重学系列/Flutter/advanced/Untitled",
-    "You Do Not Know Algorithms/Shuffle.md",
-    "重学系列/Flutter/basic/collections",
+    "Flutter & Dart/Flutter/All about build in flutter.md",
+    "Flutter & Dart/Flutter/配置.md",
+    "Flutter & Dart/Flutter/Packages/Packages.md",
+    "Flutter & Dart/Flutter/Packages/intl.md",
+    "PowerShell/PowerShell 初探.md",
+    "重学系列/Vue/Composables.md",
+    "重学系列/Flutter/状态管理/登录注册实现方式.md",
+    "重学系列/Vue/define 系列.md",
+    "重学系列/Vue/Vue 千问.md",
+    "重学系列/Flutter/basic/特殊组件.md",
+    "重学系列/CSS/list bullet.md",
+    "Tools/Git 常用命令.md",
+    "重学系列/Flutter/basic/widgets/TextField.md",
     "重学系列/Flutter/Flutter 千问.md",
-    "重学系列/CSS/动画效果.md",
-    "重学系列/工具网站.md",
-    "重学系列/设计模式/工具网站.md",
+    "重学系列/Flutter/basic/widgets",
+    "重学系列/Python/文件引用.md",
+    "重学系列/Python",
+    "重学系列/Flutter/性能优化",
+    "重学系列/Unity",
+    "重学系列/Flutter/advanced/Untitled",
+    "重学系列/Flutter/basic/collections",
     "重学系列/设计模式",
     "重学系列/C Sharp",
     "重学系列/Nest",
-    "Tools/Git 常用命令.md",
-    "重学系列/Flutter/状态管理/插件.md",
-    "重学系列/Flutter/状态管理/状态管理.md",
-    "重学系列/Flutter/插件/easy_debounce.md",
-    "重学系列/Flutter/插件/flutter_launcher_icons.md",
     "重学系列/Flutter/插件",
-    "重学系列/Flutter/组件详解",
-    "Docker/Getting Started.md",
-    "Flutter & Dart/Flutter/Snippets.md",
-    "重学系列/Flutter/basic/父组件调用子组件方法.md",
-    "k8s/可视化工具.md",
-    "CSS/Snippets/Auto Numbering Elements.md",
-    "重学系列/Flutter/utils/shared_preferences.md",
-    "重学系列/Flutter/设计模式",
-    "重学系列/Flutter/basic/setState 探秘.md",
-    "重学系列/Flutter/basic/点击事件.md",
-    "重学系列/Flutter/路由",
     "Attachments/google oauth.png",
     "Attachments/Generating a token in SonarQube.png",
     "Attachments/SonarQube Scanner Jenkins Plugin Installation.png",

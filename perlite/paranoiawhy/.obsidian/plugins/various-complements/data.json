@@ -47,158 +47,6 @@
   },
   "showLogAboutPerformanceInConsole": false,
   "selectionHistoryTree": {
-    "revert": {
-      "revert": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1690872119698
-        }
-      }
-    },
-    "status": {
-      "status": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1690872165905
-        }
-      }
-    },
-    "mounted": {
-      "mounted": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1690875002788
-        }
-      }
-    },
-    "configurations": {
-      "configurations": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1691054044771
-        }
-      }
-    },
-    "minLines": {
-      "minLines": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1691484517287
-        }
-      }
-    },
-    "video_player": {
-      "video_player": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1691562604580
-        }
-      }
-    },
-    "TextField": {
-      "TextField": {
-        "currentFile": {
-          "count": 3,
-          "lastUpdated": 1691571227723
-        }
-      }
-    },
-    "StatelessWidget": {
-      "StatelessWidget": {
-        "internalLink": {
-          "count": 1,
-          "lastUpdated": 1691979729462
-        }
-      }
-    },
-    "HorizontalDashedLine": {
-      "HorizontalDashedLine": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1691980922615
-        }
-      }
-    },
-    "Devtools": {
-      "Devtools": {
-        "internalLink": {
-          "count": 2,
-          "lastUpdated": 1691987776108
-        }
-      }
-    },
-    "工具网站": {
-      "工具网站": {
-        "internalLink": {
-          "count": 1,
-          "lastUpdated": 1691987818409
-        }
-      }
-    },
-    "global": {
-      "global": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1692324543143
-        }
-      }
-    },
-    "middleware": {
-      "middleware": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1692325098368
-        }
-      }
-    },
-    "baseURL": {
-      "baseURL": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1692325517624
-        }
-      }
-    },
-    "transitions": {
-      "transitions": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1692329134482
-        }
-      }
-    },
-    "pageTransition": {
-      "pageTransition": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1692329176269
-        }
-      }
-    },
-    "Transition": {
-      "Transition": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1692329580242
-        }
-      }
-    },
-    "layouts": {
-      "layouts": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1692330592383
-        }
-      }
-    },
-    "default": {
-      "default": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1692330595280
-        }
-      }
-    },
     "System": {
       "System": {
         "currentFile": {
@@ -252,6 +100,262 @@
         "currentFile": {
           "count": 1,
           "lastUpdated": 1693534369656
+        }
+      }
+    },
+    "OnEnable": {
+      "OnEnable": {
+        "currentFile": {
+          "count": 2,
+          "lastUpdated": 1693808595752
+        }
+      }
+    },
+    "FixedUpdate": {
+      "FixedUpdate": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1693798285465
+        }
+      }
+    },
+    "Update": {
+      "Update": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1693798293584
+        }
+      }
+    },
+    "LateUpdate": {
+      "LateUpdate": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1693798299080
+        }
+      }
+    },
+    "OnDisable": {
+      "OnDisable": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1693798305560
+        }
+      }
+    },
+    "OnDestroy": {
+      "OnDestroy": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1693798310136
+        }
+      }
+    },
+    "Awake": {
+      "Awake": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1693798325369
+        }
+      }
+    },
+    "Transform": {
+      "Transform": {
+        "currentFile": {
+          "count": 3,
+          "lastUpdated": 1693901138798
+        }
+      }
+    },
+    "GameObject": {
+      "GameObject": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1693820410752
+        }
+      }
+    },
+    "Timestep": {
+      "Timestep": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1693882925501
+        }
+      }
+    },
+    "localScale": {
+      "localScale": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1693902219090
+        }
+      }
+    },
+    "Horizontal": {
+      "Horizontal": {
+        "currentFile": {
+          "count": 2,
+          "lastUpdated": 1693906793147
+        }
+      }
+    },
+    "Vertical": {
+      "Vertical": {
+        "currentFile": {
+          "count": 2,
+          "lastUpdated": 1693906797540
+        }
+      }
+    },
+    "AudioSource": {
+      "AudioSource": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1693988302581
+        }
+      }
+    },
+    "UnityEngine": {
+      "UnityEngine": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1693989619752
+        }
+      }
+    },
+    "Color": {
+      "Color": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1694057065777
+        }
+      }
+    },
+    "Colider": {
+      "Colider": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1694057067736
+        }
+      }
+    },
+    "Component": {
+      "Component": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1694070446297
+        }
+      }
+    },
+    "test_a": {
+      "test_a": {
+        "currentFile": {
+          "count": 3,
+          "lastUpdated": 1694140929027
+        }
+      }
+    },
+    "__init__": {
+      "__init__": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1694140938483
+        }
+      }
+    },
+    "基本操作": {
+      "基本操作": {
+        "internalLink": {
+          "count": 1,
+          "lastUpdated": 1694143630933
+        }
+      }
+    },
+    "Game_Data": {
+      "Game_Data": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1694771957668
+        }
+      }
+    },
+    "Build": {
+      "Build": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1694772540090
+        }
+      }
+    },
+    "Settings": {
+      "Settings": {
+        "currentFile": {
+          "count": 2,
+          "lastUpdated": 1694772567834
+        }
+      }
+    },
+    "Resolution": {
+      "Resolution": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1694772610016
+        }
+      }
+    },
+    "Fullscreen": {
+      "Fullscreen": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1694772641248
+        }
+      }
+    },
+    "WebGL": {
+      "WebGL": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1694772986023
+        }
+      }
+    },
+    "Brotli": {
+      "Brotli": {
+        "currentFile": {
+          "count": 2,
+          "lastUpdated": 1695004639222
+        }
+      }
+    },
+    "Unity": {
+      "Unity": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1695025704357
+        }
+      }
+    },
+    "undefined": {
+      "undefined": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1695030348744
+        }
+      }
+    },
+    "useRouter": {
+      "useRouter": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1695031054945
+        }
+      }
+    },
+    "类型转换": {
+      "类型转换": {
+        "internalLink": {
+          "count": 2,
+          "lastUpdated": 1695113677503
         }
       }
     }

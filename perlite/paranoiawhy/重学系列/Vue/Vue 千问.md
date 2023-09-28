@@ -29,3 +29,29 @@
 	border 1px solid red;
 }
 ```
+
+# 环境变量类型提示
+
+`env.d.ts`:
+
+```ts
+/// <reference types="vite/client" />
+
+interface ImportMetaEnv {
+  readonly VITE_APP_BASE_URL: string
+}
+
+interface ImportMeta {
+  readonly env: ImportMetaEnv
+}
+```
+
+```vue
+<script>
+console.log(import.meta.VITE_APP_BASE_URL);
+</script>
+```
+
+# Vite
+
+Vite 仅执行 `.ts` 文件的转译工作，**并不执行** 任何类型检查。并假定类型检查已经被你的 `IDE` 或构建过程处理了。

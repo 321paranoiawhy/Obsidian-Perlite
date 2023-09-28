@@ -277,7 +277,7 @@ class GetImageInfo extends StatelessWidget {
 
 - [how-do-i-determine-the-width-and-height-of-an-image-in-flutter - stackoverflow](https://stackoverflow.com/questions/44665955/how-do-i-determine-the-width-and-height-of-an-image-in-flutter)
 
-## 可选链
+# 可选链
 
 `...?`
 
@@ -303,7 +303,7 @@ final List? list = null;
 print(list?[0]);
 ```
 
-## 在 build 方法里条件
+# 在 build 方法里条件
 
 `if...else`:
 
@@ -320,7 +320,7 @@ else
 true ? SizedBox(width: 10, height: 10)
 ```
 
-## VS Code
+# VS Code
 
 ### 设置自动保存并格式化
 
