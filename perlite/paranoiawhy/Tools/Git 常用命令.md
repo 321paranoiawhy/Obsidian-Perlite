@@ -27,6 +27,8 @@ git remote -v
 
 ```bash
 git fetch -p
+
+git remote update origin --prune
 ```
 
 # 删除远程分支
@@ -40,6 +42,9 @@ git push origin --delete remoteBranchName
 
 ```bash
 git branch
+
+# 查看本地所有分支
+git branch -a
 ```
 
 # 查看本地分支状态
@@ -80,6 +85,8 @@ git checkout another
 ```bash
 # 本地 local 分支推送到远程 origin 分支
 git push origin local:origin
+
+git push -u origin remoteBranchName
 ```
 
 # 拉取远程指定分支并合并到本地分支
@@ -206,6 +213,10 @@ git reset --soft HEAD~2
 `--soft` 表示**软**撤回, 不删除本地代码和新添加文件, 只撤回提交信息;
 
 `--hard` 表示**硬**撤回, 删除本地代码和新添加文件, 并撤回提交信息。
+
+```bash
+git reset --merge HEAD~1
+```
 
 # 远程仓库回滚
 

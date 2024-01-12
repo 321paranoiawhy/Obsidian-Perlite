@@ -33,12 +33,12 @@ New-Item -Path $PROFILE -Type File -Force
 [PSReadLine - GitHub](https://github.com/PowerShell/PSReadLine#install-from-powershellgallery-preferred)
 
 ```
-Install-Module -Name PowerShellGet -Force
+Install-Module -Name PSReadLine -Force
 ```
 
 查看已有历史输入命令: 
 
-[### History Cmdlets - Powershell](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_history?view=powershell-7.3#history-cmdlets)
+[History Cmdlets - Powershell](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_history?view=powershell-7.3#history-cmdlets)
 
 ```bash
 Get-History
@@ -52,6 +52,19 @@ Import-Module posh-git
 Import-Module oh-my-posh
 Import-Module -Name Terminal-Icons
 oh-my-posh init pwsh --config '$env:POSH_THEMES_PATH\jandedobbeleer.omp.json' | Invoke-Expression
+```
+
+- [posh-git](https://github.com/dahlbyk/posh-git)
+- [Terminal-Icons](https://github.com/devblackops/Terminal-Icons)
+
+```bash
+Install-Module oh-my-posh -Scope CurrentUser
+
+Install-Module PSReadLine -AllowPrerelease -Force
+
+Install-Module posh-git -Scope CurrentUser -Force
+
+Install-Module -Name Terminal-Icons -Repository PSGallery
 ```
 
 # 列出所有主题

@@ -4,17 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "e896059f7cce993c",
+        "id": "9f10646f6649b98e",
         "type": "tabs",
         "children": [
           {
-            "id": "fdf4e85b67a71b68",
+            "id": "4bc9e2c8555cbed6",
             "type": "leaf",
             "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
-                "file": "重学系列/C Sharp/入门.md",
+                "file": "TypeScript/Type Challenges.md",
                 "mode": "source",
                 "source": false
               },
@@ -22,33 +22,18 @@
             }
           },
           {
-            "id": "891f880013ef487f",
-            "type": "leaf",
-            "pinned": true,
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "重学系列/Unity/Basic.md",
-                "mode": "source",
-                "source": false
-              },
-              "pinned": true
-            }
-          },
-          {
-            "id": "2298a32bfde04b93",
+            "id": "a0c354f0113d49e2",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "重学系列/C Sharp/工具网站.md",
+                "file": "Vite/压缩.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 2,
         "stacked": true
       }
     ],
@@ -78,7 +63,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "coco",
+                "query": "远程分支",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -131,7 +116,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "重学系列/C Sharp/工具网站.md",
+                "file": "TypeScript/Type Challenges.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -148,7 +133,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "重学系列/C Sharp/工具网站.md",
+                "file": "TypeScript/Type Challenges.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -171,7 +156,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "重学系列/C Sharp/工具网站.md"
+                "file": "TypeScript/Type Challenges.md"
               }
             }
           },
@@ -201,7 +186,6 @@
   "left-ribbon": {
     "hiddenItems": {
       "publish:Publish changes...": false,
-      "obsidian-markdown-formatting-assistant-plugin:Open Markdown Formatting Assistant": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
@@ -210,47 +194,48 @@
       "command-palette:Open command palette": false,
       "workspaces:Manage workspace layouts": false,
       "table-editor-obsidian:Advanced Tables Toolbar": false,
-      "markdown-table-editor:Open Markdown Table Editor": false
+      "markdown-table-editor:Open Markdown Table Editor": false,
+      "obsidian-markdown-formatting-assistant-plugin:Open Markdown Formatting Assistant": false
     }
   },
-  "active": "2298a32bfde04b93",
+  "active": "4bc9e2c8555cbed6",
   "lastOpenFiles": [
-    "重学系列/C Sharp/平台相关.md",
-    "重学系列/C Sharp/打包.md",
-    "重学系列/C Sharp/工具网站.md",
-    "重学系列/C Sharp/常用 api.md",
-    "重学系列/Unity/Basic.md",
-    "重学系列/Unity/Visual Studio.md",
-    "重学系列/C Sharp/Time.md",
-    "重学系列/C Sharp/gitignore.md",
-    "重学系列/C Sharp/CI CD.md",
-    "重学系列/C Sharp/延时操作.md",
-    "重学系列/C Sharp/入门.md",
-    "Flutter & Dart/Flutter/All about build in flutter.md",
-    "Flutter & Dart/Flutter/配置.md",
-    "Flutter & Dart/Flutter/Packages/Packages.md",
-    "Flutter & Dart/Flutter/Packages/intl.md",
-    "PowerShell/PowerShell 初探.md",
-    "重学系列/Vue/Composables.md",
-    "重学系列/Flutter/状态管理/登录注册实现方式.md",
-    "重学系列/Vue/define 系列.md",
-    "重学系列/Vue/Vue 千问.md",
-    "重学系列/Flutter/basic/特殊组件.md",
-    "重学系列/CSS/list bullet.md",
+    "Vite/压缩.md",
     "Tools/Git 常用命令.md",
-    "重学系列/Flutter/basic/widgets/TextField.md",
+    "TypeScript/Type Challenges.md",
+    "TypeScript/unions.md",
+    "CSS/你不知道的 CSS.md",
+    "Nuxt/多个 url 匹配至同一个页面.md",
+    "Nuxt/动态路由.md",
+    "Nuxt",
+    "JavaScript/url.md",
+    "CSS/Snippets/Loading.md",
+    "Vue/Snippets.md",
+    "TypeScript/Snippets.md",
+    "Element UI/溢出显示....md",
+    "git/CRLF.md",
+    "JavaScript/滚动到顶.md",
+    "Vue/最佳实践.md",
+    "Vue/自动批量导入文件.md",
+    "ECharts/配置.md",
+    "JavaScript/校验.md",
+    "JavaScript/复制功能.md",
+    "git/ignore.md",
+    "git",
+    "JavaScript/金融领域金额高精度计算.md",
+    "ECharts",
     "重学系列/Flutter/Flutter 千问.md",
+    "Element UI/clickoutside.md",
+    "Element UI/Pagination.md",
+    "Element UI",
+    "CSS/aspect-ratio.md",
+    "CSS/Snippets/Collapse.md",
     "重学系列/Flutter/basic/widgets",
-    "重学系列/Python/文件引用.md",
     "重学系列/Python",
     "重学系列/Flutter/性能优化",
     "重学系列/Unity",
     "重学系列/Flutter/advanced/Untitled",
     "重学系列/Flutter/basic/collections",
-    "重学系列/设计模式",
-    "重学系列/C Sharp",
-    "重学系列/Nest",
-    "重学系列/Flutter/插件",
     "Attachments/google oauth.png",
     "Attachments/Generating a token in SonarQube.png",
     "Attachments/SonarQube Scanner Jenkins Plugin Installation.png",
